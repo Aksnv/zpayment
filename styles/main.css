@@ -1,0 +1,74 @@
+/* ------------- Fonts ------------- */
+
+@font-face {
+  font-family: "GothamPro-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("GothamPro-Light"),
+       url(../fonts/web/GothamPro-Light.woff2) format("woff2"),
+       url(../fonts/web/GothamPro-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "GothamPro-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("GothamPro"), local("GothamPro-Regular"),
+       url(../fonts/web/GothamPro-Regular.woff2) format("woff2"),
+       url(../fonts/web/GothamPro-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "GothamPro-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("GothamPro-Medium"),
+       url(../fonts/web/GothamPro-Medium.woff2) format("woff2"),
+       url(../fonts/web/GothamPro-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "GothamPro-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("GothamPro-Bold"),
+       url(../fonts/web/GothamPro-Bold.woff2) format("woff2"),
+       url(../fonts/web/GothamPro-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "GothamPro-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("GothamPro-Black"),
+       url(../fonts/web/GothamPro-Black.woff2) format("woff2"),
+       url(../fonts/web/GothamPro-Black.woff) format("woff");
+}
+
+
+/* ------------- Сommon styles ------------- */
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #32325d;
+
+  background-color: #f5f7fa;
+}
