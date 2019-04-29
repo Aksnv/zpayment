@@ -59,9 +59,9 @@
   <main class="page-content">
     <h1 class="vissually-hidden">Z-Payment</h1>
     <section class="intro">
-      <p class="intro__text intro__text_big">Принимайте <strong>все методы</strong> оплаты <strong>от всех клиентов!</strong></p>
-      <p class="intro__text">Вместе с Z-Payment</p>
-      <p class="intro__text intro__text_small">Быстро, выгодно, безопасно!</p>
+      <p class="intro__text intro__text_huge">Принимайте <strong>все методы</strong> оплаты <strong>от всех клиентов!</strong></p>
+      <p class="intro__text intro__text_big">Вместе с Z-Payment</p>
+      <p class="intro__text">Быстро, выгодно, безопасно!</p>
     </section>
     <section class="advantages">
       <h2 class="vissually-hidden">Преимущества Z-Payment</h2>
@@ -177,6 +177,10 @@
           </article>
         </li>
       </ul>
+      <div class="controls use-cases__controls">
+        <button class="controls__button controls__button_dark controls__button_back" type="button">Назад</button disabled>
+        <button class="controls__button controls__button_dark controls__button_forward" type="button">Вперед</button>
+      </div>
       <ul class="indicators use-cases__indicators">
         <li class="indicator indicator_current">1</li>
         <li class="indicator">2</li>
@@ -186,40 +190,78 @@
     </section>
     <section class="reviews">
       <h2 class="reviews__header">Отзывы о нас</h2>
-      <p class="reviews__text">Мы публикуем отзывы наших клиентов, чтобы все знали, какая мы отличная команда!</p>
+      <b class="reviews__text reviews__text_big">Мы публикуем отзывы наших клиентов, чтобы все знали, какая мы отличная команда!</b>
       <ul class="reviews__list">
         <li class="reviews__item">
           <article class="reviews__article">
-            <img src="images/reviews/client-photo-1.jpg" width="100" height="100" alt="Владислав Греков">
-            <blockquote>...после перехода из другой версии системы: ”А вообще классная у вас платформа Покупо. Сразу видны изменения в лучшую сторону”.</blockquote>
-            <cite>Владислав Греков</cite>
+            <img class="reviews__image" src="images/reviews/client-photo-1.jpg" width="100" height="100" alt="Владислав Греков">
+            <blockquote class="reviews__text">...после перехода из другой версии системы: ”А вообще классная у вас платформа Покупо. Сразу видны изменения в лучшую сторону”.</blockquote>
+            <cite class="reviews__author">Владислав Греков</cite>
           </article>
         </li>
         <li class="reviews__item">
           <article class="reviews__article">
-            <img src="images/reviews/client-photo-2.jpg" width="100" height="100" alt="Юрий Махнев">
-            <blockquote>Здравствуйте. Ваше приложение pokupo news на android нереально крутое в плане агрегации новостей, особенно из мира блокчейн.</blockquote>
-            <cite>Юрий Махнев</cite>
+            <img class="reviews__image" src="images/reviews/client-photo-2.jpg" width="100" height="100" alt="Юрий Махнев">
+            <blockquote class="reviews__text">Здравствуйте. Ваше приложение pokupo news на android нереально крутое в плане агрегации новостей, особенно из мира блокчейн.</blockquote>
+            <cite class="reviews__author">Юрий Махнев</cite>
           </article>
         </li>
         <li class="reviews__item">
           <article class="reviews__article">
-            <img src="images/reviews/client-photo-3.jpg" width="100" height="100" alt="Юрий Махнев">
-            <blockquote>Все самые главные новости про блокчейн у Вас и у forklog. Это очень круто, поскольку мы сами работаем с блокчейн, поэтому я НЕСКОЛЬКО раз в день читаю Ваши новости и статьи. В связи с этим хотел бы выразить Вам благодарность и успехов в предпринимательской деятельности. Большое Вам спасибо!!!</blockquote>
-            <cite>Юрий Махнев</cite>
+            <img class="reviews__image" src="images/reviews/client-photo-3.jpg" width="100" height="100" alt="Юрий Махнев">
+            <blockquote class="reviews__text">Все самые главные новости про блокчейн у Вас и у forklog. Это очень круто, поскольку мы сами работаем с блокчейн, поэтому я НЕСКОЛЬКО раз в день читаю Ваши новости и статьи. В связи с этим хотел бы выразить Вам благодарность и успехов в предпринимательской деятельности. Большое Вам спасибо!!!</blockquote>
+            <cite class="reviews__author">Юрий Махнев</cite>
           </article>
         </li>
       </ul>
+      <div class="controls reviews__controls">
+        <button class="controls__button controls__button_light controls__button_back" type="button">Назад</button disabled>
+        <button class="controls__button controls__button_light controls__button_forward" type="button">Вперед</button>
+      </div>
       <ul class="indicators reviews__indicators">
         <li class="indicator indicator_current">1</li>
         <li class="indicator">2</li>
         <li class="indicator">3</li>
       </ul>
-      <div class="controls reviews__controls">
-        <button class="controls__button controls__button_back" type="button">Назад</button disabled>
-        <button class="controls__button controls__button_forward" type="button">Вперед</button>
-      </div>
       <a class="button button_blue reviews__button" href="#">Подключить прием платежей</a>
+    </section>
+    <section class="integration">
+      <h2 class="integration__header">Интеграция</h2>
+      <b class="integration__text integration__text_big">Простая интеграция приема платежей через модули популярных систем управления сайтом</b>
+      <ul class="integration__list">
+        <li class="integration__item">
+          <img src="images/logo/cms/wordpress.png" width="85" height="78" alt="Wordpress">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/umicms.png" width="87" height="78" alt="Umicms">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/bitrix.png" width="85" height="78" alt="1C-Bitrix">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/joomla.png" width="63" height="58" alt="Joomla">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/drupal.png" width="113" height="104" alt="Drupal">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/insales.png" width="85" height="78" alt="Insales">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/ecwid.png" width="83" height="78" alt="Ecwid">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/netcat.png" width="85" height="78" alt="Netcat">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/simpla.png" width="85" height="78" alt="Simpla">
+        </li>
+        <li class="integration__item">
+          <img src="images/logo/cms/opencart.png" width="85" height="78" alt="Opencart">
+        </li>
+      </ul>
+      <p class="integration__text">Вы можете бесплатно выбрать и загрузить модуль оплаты <a href="#">здесь</a></p>
+      <p class="integration__text">Если у вас возникли вопросы по интеграции, наша <a href="#">служба поддержки</a> будет рада помочь вам</p>
     </section>
   </main>
   <footer class="page-footer">
