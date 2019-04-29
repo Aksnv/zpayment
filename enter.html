@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Регистрация в Z-Payment</title>
+  <title>Вход в Z-Payment</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
@@ -34,10 +34,10 @@
       </ul>
       <ul class="user-navigation page-header__user-navigation">
         <li class="user-navigation__item">
-          <a class="button user-navigation__button user-navigation__button_registration">Зарегистрироваться</a>
+          <a class="button user-navigation__button user-navigation__button_registration" href="registration.html">Зарегистрироваться</a>
         </li>
         <li class="user-navigation__item">
-          <a class="button button_white user-navigation__button user-navigation__button_enter" href="enter.html">Войти</a>
+          <a class="button button_white user-navigation__button user-navigation__button_enter">Войти</a>
         </li>
         <li class="user-navigation__item">
           <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span>zpayment2017</span></a>
@@ -57,35 +57,19 @@
     </nav>
   </header>
   <main class="page-content">
-    <section class="registration">
-      <h1 class="registration__header">Регистрация в Z-Payment</h1>
-      <p class="registration__text">Быстро, выгодно, безопасно!</p>
-      <form class="registration-form registration__form">
-        <input class="registration-form__field registration-form__field_radio" id="person" type="radio" name="registration-form__field_radio" value="person" checked>
-        <label class="registration-form__label" for="person">
-          <span class="registration-form__indicator registration-form__indicator_radio"></span>
-          Частное лицо
+    <section class="enter">
+      <h1 class="enter__header">Вход в Z-Payment</h1>
+      <p class="enter__text">Для продавцов</p>
+      <form class="enter-form enter__form">
+        <input class="enter-form__field enter-form__field_text enter-form__field_login" type="text" name="enter-form__field_login" placeholder="Логин">
+        <input class="enter-form__field enter-form__field_text enter-form__field_password" type="text" name="enter-form__field_password" placeholder="Пароль">
+        <input class="enter-form__field enter-form__field_checkbox" id="remember-password" type="checkbox" name="enter-form__field_checkbox">
+        <label class="enter-form__label" for="remember-password">
+          <span class="enter-form__indicator registration-form__indicator_checkbox"></span>
+          Запомнить пароль
         </label>
-        <input class="registration-form__field registration-form__field_radio" id="company" type="radio" name="registration-form__field_radio" value="company">
-        <label class="registration-form__label" for="company">
-          <span class="registration-form__indicator registration-form__indicator_radio"></span>
-          Компания
-        </label>
-        <input class="registration-form__field registration-form__field_text registration-form__field_email" type="text" name="registration-form__field_email" placeholder="Ваш e-mail">
-        <input class="registration-form__field registration-form__field_text registration-form__field_phone" type="text" name="registration-form__field_phone" placeholder="Номер телефона">
-        <fieldset class="egistration-form__fieldset">
-          <legend class="egistration-form__legend">Дополнительные данные (необязательно)</legend>
-          <input class="registration-form__field registration-form__field_text registration-form__field_shop-name" type="text" name="registration-form__field_shop-name" placeholder="Название магазина">
-          <input class="registration-form__field registration-form__field_text registration-form__field_subdomain-name" type="text" name="registration-form__field_subdomain-name" placeholder="Желаемый поддомен">
-          <input class="registration-form__field registration-form__field_text registration-form__field_website-address" type="text" name="registration-form__field_website-address" placeholder="Адрес сайта (если есть)">
-          <input class="registration-form__field registration-form__field_text registration-form__field_login" type="text" name="registration-form__field_login" placeholder="Ваш логин">
-        </fieldset>
-        <input class="registration-form__field registration-form__field_checkbox" id="agreement" type="checkbox" name="registration-form__field_checkbox">
-        <label class="registration-form__label" for="agreement">
-          <span class="registration-form__indicator registration-form__indicator_checkbox"></span>
-          Я принамаю условия <a href="#">пользовательского соглашения</a>, <a href="#">правила конфиденциальности</a> и <a href="#">политику возврата платежей</a>
-        </label>
-        <button class="button button_blue registration-form__button registration-form__button_submit" type="submit">Получить код на e-mail</button>
+        <button class="button button_blue enter-form__button enter-form__button_submit" type="submit">Войти в Z-Payment</button>
+        <a class="enter-form__link" href="#">Забыли пароль?</a>
       </form>
     </section>
   </main>
