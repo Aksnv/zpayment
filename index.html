@@ -103,6 +103,81 @@
       <p class="advantages-comment">* Только для ИП и юридических лиц РФ</p>
       <p class="advantages-comment">** Не все платежные системы разрешают проводить оплату на сайте продавца</p>
     </section>
+    <section class="use-cases">
+      <h2>Как можно использовать Z-Payment</h2>
+      <ul class="use-cases__list">
+        <li class="use-cases__item">
+          <article class="product-widget use-cases__product-widget">
+            <h3 class="product-widget__header">Хлопковая футболка с принтом</h3>
+            <img class="product-widget__image" src="images/use-cases/product-image.jpg" width="251" height="297" alt="Хлопковая футболка с принтом">
+            <p class="product-widget__text">Бесплатная доставка в Россию через Aliexpress стандартная доставка. Расчетный срок поставки: 25 дней</p>
+            <p class="product-widget__text">Подробнее о товаре на <a href="#">Aliexpress</a></p>
+            <strong class="product-widget__price">499 ₽</strong>
+            <form class="product-widget__form" method="post" action="#" name="product-widget__form">
+              <button class="product-widget__form-button product-widget__form-button_decrease" type="button" disabled>-</button>
+              <input class="product-widget__form-field product-widget__form-field_text" type="text" name="product-widget__form-field_text" value="1">
+              <button class="product-widget__form-button product-widget__form-button_increase" type="button">+</button>
+              <button class="button button_red product-widget__form-button product-widget__form-button_submit" type="submit">Оплатить товар</button>
+            </form>
+          </article>
+        </li>
+        <li class="use-cases__item">
+          <article class="subscription-widget use-cases__subscription-widget">
+            <h3 class="subscription-widget__header">Месячная подписка на просмотр без рекламы</h3>
+            <img class="subscription-widget__image" src="images/use-cases/youtube-logo.svg" width="381" height="85" alt="Логотип YouTube">
+            <a class="subscription-widget__link" href="#">youtube подписка</a>
+            <strong class="subscription-widget__price">199 ₽/мес</strong>
+            <form class="subscription-widget__form" method="post" action="#" name="subscription-widget__form">
+              <button class="button button_red subscription-widget__form-button subscription-widget__form-button_submit" type="submit">Оплатить подписку</button>
+            </form>
+          </article>
+        </li>
+        <li class="use-cases__item">
+          <article class="advertising-widget use-cases__advertising-widget">
+            <h3 class="advertising-widget__header">Заказать контекстную рекламу</h3>
+            <form class="advertising-widget__form" method="post" action="#" name="advertising-widget__form">
+              <label class="advertising-widget__form-label" for="advertising-widget__form-select">Тариф</label>
+              <select class="advertising-widget__form-select" id="advertising-widget__form-select">
+                <option>Стандарт</option>
+                <option>Бизнес</option>
+                <option>Премиум</option>
+              </select>
+              <strong class="advertising-widget__price">780 ₽</strong>
+              <button class="button button_red advertising-widget__form-button advertising-widget__form-button_submit" type="submit">Оплатить услугу</button>
+            </form>
+          </article>
+        </li>
+        <li class="use-cases__item">
+          <article class="donation-widget use-cases__donation-widget">
+            <h3 class="donation-widget__header">Товар-пожертвование</h3>
+            <img class="donation-widget__image" src="images/use-cases/donation-image.jpg" width="306" height="405" alt="Сумка с принтом WWF.RU">
+            <a class="donation-widget__link" href="#">wwf.ru</a>
+            <form class="donation-widget__form" method="post" action="#" name="donation-widget__form">
+              <input class="donation-widget__form-field donation-widget__form-field_radio" id="4000" type="radio" name="donation-widget__form-field_radio" value="4000">
+              <label class="donationwidget__form-label" for="4000">
+                <span class="donation-widget__form-indicator donation-widget__form-indicator_radio"></span>
+                4000 ₽
+              </label>
+              <input class="donation-widget__form-field donation-widget__form-field_radio" id="2500" type="radio" name="donation-widget__form-field_radio" value="2500" checked>
+              <label class="donationwidget__form-label" for="2500">
+                <span class="donation-widget__form-indicator donation-widget__form-indicator_radio"></span>
+                2500 ₽
+              </label>
+              <input class="donation-widget__form-field donation-widget__form-field_radio" id="1500" type="radio" name="donation-widget__form-field_radio" value="1500">
+              <label class="donationwidget__form-label" for="1500">
+                <span class="donation-widget__form-indicator donation-widget__form-indicator_radio"></span>
+                1500 ₽
+              </label>
+              <strong class="donation-widget__price">
+                <input lass="donation-widget__form-field donation-widget__form-field_text" type="text" name="donation-widget__form-field_text" placeholder="Другая сумма">
+                ₽
+              </strong>
+              <button class="button button_red donation-widget__form-button donation-widget__form-button_submit" type="submit">Сделать пожертвование</button>
+            </form>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="page-footer">
     <a class="logo page-footer__logo">
