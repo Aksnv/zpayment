@@ -284,6 +284,29 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
+/* ------------- Use cases ------------- */
+
+.use-cases__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.use-cases__item {
+  width: 300px;
+}
+
 
 /* ------------- Footer ------------- */
 
@@ -374,6 +397,12 @@ input[type="radio"].visually-hidden {
     width: 323px;
   }
 
+  /* ------------- Use cases ------------- */
+
+  .use-cases__item {
+    width: 688px;
+  }
+
 
   /* ------------- Footer ------------- */
 
@@ -450,6 +479,18 @@ input[type="radio"].visually-hidden {
 
   .advantages-item {
     width: 353px;
+  }
+
+  /* ------------- Use cases ------------- */
+
+  .use-cases__item {
+    width: 353px;
+  }
+
+  .use-cases__item:first-child,
+  .use-cases__item:nth-child(4n + 4),
+  .use-cases__item:nth-child(5n + 5) {
+    width: 747px;
   }
 
 
