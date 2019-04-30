@@ -219,16 +219,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  text-align: center;
-
   list-style-type: none;
 }
 
-.site-navigation {
+.site-navigation_header {
   order: 2;
 }
 
-.site-navigation__link {
+.site-navigation__link_header {
   color: #ffffff;
 }
 
@@ -255,6 +253,49 @@ input[type="radio"].visually-hidden {
 
 /* ------------- Footer ------------- */
 
+.page-footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.site-navigation_footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.site-navigation__item_footer {
+  width: 50%;
+}
+
+.site-navigation__link_footer {
+  color: #666666;
+}
 
 
 
@@ -276,7 +317,7 @@ input[type="radio"].visually-hidden {
     order: 2;
   }
 
-  .site-navigation {
+  .site-navigation_header {
     order: 3;
   }
 
@@ -293,6 +334,26 @@ input[type="radio"].visually-hidden {
   .language-navigation {
 
   }
+
+  /* ------------- Footer ------------- */
+
+  .page-footer {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .socials {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .site-navigation__item_footer {
+    width: auto;
+  }
+
 
 }
 
@@ -315,7 +376,7 @@ input[type="radio"].visually-hidden {
     order: 3;
   }
 
-  .site-navigation {
+  .site-navigation_header {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -340,6 +401,25 @@ input[type="radio"].visually-hidden {
     top: 0;
     right: 0;
     width: auto;
+  }
+
+  /* ------------- Footer ------------- */
+
+  .page-footer__logo {
+    order: 0;
+  }
+
+  .page-footer__socials {
+    order: 2;
+  }
+
+  .site-navigation_footer {
+    order: 1;
+    width: auto;
+  }
+
+  .site-navigation__item_footer {
+    width: 50%;
   }
 
 }
