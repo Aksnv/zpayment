@@ -364,7 +364,20 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.registration-form__label_radio {
+.registration-form__label_radio,
+.registration-form__field_text {
+  width: 100%;
+}
+
+/* ------------- Enter ------------- */
+
+.enter-form__field_text {
+  width: 100%;
+}
+
+/* ------------- Reset ------------- */
+
+.reset-form__field_text {
   width: 100%;
 }
 
@@ -481,6 +494,18 @@ input[type="radio"].visually-hidden {
   }
 
   .registration-form__field_text {
+    width: 360px;
+  }
+
+  /* ------------- Enter ------------- */
+
+  .enter-form {
+    width: 360px;
+  }
+
+  /* ------------- Reset ------------- */
+
+  .reset-form {
     width: 360px;
   }
 
