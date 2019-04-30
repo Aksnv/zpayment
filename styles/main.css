@@ -74,9 +74,9 @@ body {
 }
 
 .container {
-  /*position: relative;
+  position: relative;
 
-  display: -webkit-flex;
+  /*display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -174,3 +174,176 @@ input[type="radio"].visually-hidden {
 /*legend.visually-hidden {
   display: block;
 }*/
+
+
+/* ------------- Mobile styles (320px) ------------- */
+
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+/* ------------- Header ------------- */
+
+.page-header {
+  background-color: #4d44d6;
+}
+
+.main-navigation {
+
+}
+
+.main-navigation__logo {
+  order: 0;
+}
+
+.main-navigation__button {
+  order: 1;
+  margin-left: auto;
+}
+
+.site-navigation,
+.user-navigation,
+.language-navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  list-style-type: none;
+}
+
+.site-navigation {
+  order: 2;
+}
+
+.site-navigation__link {
+  color: #ffffff;
+}
+
+.user-navigation {
+  order: 3;
+}
+
+.language-navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.language-navigation__button {
+  color: #ffffff;
+}
+
+
+/* ------------- Main content ------------- */
+
+
+/* ------------- Footer ------------- */
+
+
+
+
+/* ------------- Tablet styles (768px) ------------- */
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 708px;
+  }
+
+  /* ------------- Header ------------- */
+
+  .main-navigation__logo {
+    order: 0;
+  }
+
+  .main-navigation__button {
+    order: 2;
+  }
+
+  .site-navigation {
+    order: 3;
+  }
+
+  .user-navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    order: 1;
+    width: auto;
+  }
+
+  .language-navigation {
+
+  }
+
+}
+
+
+/* ------------- Desktop styles (1180px) ------------- */
+
+@media screen and (min-width: 1200px) {
+
+  .container {
+    width: 1180px;
+  }
+
+  /* ------------- Header ------------- */
+
+  .main-navigation__logo {
+    order: 0;
+  }
+
+  .main-navigation__button {
+    order: 3;
+  }
+
+  .site-navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    order: 1;
+    width: auto;
+  }
+
+  .user-navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    order: 2;
+    width: auto;
+  }
+
+  .language-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+  }
+
+}
+
+
+
+

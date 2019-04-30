@@ -12,43 +12,45 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="logo page-header__logo">
-      <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment">
-    </a>
     <nav class="main-navigation page-header__main-navigation">
-      <button class="main-navigation__button main-navigation__button_open" type="button"><span class="vissually-hidden">Показать навигацию</span></button>
-      <button class="main-navigation__button main-navigation__button_close" type="button"><span class="vissually-hidden">Скрыть навигацию</span></button>
-      <ul class="site-navigation site-navigation_header page-header__site-navigation">
-        <li class="site-navigation__item site-navigation__item_header">
-          <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Возможности</a>
-        </li>
-        <li class="site-navigation__item site-navigation__item_header">
-          <a class="site-navigation__link site-navigation__link_header" href="#">Тарифы</a>
-        </li>
-        <li class="site-navigation__item site-navigation__item_header">
-          <a class="site-navigation__link site-navigation__link_header" href="#">Поддержка</a>
-        </li>
-        <li class="site-navigation__item site-navigation__item_header">
-          <a class="site-navigation__link site-navigation__link_header" href="#">Примеры</a>
-        </li>
-      </ul>
-      <ul class="user-navigation page-header__user-navigation">
-        <li class="user-navigation__item">
-          <a class="button user-navigation__button user-navigation__button_registration" href="registration.html">Зарегистрироваться</a>
-        </li>
-        <li class="user-navigation__item">
-          <a class="button button_white user-navigation__button user-navigation__button_enter" href="enter.html">Войти</a>
-        </li>
-        <li class="user-navigation__item">
-          <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span>zpayment2017</span></a>
-        </li>
-        <li class="user-navigation__item">
-          <a class="user-navigation__button user-navigation__button_exit" href="#"><span class="vissually-hidden">Выйти</span></a>
-        </li>
-      </ul>
-      <ul class="language-navigation page-header__language-navigation">
+      <div class="container">
+        <a class="logo main-navigation__logo">
+          <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment">
+        </a>
+        <button class="main-navigation__button main-navigation__button_open" type="button"><span class="visually-hidden">Показать навигацию</span></button>
+        <button class="main-navigation__button main-navigation__button_close" type="button"><span class="visually-hidden">Скрыть навигацию</span></button>
+        <ul class="site-navigation site-navigation_header main-navigation__site-navigation">
+          <li class="site-navigation__item site-navigation__item_header">
+            <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Возможности</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item_header">
+            <a class="site-navigation__link site-navigation__link_header" href="#">Тарифы</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item_header">
+            <a class="site-navigation__link site-navigation__link_header" href="#">Поддержка</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item_header">
+            <a class="site-navigation__link site-navigation__link_header" href="#">Примеры</a>
+          </li>
+        </ul>
+        <ul class="user-navigation main-navigation__user-navigation">
+          <li class="user-navigation__item">
+            <a class="button user-navigation__button user-navigation__button_registration" href="registration.html">Зарегистрироваться</a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="button button_white user-navigation__button user-navigation__button_enter" href="enter.html">Войти</a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span>zpayment2017</span></a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__button user-navigation__button_exit" href="#"><span class="visually-hidden">Выйти</span></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="language-navigation main-navigation__language-navigation">
         <li class="language-navigation__item">
-          <a class="language-navigation__button language-navigation__button_ru language-navigation__button_current" href="#">Ru</a>
+          <a class="language-navigation__button language-navigation__button_ru language-navigation__button_current">Ru</a>
         </li>
         <li class="language-navigation__item">
           <a class="language-navigation__button language-navigation__button_en" href="#">En</a>
@@ -57,14 +59,14 @@
     </nav>
   </header>
   <main class="page-content">
-    <h1 class="vissually-hidden">Z-Payment</h1>
+    <h1 class="visually-hidden">Z-Payment</h1>
     <section class="intro">
       <p class="intro__text intro__text_huge">Принимайте <strong>все методы</strong> оплаты <strong>от&nbsp;всех клиентов!</strong></p>
       <p class="intro__text intro__text_big">Вместе с&nbsp;Z-Payment</p>
       <p class="intro__text">Быстро, выгодно, безопасно!</p>
     </section>
     <section class="advantages">
-      <h2 class="vissually-hidden">Преимущества Z-Payment</h2>
+      <h2 class="visually-hidden">Преимущества Z-Payment</h2>
       <ul class="advantages-list">
         <li class="advantages-item advantages-item_current">
           <h3 class="advantages-header">Более 40&nbsp;методов оплаты</h3>
@@ -271,17 +273,17 @@
     <ul class="socials page-footer__socials">
       <li class="socials__item">
         <a class="socials__link" href="#">
-          <span class="vissually-hidden">Вконтакте</span>
+          <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="socials__item">
         <a class="socials__link" href="#">
-          <span class="vissually-hidden">Фейсбук</span>
+          <span class="visually-hidden">Фейсбук</span>
         </a>
       </li>
       <li class="socials__item">
         <a class="socials__link" href="#">
-          <span class="vissually-hidden">Твиттер</span>
+          <span class="visually-hidden">Твиттер</span>
         </a>
       </li>
     </ul>
