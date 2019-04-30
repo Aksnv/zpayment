@@ -17,10 +17,13 @@
         <a class="logo main-navigation__logo">
           <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment">
         </a>
-        <button class="main-navigation__button main-navigation__button_open" type="button"><span class="visually-hidden">Показать навигацию</span></button>
+        <button class="main-navigation__button main-navigation__button_open main-navigation__button_visible" type="button"><span class="visually-hidden">Показать навигацию</span></button>
         <button class="main-navigation__button main-navigation__button_close" type="button"><span class="visually-hidden">Скрыть навигацию</span></button>
         <ul class="site-navigation site-navigation_header main-navigation__site-navigation">
-          <li class="site-navigation__item site-navigation__item_header">
+          <!-- <li class="site-navigation__item site-navigation__item_header site-navigation__item_current">
+            <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Главная</a>
+          </li> -->
+          <li class="site-navigation__item site-navigation__item_header site-navigation__item_current">
             <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Возможности</a>
           </li>
           <li class="site-navigation__item site-navigation__item_header">
@@ -34,16 +37,16 @@
           </li>
         </ul>
         <ul class="user-navigation main-navigation__user-navigation">
-          <li class="user-navigation__item">
-            <a class="button user-navigation__button user-navigation__button_registration" href="registration.html">Зарегистрироваться</a>
+          <li class="user-navigation__item user-navigation__item_visible">
+            <a class="button user-navigation__button user-navigation__button_registration user-navigation__button_visible" href="registration.html">Зарегистрироваться</a>
           </li>
-          <li class="user-navigation__item">
-            <a class="button button_white user-navigation__button user-navigation__button_enter" href="enter.html">Войти</a>
+          <li class="user-navigation__item user-navigation__item_visible">
+            <a class="button button_white user-navigation__button user-navigation__button_enter user-navigation__button_visible" href="enter.html">Войти</a>
           </li>
           <li class="user-navigation__item">
             <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span>zpayment2017</span></a>
           </li>
-          <li class="user-navigation__item">
+          <li class="user-navigation__item user-navigation__item_exit">
             <a class="user-navigation__button user-navigation__button_exit" href="#"><span class="visually-hidden">Выйти</span></a>
           </li>
         </ul>
@@ -53,7 +56,7 @@
           <a class="language-navigation__button language-navigation__button_ru language-navigation__button_current">Ru</a>
         </li>
         <li class="language-navigation__item">
-          <a class="language-navigation__button language-navigation__button_en" href="#">En</a>
+          <a class="language-navigation__button language-navigation__button_eng" href="#">Eng</a>
         </li>
       </ul>
     </nav>
