@@ -349,6 +349,25 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
+/* ------------- Registration ------------- */
+
+.registration-form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.registration-form__label_radio {
+  width: 100%;
+}
+
 
 /* ------------- Footer ------------- */
 
@@ -449,6 +468,20 @@ input[type="radio"].visually-hidden {
 
   .reviews__item {
     width: 688px;
+  }
+
+  /* ------------- Registration ------------- */
+
+  .registration-form {
+    width: 450px;
+  }
+
+  .registration-form__label_radio {
+    width: 210px;
+  }
+
+  .registration-form__field_text {
+    width: 360px;
   }
 
 
