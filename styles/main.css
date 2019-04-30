@@ -179,6 +179,12 @@ input[type="radio"].visually-hidden {
 /* ------------- Mobile styles (320px) ------------- */
 
 .container {
+  width: 300px;
+}
+
+/* ------------- Header ------------- */
+
+.container_page-header {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -190,17 +196,10 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 300px;
 }
-
-/* ------------- Header ------------- */
 
 .page-header {
   background-color: #4d44d6;
-}
-
-.main-navigation {
-
 }
 
 .main-navigation__logo {
@@ -249,6 +248,41 @@ input[type="radio"].visually-hidden {
 
 
 /* ------------- Main content ------------- */
+
+.indicators {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+/* ------------- Advantages ------------- */
+
+.advantages-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.advantages-item {
+  width: 300px;
+}
 
 
 /* ------------- Footer ------------- */
@@ -331,9 +365,15 @@ input[type="radio"].visually-hidden {
     width: auto;
   }
 
-  .language-navigation {
 
+  /* ------------- Main content ------------- */
+
+  /* ------------- Advantages ------------- */
+
+  .advantages-item {
+    width: 323px;
   }
+
 
   /* ------------- Footer ------------- */
 
@@ -402,6 +442,16 @@ input[type="radio"].visually-hidden {
     right: 0;
     width: auto;
   }
+
+
+  /* ------------- Main content ------------- */
+
+  /* ------------- Advantages ------------- */
+
+  .advantages-item {
+    width: 353px;
+  }
+
 
   /* ------------- Footer ------------- */
 
