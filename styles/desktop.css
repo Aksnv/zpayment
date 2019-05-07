@@ -1,0 +1,172 @@
+/* ------------- Desktop styles (1180px) ------------- */
+
+@media screen and (min-width: 1480px) {
+
+  .container {
+    width: 1180px;
+  }
+
+
+  /* ------------- Header ------------- */
+
+  .page-header {
+    min-height: 116px;
+  }
+
+  .container_page-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /*.main-navigation_visible {
+    min-height: auto;
+    padding-bottom: 0;
+  }*/
+
+  .main-navigation__logo {
+    margin-left: 0;
+    margin-top: 27px;
+    margin-right: 82px;
+    margin-bottom: 23px;
+  }
+
+  .main-navigation__button {
+    display: none;
+  }
+
+  .site-navigation_header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    order: 1;
+    width: auto;
+    max-width: 540px;
+    padding-top: 44px;
+
+    border: none;
+  }
+
+  .site-navigation__item_header {
+    margin-right: 48px;
+    margin-bottom: 0;
+
+    line-height: 30px;
+  }
+
+  .site-navigation__item_header:last-child {
+    margin-right: 0;
+  }
+
+  .site-navigation__item_main {
+    display: none;
+  }
+
+  .site-navigation__item_current {
+    border: none;
+  }
+
+  .site-navigation__link_header {
+    padding-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .user-navigation {
+    order: 2;
+    max-width: 340px;
+    margin-left: auto;
+  }
+
+  .user-navigation__item {
+    margin-right: 0;
+    margin-left: 18px;
+  }
+
+  .language-navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: absolute;
+    top: 42px;
+    right: 40px;
+    width: auto;
+  }
+
+
+  /* ------------- Main content ------------- */
+
+
+  /* ------------- Advantages ------------- */
+
+  .advantages-item {
+    width: 353px;
+  }
+
+
+  /* ------------- Use cases ------------- */
+
+  .use-cases__item {
+    width: 353px;
+  }
+
+  .use-cases__item:first-child,
+  .use-cases__item:nth-child(4n + 4),
+  .use-cases__item:nth-child(5n + 5) {
+    width: 747px;
+  }
+
+
+  /* ------------- Reviews ------------- */
+
+  .reviews {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .reviews__wrapper,
+  .reviews__list {
+    width: 50%;
+  }
+
+  .reviews__item {
+    width: 550px;
+  }
+
+
+  /* ------------- Footer ------------- */
+
+  .page-footer__logo {
+    order: 0;
+  }
+
+  .page-footer__socials {
+    order: 2;
+  }
+
+  .site-navigation_footer {
+    order: 1;
+    width: auto;
+  }
+
+  .site-navigation__item_footer {
+    width: 50%;
+  }
+
+}

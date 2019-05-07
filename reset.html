@@ -9,6 +9,9 @@
   <meta name="description" content="Z-Payment - Принимайте все методы оплаты от всех клиентов!">
   <link rel="stylesheet" href="styles/normalize.min.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/tablet.css">
+  <link rel="stylesheet" href="styles/desktop.css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
@@ -19,14 +22,14 @@
         <a class="logo main-navigation__logo" href="index.html">
           <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment">
         </a>
-        <button class="main-navigation__button main-navigation__button_open main-navigation__button_visible" type="button"><span class="visually-hidden">Показать навигацию</span></button>
-        <button class="main-navigation__button main-navigation__button_close" type="button"><span class="visually-hidden">Скрыть навигацию</span></button>
+        <button class="main-navigation__button main-navigation__button_open" type="button"><span class="visually-hidden">Показать навигацию</span></button>
+        <button class="main-navigation__button main-navigation__button_close main-navigation__button_hidden" type="button"><span class="visually-hidden">Скрыть навигацию</span></button>
         <ul class="site-navigation site-navigation_header main-navigation__site-navigation">
-          <!-- <li class="site-navigation__item site-navigation__item_header site-navigation__item_current">
+          <li class="site-navigation__item site-navigation__item_header site-navigation__item_current site-navigation__item_main">
             <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Главная</a>
-          </li> -->
-          <li class="site-navigation__item site-navigation__item_header site-navigation__item_current">
-            <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Возможности</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item_header">
+            <a class="site-navigation__link site-navigation__link_header" href="#">Возможности</a>
           </li>
           <li class="site-navigation__item site-navigation__item_header">
             <a class="site-navigation__link site-navigation__link_header" href="#">Тарифы</a>
@@ -39,16 +42,16 @@
           </li>
         </ul>
         <ul class="user-navigation main-navigation__user-navigation">
-          <li class="user-navigation__item user-navigation__item_visible">
-            <a class="button user-navigation__button user-navigation__button_registration user-navigation__button_visible" href="registration.html">Зарегистрироваться</a>
-          </li>
-          <li class="user-navigation__item user-navigation__item_visible">
-            <a class="button button_white user-navigation__button user-navigation__button_enter user-navigation__button_visible" href="enter.html">Войти</a>
+          <li class="user-navigation__item">
+            <a class="button user-navigation__button user-navigation__button_registration" href="registration.html">Зарегистрироваться</a>
           </li>
           <li class="user-navigation__item">
+            <a class="button button_white user-navigation__button user-navigation__button_enter" href="enter.html">Войти</a>
+          </li>
+          <li class="user-navigation__item user-navigation__item_hidden">
             <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span>zpayment2017</span></a>
           </li>
-          <li class="user-navigation__item user-navigation__item_exit">
+          <li class="user-navigation__item user-navigation__item_exit user-navigation__item_hidden">
             <a class="user-navigation__button user-navigation__button_exit" href="#"><span class="visually-hidden">Выйти</span></a>
           </li>
         </ul>

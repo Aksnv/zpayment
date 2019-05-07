@@ -1,0 +1,157 @@
+/* ------------- Tablet styles (768px) ------------- */
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 768px;
+  }
+
+
+  /* ------------- Header ------------- */
+
+  .page-header {
+    min-height: 114px;
+  }
+
+  .container_page-header {
+    align-items: flex-start;
+  }
+
+  .main-navigation_visible {
+    min-height: 1024px;
+    padding-bottom: 38px;
+  }
+
+  .main-navigation__logo {
+    margin-top: 26px;
+    margin-left: 27px;
+    margin-right: auto;
+    margin-bottom: 22px;
+  }
+
+  .logo__image {
+    max-width: 207px;
+    max-height: 66px;
+  }
+
+  .main-navigation__button {
+    order: 2;
+    margin-top: 48px;
+    margin-left: 11px;
+    margin-right: 34px;
+  }
+
+  .site-navigation_header {
+    order: 3;
+    margin-bottom: 0;
+    padding-top: 256px;
+  }
+
+  .site-navigation__item_header {
+    margin-bottom: 32px;
+  }
+
+  .user-navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+    width: auto;
+    max-width: 420px;
+    min-height: auto;
+    margin-top: 36px;
+  }
+
+  .user-navigation__item {
+    margin-right: 18px;
+  }
+
+  .user-navigation__item_exit {
+    margin-left: 0;
+  }
+
+  .user-navigation__button {
+    min-width: auto;
+  }
+
+  .user-navigation__button_enter {
+    min-width: 102px;
+  }
+
+
+  /* ------------- Main content ------------- */
+
+
+  /* ------------- Advantages ------------- */
+
+  .advantages-item {
+    width: 323px;
+  }
+
+
+  /* ------------- Use cases ------------- */
+
+  .use-cases__item {
+    width: 688px;
+  }
+
+
+  /* ------------- Reviews ------------- */
+
+  .reviews__item {
+    width: 688px;
+  }
+
+
+  /* ------------- Registration ------------- */
+
+  .registration-form {
+    width: 450px;
+  }
+
+  .registration-form__label_radio {
+    width: 210px;
+  }
+
+  .registration-form__field_text {
+    width: 360px;
+  }
+
+
+  /* ------------- Enter ------------- */
+
+  .enter-form {
+    width: 360px;
+  }
+
+
+  /* ------------- Reset ------------- */
+
+  .reset-form {
+    width: 360px;
+  }
+
+
+  /* ------------- Footer ------------- */
+
+  .page-footer {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .socials {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .site-navigation__item_footer {
+    width: auto;
+  }
+
+}
