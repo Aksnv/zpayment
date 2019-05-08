@@ -13,10 +13,6 @@
     min-height: 116px;
   }
 
-  .container_page-header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
   /*.main-navigation_visible {
     min-height: auto;
     padding-bottom: 0;
@@ -103,6 +99,33 @@
 
 
   /* ------------- Main content ------------- */
+
+
+  /* ------------- Intro ------------- */
+
+  .intro {
+    padding: 0 68px;
+    padding-top: 118px;
+
+    background-position: 672px 105px;
+  }
+
+  .intro__text {
+    width: 590px;
+  }
+
+  .intro__text_big {
+    margin-bottom: 2px;
+
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .intro__text_huge {
+    margin-bottom: 69px;
+
+    line-height: 90px;
+  }
 
 
   /* ------------- Advantages ------------- */

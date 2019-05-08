@@ -10,10 +10,9 @@
 .page-header {
   min-height: 80px;
 
-  color: #ffffff;
+  /*color: #ffffff;
 
-  /*Временно*/
-  background-color: #4d44d6;
+  background-color: #4d44d6;*/
 }
 
 .container_page-header {
@@ -282,6 +281,52 @@
   padding: 0;
 
   list-style-type: none;
+}
+
+
+/* ------------- Intro ------------- */
+
+.intro {
+  padding: 0 17px;
+  padding-top: 386px;
+
+  /*color: #ffffff;
+
+  background-color: #4d44d6;*/
+  background-image: url(../images/robot.png);
+  background-repeat: no-repeat;
+  background-position: center 42px;
+  -webkit-background-size: 296px 319px;
+  background-size: 296px 319px;
+}
+
+.intro__text {
+  margin: 0;
+
+  font-family: "GothamPro-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+
+.intro__text strong {
+  font-family: "GothamPro-Bold", "Arial", sans-serif;
+}
+
+.intro__text_big,
+.intro__text_huge {
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.intro__text_big {
+  margin-bottom: 7px;
+}
+
+.intro__text_huge {
+  margin-bottom: 20px;
 }
 
 

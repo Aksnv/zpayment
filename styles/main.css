@@ -71,6 +71,9 @@ body {
   color: #32325d;
 
   background-color: #f5f7fa;
+  background-image: url(../images/backgrounds/bg-top.png);
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .container {
