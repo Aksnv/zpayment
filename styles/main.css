@@ -144,8 +144,12 @@ button {
 }
 
 .button_big {
+  padding: 18px 28px;
+
   font-family: "GothamPro-Bold", "Arial", sans-serif;
   font-size: 18px;
+
+  border-radius: 35px;
 }
 
 .button_white {
@@ -207,47 +211,7 @@ input[type="radio"].visually-hidden {
 
 /* ------------- Sprite ------------- */
 
-/*.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-advantage-icon-1 {
-    width: 94px;
-    height: 93px;
-    background-position: -5px -5px;
-}
-
-.sprite-advantage-icon-2 {
-    width: 153px;
-    height: 88px;
-    background-position: -109px -5px;
-}
-
-.sprite-advantage-icon-3 {
-    width: 93px;
-    height: 90px;
-    background-position: -272px -5px;
-}
-
-.sprite-advantage-icon-4 {
-    width: 117px;
-    height: 89px;
-    background-position: -375px -5px;
-}
-
-.sprite-advantage-icon-5 {
-    width: 131px;
-    height: 90px;
-    background-position: -109px -104px;
-}
-
-.sprite-advantage-icon-6 {
-    width: 122px;
-    height: 88px;
-    background-position: -375px -104px;
-}
+/*
 
 .sprite-advertising-icon {
     width: 54px;
