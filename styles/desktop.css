@@ -184,8 +184,23 @@
 
   /* ------------- Footer ------------- */
 
+  .page-footer {
+    align-items: flex-start;
+  }
+
   .page-footer__logo {
     order: 0;
+    margin-right: 191px;
+    margin-bottom: 0;
+  }
+
+  .socials {
+    justify-content: center;
+    width: auto;
+    max-width: 200px;
+    margin-top: 18px;
+    margin-right: 68px;
+    margin-bottom: 0;
   }
 
   .page-footer__socials {
@@ -194,11 +209,16 @@
 
   .site-navigation_footer {
     order: 1;
-    width: auto;
+    width: 480px;
   }
 
   .site-navigation__item_footer {
-    width: 50%;
+    width: 180px;
+    margin-right: 0;
+  }
+
+  .site-navigation__item_footer:nth-child(2n+1) {
+    margin-right: 120px;
   }
 
 }

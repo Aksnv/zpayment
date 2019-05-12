@@ -197,15 +197,36 @@
     -ms-flex-direction: row;
     -o-flex-direction: row;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 33px;
+  }
+
+  .logo__image_blue {
+    max-width: 207px;
+    max-height: 66px;
   }
 
   .socials {
-    width: auto;
+    justify-content: flex-end;
+    width: 50%;
     margin-left: auto;
+    margin-right: 72px;
+    margin-bottom: 38px;
+  }
+
+  .site-navigation_footer {
+    padding: 0;
   }
 
   .site-navigation__item_footer {
     width: auto;
+    margin-right: 24px;
   }
 
 }

@@ -237,18 +237,6 @@ input[type="radio"].visually-hidden {
     background-position: -507px -90px;
 }
 
-.sprite-facebook-icon-grey {
-    width: 10px;
-    height: 18px;
-    background-position: -5px -188px;
-}
-
-.sprite-facebook-icon-white {
-    width: 10px;
-    height: 18px;
-    background-position: -25px -188px;
-}
-
 .sprite-person-icon {
     width: 88px;
     height: 100px;
@@ -259,28 +247,4 @@ input[type="radio"].visually-hidden {
     width: 422px;
     height: 456px;
     background-position: -593px -5px;
-}
-
-.sprite-twitter-icon-grey {
-    width: 25px;
-    height: 18px;
-    background-position: -5px -471px;
-}
-
-.sprite-twitter-icon-white {
-    width: 25px;
-    height: 18px;
-    background-position: -40px -471px;
-}
-
-.sprite-vkontakte-icon-grey {
-    width: 25px;
-    height: 15px;
-    background-position: -101px -471px;
-}
-
-.sprite-vkontakte-icon-white {
-    width: 25px;
-    height: 15px;
-    background-position: -136px -471px;
 }*/

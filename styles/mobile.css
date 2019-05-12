@@ -56,8 +56,11 @@
 
 .logo__image {
   width: auto;
-  max-width: 166px;
   height: auto;
+}
+
+.logo__image_white {
+  max-width: 166px;
   max-height: 53px;
 }
 
@@ -354,6 +357,8 @@
 /* ------------- Advantages ------------- */
 
 .advantages {
+  padding-bottom: 41px;
+
   text-align: center;
 }
 
@@ -488,6 +493,16 @@
 
 /* ------------- Use cases ------------- */
 
+.use-cases h2 {
+  margin: 0;
+
+  font-family: "GothamPro-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .use-cases__list {
   display: -webkit-flex;
   display: -moz-flex;
@@ -597,7 +612,22 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+}
+
+.logo__image_blue {
+  max-width: 186px;
+  max-height: 59px;
 }
 
 .socials {
@@ -606,12 +636,90 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   margin: 0;
+  margin-bottom: 13px;
   padding: 0;
 
   list-style-type: none;
+}
+
+.socials__link {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+}
+
+.socials__link::before {
+  content: "";
+
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.socials__link_vkontakte:hover,
+.socials__link_vkontakte:focus {
+  background-color: #41658b;
+}
+
+.socials__link_vkontakte::before {
+  width: 25px;
+  height: 15px;
+
+  background-position: -101px -471px;
+}
+
+.socials__link_vkontakte:hover::before,
+.socials__link_vkontakte:focus::before {
+  background-position: -136px -471px;
+}
+
+.socials__link_facebook:hover,
+.socials__link_facebook:focus {
+  background-color: #395697;
+}
+
+.socials__link_facebook::before {
+  width: 10px;
+  height: 18px;
+
+  background-position: -5px -188px;
+}
+
+.socials__link_facebook:hover::before,
+.socials__link_facebook:focus::before {
+  background-position: -25px -188px;
+}
+
+.socials__link_twitter:hover,
+.socials__link_twitter:focus {
+  background-color: #1eb7ff;
+}
+
+.socials__link_twitter::before {
+  width: 25px;
+  height: 18px;
+
+  background-position: -5px -471px;
+}
+
+.socials__link_twitter:hover::before,
+.socials__link_twitter:focus::before {
+  background-position: -40px -471px;
 }
 
 .site-navigation_footer {
@@ -625,12 +733,22 @@
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 0 30px;
 }
 
 .site-navigation__item_footer {
-  width: 50%;
+  width: 130px;
+
+  line-height: 25px;
 }
 
 .site-navigation__link_footer {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  font-size: 13px;
+  line-height: 25px;
   color: #666666;
 }
