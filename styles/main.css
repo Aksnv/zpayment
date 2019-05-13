@@ -185,6 +185,11 @@ button {
   background-color: #cf453c;
 }*/
 
+.inline-link {
+  text-decoration: underline;
+  color: #4a9ad8;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {

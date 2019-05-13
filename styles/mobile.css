@@ -551,6 +551,36 @@
 
 /* ------------- Integration ------------- */
 
+.integration {
+  padding: 0 10px;
+  padding-bottom: 74px;
+
+  text-align: center;
+}
+
+.integration h2 {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-family: "GothamPro-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.integration__text {
+  margin: 0;
+}
+
+.integration__text_big {
+  display: block;
+  margin-bottom: 28px;
+
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
 .integration__list {
   display: -webkit-flex;
   display: -moz-flex;
@@ -562,10 +592,24 @@
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
+  padding-right: 15px;
 
   list-style-type: none;
+}
+
+.integration__item {
+  width: 92px;
+  margin-bottom: 30px;
+}
+
+.integration__image {
+  width: 57%;
+  margin: auto;
 }
 
 

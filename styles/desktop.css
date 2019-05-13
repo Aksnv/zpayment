@@ -93,7 +93,8 @@
     display: flex;
     position: absolute;
     top: 42px;
-    right: 40px;
+    /*right: 40px;*/
+    left: calc(50% + 620px);
     width: auto;
   }
 
@@ -182,10 +183,36 @@
   }
 
 
+  /* ------------- Integration ------------- */
+
+  .integration {
+    padding: 0;
+    padding-bottom: 171px;
+  }
+
+  .integration h2 {
+    margin-bottom: 20px;
+  }
+
+  .integration__text_big {
+    margin-bottom: 42px;
+
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .integration__item {
+    width: 118px;
+    margin-bottom: 37px;
+  }
+
+
   /* ------------- Footer ------------- */
 
   .page-footer {
     align-items: flex-start;
+    padding: 0;
+    padding-bottom: 60px;
   }
 
   .page-footer__logo {
