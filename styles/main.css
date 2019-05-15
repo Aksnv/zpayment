@@ -71,8 +71,6 @@ body {
   color: #32325d;
 
   background-color: #f5f7fa;
-  background-image: url(../images/backgrounds/bg-top.png);
-  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -152,6 +150,15 @@ button {
   border-radius: 35px;
 }
 
+.button_medium {
+  padding: 5px 15px;
+
+  font-family: "GothamPro-Light", "Arial", sans-serif;
+  font-size: 18px;
+
+  border-radius: 35px;
+}
+
 .button_white {
   color: #0e327a;
 
@@ -171,19 +178,19 @@ button {
   background-color: #3d3b7f;
 }
 
-/*.button_blue:hover,
+.button_blue:hover,
 .button_blue:focus {
-  background-color: #3d3b7f;
-}*/
+  background-color: #504da7;
+}
 
 .button_red {
   background-color: #cf453c;
 }
 
-/*.button_red:hover,
+.button_red:hover,
 .button_red:focus {
-  background-color: #cf453c;
-}*/
+  background-color: #ed6f6f;
+}
 
 .inline-link {
   text-decoration: underline;
@@ -217,12 +224,6 @@ input[type="radio"].visually-hidden {
 /* ------------- Sprite ------------- */
 
 /*
-
-.sprite-advertising-icon {
-    width: 54px;
-    height: 75px;
-    background-position: -502px -5px;
-}
 
 .sprite-cashbox-icon {
     width: 186px;

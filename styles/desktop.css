@@ -2,6 +2,23 @@
 
 @media screen and (min-width: 1480px) {
 
+  body {
+    background-image: url(../images/backgrounds/bg-top.png),
+                      url(../images/backgrounds/bg-group-1.png),
+                      url(../images/backgrounds/bg-group-2.png),
+                      url(../images/backgrounds/bg-group-3.png),
+                      url(../images/backgrounds/bg-middle.png),
+                      url(../images/backgrounds/bg-group-4.png),
+                      url(../images/backgrounds/bg-group-1.png);
+    background-position: center top,
+                         left 1200px,
+                         right 1300px,
+                         left 1700px,
+                         center 2000px,
+                         right 3200px,
+                         left 3400px;
+  }
+
   .container {
     width: 1180px;
   }
@@ -132,6 +149,10 @@
 
   /* ------------- Advantages ------------- */
 
+  .advantages {
+    padding-bottom: 100px;
+  }
+
   .advantages-list {
     margin-bottom: 10px;
     padding: 0 20px;
@@ -147,6 +168,14 @@
 
   /* ------------- Use cases ------------- */
 
+  .use-cases h2 {
+    margin-bottom: 40px;
+  }
+
+  .use-cases__list {
+    justify-content: space-around;
+  }
+
   .use-cases__item {
     width: 353px;
   }
@@ -155,6 +184,99 @@
   .use-cases__item:nth-child(4n + 4),
   .use-cases__item:nth-child(5n + 5) {
     width: 747px;
+  }
+
+  .use-cases__item,
+  .use-cases__item_current {
+    margin-bottom: 39px;
+  }
+
+  .product-widget {
+    padding-left: 343px;
+    padding-right: 50px;
+  }
+
+  .product-widget__image {
+    left: 43px;
+
+    margin: 0;
+  }
+
+  .subscription-widget {
+    padding-top: 43px;
+    padding-right: 30px;
+  }
+
+  .subscription-widget__header {
+    width: auto;
+    margin-bottom: 14px;
+  }
+
+  .subscription-widget__price {
+    margin: 0;
+  }
+
+  .subscription-widget__form-button_submit {
+    position: relative;
+    left: -10px;
+
+    margin-bottom: 6px;
+  }
+
+  .advertising-widget {
+    padding-top: 129px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advertising-widget::before {
+    top: 40px;
+  }
+
+  .advertising-widget__header {
+    margin-left: 10px;
+  }
+
+  .advertising-widget__form {
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .advertising-widget__price {
+    margin-top: 21px;
+    margin-right: 12px;
+  }
+
+  .advertising-widget__form-button_submit {
+    margin-left: 0;
+  }
+
+  .donation-widget {
+    padding-left: 411px;
+    padding-right: 50px;
+  }
+
+  .donation-widget__header {
+    margin-bottom: 8px;
+  }
+
+  .donation-widget__image {
+    left: 50px;
+  }
+
+  .donation-widget__price {
+    width: 100%;
+    margin-top: 3px;
+  }
+
+  .donation-widget__form-field_text {
+    margin-right: 42px;
+  }
+
+  .donation-widget__form-button_submit {
+    width: 100%;
   }
 
 
