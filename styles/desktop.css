@@ -118,6 +118,10 @@
 
   /* ------------- Main content ------------- */
 
+  .page-content_inner {
+    justify-content: flex-start;
+  }
+
   .controls__button_back {
     margin-left: 0;
   }
@@ -425,6 +429,12 @@
   .integration__item {
     width: 118px;
     margin-bottom: 37px;
+  }
+
+  /* ------------- Reset ------------- */
+
+  .reset {
+    padding-top: 159px;
   }
 
 
