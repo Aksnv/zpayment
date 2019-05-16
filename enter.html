@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
 <body class="inner-page">
-  <header class="page-header">
+  <header class="page-header page-header_inner">
     <nav class="main-navigation page-header__main-navigation">
       <div class="container container_page-header">
         <a class="logo main-navigation__logo" href="index.html">
@@ -66,20 +66,21 @@
       </ul>
     </nav>
   </header>
-  <main class="page-content">
+  <main class="page-content page-content_inner">
     <section class="enter container">
       <h1 class="enter__header">Вход в&nbsp;Z&#8209;Payment</h1>
       <p class="enter__text">Для продавцов</p>
       <form class="enter-form enter__form">
         <input class="enter-form__field enter-form__field_text enter-form__field_login" type="text" name="enter-form__field_login" placeholder="Логин">
         <input class="enter-form__field enter-form__field_text enter-form__field_password" type="text" name="enter-form__field_password" placeholder="Пароль">
-        <input class="enter-form__field enter-form__field_checkbox" id="remember-password" type="checkbox" name="enter-form__field_checkbox">
+        <input class="enter-form__field enter-form__field_checkbox visually-hidden" id="remember-password" type="checkbox" name="enter-form__field_checkbox" checked>
         <label class="enter-form__label" for="remember-password">
           <span class="enter-form__indicator registration-form__indicator_checkbox"></span>
           Запомнить пароль
         </label>
-        <button class="button button_blue enter-form__button enter-form__button_submit" type="submit">Войти в Z&#8209;Payment</button>
-        <a class="enter-form__link" href="reset.html">Забыли пароль?</a>
+        <button class="button button_big button_blue enter-form__button enter-form__button_submit" type="submit">Войти в Z&#8209;Payment</button>
+        <button class="button button_big enter-form__button enter-form__button_submit enter-form__button_submit_google" type="submit">Войти через Google</button>
+        <a class="enter-form__link inline-link" href="reset.html">Забыли пароль?</a>
       </form>
     </section>
   </main>
