@@ -5,7 +5,7 @@
   body {
     background-image: url(../images/backgrounds/bg-top.png),
                       url(../images/backgrounds/bg-middle.png);
-    background-position: center top, center 2000px;
+    background-position: center top, center 2705px;
   }
 
   .container {
@@ -107,6 +107,78 @@
     left: -37px;
   }
 
+  /*.indicator_pagination_current {
+    background-color: #ffffff;
+  }*/
+
+  .controls__button {
+    position: absolute;
+
+    display: block;
+    width: 17px;
+    height: 29px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  .controls__button:disabled {
+    opacity: 0.5;
+
+    cursor: default;
+  }
+
+  .controls__button_back {
+    left: 0;
+
+    margin-left: 40px;
+
+    transform: rotate(180deg);
+  }
+
+  .controls__button_forward {
+    right: 0;
+
+    margin-right: 40px;
+  }
+
+  .controls__button::before,
+  .controls__button::after {
+    content: "";
+
+    position: absolute;
+
+    display: block;
+    width: 22px;
+    height: 4px;
+  }
+
+  .controls__button::before {
+    top: 6px;
+    left: -5px;
+
+    transform: rotate(45deg);
+  }
+
+  .controls__button::after {
+    left: -5px;
+    bottom: 6px;
+
+    transform: rotate(-45deg);
+  }
+
+  .controls__button_dark::before,
+  .controls__button_dark::after  {
+    background-color: #3d3b7f;
+  }
+
+  .controls__button_light::before,
+  .controls__button_light::after  {
+    background-color: #ffffff;
+  }
+
 
   /* ------------- Intro ------------- */
 
@@ -137,6 +209,10 @@
 
   /* ------------- Advantages ------------- */
 
+  .advantages {
+    padding-bottom: 49px;
+  }
+
   .advantages-list {
     justify-content: space-between;
     margin-bottom: 20px;
@@ -159,15 +235,42 @@
 
   /* ------------- Use cases ------------- */
 
+  .use-cases {
+    position: relative;
+
+    padding-bottom: 38px;
+  }
+
+  .use-cases h2 {
+    margin-bottom: 30px;
+  }
+
   .use-cases__item {
     width: 688px;
     min-height: 405px;
     padding: 0;
   }
 
+  .use-cases__controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+  }
+
+  .use-cases__indicators {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+
   .use-cases__item,
   .use-cases__item_current {
-    margin-bottom: 43px;
+    margin-bottom: 29px;
   }
 
   .product-widget {
@@ -353,8 +456,81 @@
 
   /* ------------- Reviews ------------- */
 
+  .reviews {
+    padding-bottom: 89px;
+  }
+
+  .reviews__wrapper {
+    padding-left: 36px;
+    padding-right: 46px;
+  }
+
+  .reviews__header {
+    margin-bottom: 31px;
+  }
+
+  .reviews__list {
+    margin-bottom: 277px;
+  }
+
   .reviews__item {
+    order: 0;
+    display: block;
     width: 688px;
+    margin-bottom: 35px;
+    padding-top: 22px;
+    padding-right: 55px;
+  }
+
+  .reviews__article {
+    position: relative;
+
+    align-items: flex-start;
+    padding-left: 142px;
+  }
+
+  .reviews__image {
+    position: absolute;
+    top: 3px;
+    left: 13px;
+
+    margin-bottom: 0;
+  }
+
+  .reviews__text {
+    text-align: left;
+  }
+
+  .reviews__text_big {
+    margin-bottom: 52px;
+
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .reviews__controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+  }
+
+  .reviews__controls .controls__button_back {
+    left: auto;
+    right: 110px;
+  }
+
+  .reviews__button {
+    padding: 21px 36px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__button:before {
+    bottom: 124px;
   }
 
 

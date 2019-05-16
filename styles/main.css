@@ -176,6 +176,9 @@ button {
 
 .button_blue {
   background-color: #3d3b7f;
+
+  -webkit-box-shadow: 0 7px 25px rgba(43, 81, 144, 0.4);
+  box-shadow: 0 7px 25px rgba(43, 81, 144, 0.4);
 }
 
 .button_blue:hover,
@@ -224,12 +227,6 @@ input[type="radio"].visually-hidden {
 /* ------------- Sprite ------------- */
 
 /*
-
-.sprite-cashbox-icon {
-    width: 186px;
-    height: 180px;
-    background-position: -250px -202px;
-}
 
 .sprite-checkbox-icon {
     width: 14px;
