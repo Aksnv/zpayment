@@ -570,16 +570,140 @@
 
   /* ------------- Registration ------------- */
 
+  .registration {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .registration__header {
+    margin-bottom: 3px;
+
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .registration__text {
+    margin-bottom: 31px;
+
+    font-family: "GothamPro-Medium", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .registration-form__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;-webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .registration-form {
+    justify-content: space-between;
     width: 450px;
   }
 
   .registration-form__label_radio {
     width: 210px;
+    min-height: 260px;
+    margin-bottom: 62px;
+    padding: 0;
+    padding-top: 169px;
+
+    text-align: center;
+  }
+
+  .registration-form__label_radio::before {
+    left: 50%;
+
+    transform: scale(1) translateX(-50%);
+  }
+
+  .registration-form__label_radio_person::before {
+    top: 49px;
+  }
+
+  .registration-form__label_radio_company::before {
+    top: 61px;
+  }
+
+  .registration-form__field_radio + .registration-form__label_radio .registration-form__indicator_radio {
+    top: auto;
+    left: 50%;
+    bottom: 22px;
+
+    width: 30px;
+    height: 30px;
+
+    transform: translateX(-50%);
+  }
+
+  .registration-form__field_radio:checked + .registration-form__label_radio .registration-form__indicator_radio::before {
+    top: 6px;
+    left: 6px;
+
+    width: 16px;
+    height: 16px;
   }
 
   .registration-form__field_text {
     width: 360px;
+  }
+
+  .registration-form__button_extra-data {
+    width: auto;
+    padding-right: 40px;
+  }
+
+  .registration-form__button_extra-data::before {
+    top: 7px;
+    right: 23px;
+  }
+
+  .registration-form__button_extra-data::after {
+    top: 7px;
+    right: 18px;
+  }
+
+  .registration-form__label_agreement {
+    margin-bottom: 47px;
+    padding-left: 43px;
+  }
+
+  .registration-form__indicator_checkbox {
+    left: 14px;
+  }
+
+  .registration-form__button_submit {
+    max-width: 352px;
+    margin-bottom: 19px;
+
+    font-family: "GothamPro-Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .registration-form__button_submit_google {
+    padding-left: 90px;
+  }
+
+  .registration-form__button_submit_google::before {
+    left: 56px;
   }
 
 
@@ -625,7 +749,7 @@
     padding-left: 18px;
   }
 
-  .registration-form__indicator_checkbox {
+  .enter-form__indicator_checkbox {
     top: -3px;
     left: -11px;
   }

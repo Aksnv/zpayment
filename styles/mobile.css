@@ -1194,6 +1194,30 @@ body {
 
 /* ------------- Registration ------------- */
 
+.registration {
+  padding: 0 10px;
+  padding-top: 34px;
+  padding-bottom: 15px;
+}
+
+.registration__header {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 40px;
+
+  text-align: center;
+}
+
+.registration__text {
+  margin: 0;
+  margin-bottom: 22px;
+
+  line-height: 25px;
+  text-align: center;
+}
+
 .registration-form {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1206,10 +1230,278 @@ body {
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.registration-form__wrapper {
+  padding: 0 10px;
+}
 
 .registration-form__label_radio,
 .registration-form__field_text {
   width: 100%;
+}
+
+.registration-form__label_radio {
+  position: relative;
+
+  margin-bottom: 12px;
+  padding: 18px 28px;
+  padding-left: 138px;
+
+  font-family: "GothamPro-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  background-color: transparent;
+  border: 1px dashed #4d91dd;
+  border-radius: 35px;
+
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  cursor: pointer;
+}
+
+.registration-form__label_radio_company {
+  margin-bottom: 41px;
+}
+
+.registration-form__label_radio::before {
+  content: "";
+
+  position: absolute;
+
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.registration-form__label_radio_person::before {
+  top: -17px;
+  left: 53px;
+
+  width: 88px;
+  height: 100px;
+
+  background-position: -446px -202px;
+
+  transform: scale(0.5);
+}
+
+.registration-form__label_radio_company::before {
+  top: -11px;
+  left: 63px;
+
+  width: 68px;
+  height: 88px;
+
+  background-position: -507px -90px;
+
+  transform: scale(0.5);
+}
+
+.registration-form__field_radio:checked + .registration-form__label_radio {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+  -webkit-box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
+  box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
+}
+
+.registration-form__label_radio:hover,
+.registration-form__label_radio:focus {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+  -webkit-box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
+  box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
+}
+
+.registration-form__field_radio + .registration-form__label_radio .registration-form__indicator_radio {
+  top: 15px;
+  left: 18px;
+
+  width: 36px;
+  height: 36px;
+}
+
+.registration-form__field_radio:checked + .registration-form__label_radio .registration-form__indicator_radio::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  background-image: linear-gradient(to right, #38b7c2, #5090e0);
+  border-radius: 50%;
+}
+
+.registration-form__field_text {
+  margin-bottom: 32px;
+  padding: 0 10px;
+
+  font-family: "GothamPro-Light", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #a7a8bb;
+}
+
+.registration-form__field_phone {
+  margin-bottom: 45px;
+}
+
+.registration-form__fieldset {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.registration-form__fieldset_visible {
+  display: block;
+}
+
+.registration-form__button_extra-data {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-bottom: 44px;
+
+  font-family: "GothamPro-Medium", "Arial", sans-serif;
+  text-align: left;
+
+  background-color: transparent;
+  border: none;
+}
+
+.registration-form__button_extra-data::before,
+.registration-form__button_extra-data::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 9px;
+  height: 2px;
+
+  background-color: #32325d;
+}
+
+.registration-form__button_extra-data::before {
+  top: 6px;
+  right: 5px;
+
+  transform: rotate(45deg);
+}
+
+.registration-form__button_extra-data::after {
+  top: 6px;
+  right: 0;
+
+  transform: rotate(-45deg);
+}
+
+.registration-form__label_agreement {
+  position: relative;
+
+  display: block;
+  margin-bottom: 26px;
+  padding-left: 30px;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  cursor: pointer;
+}
+
+.registration-form__indicator_checkbox {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  border: 1px solid #adadbe;
+  border-radius: 2px;
+}
+
+.registration-form__field_checkbox:checked + .registration-form__label .registration-form__indicator_checkbox {
+  background-color: #3d3b7f;
+  border: 1px solid #3d3b7f;
+}
+
+.registration-form__field_checkbox:checked + .registration-form__label .registration-form__indicator_checkbox::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 2px;
+
+  display: block;
+  width: 14px;
+  height: 11px;
+
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -566px -5px;
+}
+
+.registration-form__button_submit {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 22px 28px;
+
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.registration-form__button_submit_google {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding: 20px 28px;
+  padding-left: 80px;
+
+  line-height: 32px;
+  color: #3d3b7f;
+
+  border: 1px solid #353577;
+}
+
+.registration-form__button_submit_google:hover,
+.registration-form__button_submit_google:focus {
+  color: #ffffff;
+
+  background-color: #504da7;
+}
+
+.registration-form__button_submit_google::before {
+  content: "";
+
+  position: absolute;
+  top: 19px;
+  left: 33px;
+
+  display: block;
+  width: 33px;
+  height: 34px;
+
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -200px -451px;
 }
 
 
@@ -1280,7 +1572,7 @@ body {
   cursor: pointer;
 }
 
-.registration-form__indicator_checkbox {
+.enter-form__indicator_checkbox {
   position: absolute;
   top: -4px;
   left: -18px;
@@ -1298,11 +1590,11 @@ body {
   border-radius: 2px;
 }
 
-.enter-form__field_checkbox:checked + .enter-form__label .registration-form__indicator_checkbox {
+.enter-form__field_checkbox:checked + .enter-form__label .enter-form__indicator_checkbox {
   background-color: #3d3b7f;
 }
 
-.enter-form__field_checkbox:checked + .enter-form__label .registration-form__indicator_checkbox::before {
+.enter-form__field_checkbox:checked + .enter-form__label .enter-form__indicator_checkbox::before {
   content: "";
 
   position: absolute;

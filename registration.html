@@ -71,31 +71,35 @@
       <h1 class="registration__header">Регистрация в&nbsp;Z&#8209;Payment</h1>
       <p class="registration__text">Быстро, выгодно, безопасно!</p>
       <form class="registration-form registration__form">
-        <input class="registration-form__field registration-form__field_radio" id="person" type="radio" name="registration-form__field_radio" value="person" checked>
-        <label class="registration-form__label registration-form__label_radio registration-form__label_current" for="person">
-          <span class="registration-form__indicator registration-form__indicator_radio"></span>
+        <input class="registration-form__field registration-form__field_radio visually-hidden" id="person" type="radio" name="registration-form__field_radio" value="person" checked>
+        <label class="registration-form__label registration-form__label_radio registration-form__label_radio_person" for="person">
+          <span class="indicator_radio registration-form__indicator registration-form__indicator_radio"></span>
           Частное лицо
         </label>
-        <input class="registration-form__field registration-form__field_radio" id="company" type="radio" name="registration-form__field_radio" value="company">
-        <label class="registration-form__label registration-form__label_radio" for="company">
-          <span class="registration-form__indicator registration-form__indicator_radio"></span>
+        <input class="registration-form__field registration-form__field_radio visually-hidden" id="company" type="radio" name="registration-form__field_radio" value="company">
+        <label class="registration-form__label registration-form__label_radio registration-form__label_radio_company" for="company">
+          <span class="indicator_radio registration-form__indicator registration-form__indicator_radio"></span>
           Компания
         </label>
-        <input class="registration-form__field registration-form__field_text registration-form__field_email" type="text" name="registration-form__field_email" placeholder="Ваш e-mail">
-        <input class="registration-form__field registration-form__field_text registration-form__field_phone" type="text" name="registration-form__field_phone" placeholder="Номер телефона">
-        <fieldset class="registration-form__fieldset">
-          <legend class="registration-form__legend">Дополнительные данные (необязательно)</legend>
-          <input class="registration-form__field registration-form__field_text registration-form__field_shop-name" type="text" name="registration-form__field_shop-name" placeholder="Название магазина">
-          <input class="registration-form__field registration-form__field_text registration-form__field_subdomain-name" type="text" name="registration-form__field_subdomain-name" placeholder="Желаемый поддомен">
-          <input class="registration-form__field registration-form__field_text registration-form__field_website-address" type="text" name="registration-form__field_website-address" placeholder="Адрес сайта (если есть)">
-          <input class="registration-form__field registration-form__field_text registration-form__field_login" type="text" name="registration-form__field_login" placeholder="Ваш логин">
-        </fieldset>
-        <input class="registration-form__field registration-form__field_checkbox" id="agreement" type="checkbox" name="registration-form__field_checkbox">
-        <label class="registration-form__label" for="agreement">
-          <span class="registration-form__indicator registration-form__indicator_checkbox"></span>
-          Я&nbsp;принамаю условия <a href="#">пользовательского соглашения</a>, <a href="#">правила конфиденциальности</a> и&nbsp;<a href="#">политику возврата платежей</a>
-        </label>
-        <button class="button button_blue registration-form__button registration-form__button_submit" type="submit">Получить код на e-mail</button>
+        <div class="registration-form__wrapper">
+          <input class="registration-form__field registration-form__field_text registration-form__field_email" type="text" name="registration-form__field_email" placeholder="Ваш e-mail">
+          <input class="registration-form__field registration-form__field_text registration-form__field_phone" type="text" name="registration-form__field_phone" placeholder="Номер телефона">
+          <button class="registration-form__button registration-form__button_extra-data" type="button">Еще данные (необязательно)</button>
+          <fieldset class="registration-form__fieldset">
+            <legend class="registration-form__legend visually-hidden">Дополнительные данные</legend>
+            <input class="registration-form__field registration-form__field_text registration-form__field_shop-name" type="text" name="registration-form__field_shop-name" placeholder="Название магазина">
+            <input class="registration-form__field registration-form__field_text registration-form__field_subdomain-name" type="text" name="registration-form__field_subdomain-name" placeholder="Желаемый поддомен">
+            <input class="registration-form__field registration-form__field_text registration-form__field_website-address" type="text" name="registration-form__field_website-address" placeholder="Адрес сайта (если есть)">
+            <input class="registration-form__field registration-form__field_text registration-form__field_login" type="text" name="registration-form__field_login" placeholder="Ваш логин">
+          </fieldset>
+          <input class="registration-form__field registration-form__field_checkbox visually-hidden" id="agreement" type="checkbox" name="registration-form__field_checkbox">
+          <label class="registration-form__label registration-form__label_agreement" for="agreement">
+            <span class="registration-form__indicator registration-form__indicator_checkbox"></span>
+            Я&nbsp;принамаю условия <a class="inline-link" href="#">пользовательского соглашения</a>, <a class="inline-link" href="#">правила конфиденциальности</a> и&nbsp;<a class="inline-link" href="#">политику возврата платежей</a>
+          </label>
+          <button class="button button_big button_blue registration-form__button registration-form__button_submit" type="submit">Получить код на e-mail</button>
+          <button class="button button_big registration-form__button registration-form__button_submit registration-form__button_submit_google" type="submit">Войти через Google</button>
+        </div>
       </form>
     </section>
   </main>
