@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
-<body class="inner-page">
+<body class="inner-page inner-page_visible">
   <header class="page-header page-header_inner">
     <nav class="main-navigation page-header__main-navigation">
       <div class="container container_page-header">
@@ -84,8 +84,8 @@
         <div class="registration-form__wrapper">
           <input class="registration-form__field registration-form__field_text registration-form__field_email" type="text" name="registration-form__field_email" placeholder="Ваш e-mail">
           <input class="registration-form__field registration-form__field_text registration-form__field_phone" type="text" name="registration-form__field_phone" placeholder="Номер телефона">
-          <button class="registration-form__button registration-form__button_extra-data" type="button">Еще данные (необязательно)</button>
-          <fieldset class="registration-form__fieldset">
+          <button class="registration-form__button registration-form__button_extra-data registration-form__button_extra-data_hidden" type="button">Еще данные (необязательно)</button>
+          <fieldset class="registration-form__fieldset registration-form__fieldset_extra-data registration-form__fieldset_visible">
             <legend class="registration-form__legend visually-hidden">Дополнительные данные</legend>
             <input class="registration-form__field registration-form__field_text registration-form__field_shop-name" type="text" name="registration-form__field_shop-name" placeholder="Название магазина">
             <input class="registration-form__field registration-form__field_text registration-form__field_subdomain-name" type="text" name="registration-form__field_subdomain-name" placeholder="Желаемый поддомен">
@@ -145,5 +145,8 @@
       </li>
     </ul>
   </footer>
+  <script src="scripts/inner-page.js"></script>
+  <script src="scripts/main-navigation.js"></script>
+  <script src="scripts/registration.js"></script>
 </body>
 </html>

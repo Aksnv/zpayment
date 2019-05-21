@@ -15,16 +15,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
-<body>
+<body class="main-page main-page_visible">
   <header class="page-header">
-    <nav class="main-navigation page-header__main-navigation">
+    <nav class="main-navigation main-navigation_visible page-header__main-navigation">
       <div class="container container_page-header">
         <a class="logo main-navigation__logo">
           <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment">
         </a>
-        <button class="main-navigation__button main-navigation__button_open" type="button"><span class="visually-hidden">Показать навигацию</span></button>
+        <button class="main-navigation__button main-navigation__button_open main-navigation__button_hidden" type="button"><span class="visually-hidden">Показать навигацию</span></button>
         <button class="main-navigation__button main-navigation__button_close main-navigation__button_hidden" type="button"><span class="visually-hidden">Скрыть навигацию</span></button>
-        <ul class="site-navigation site-navigation_header main-navigation__site-navigation">
+        <ul class="site-navigation site-navigation_header site-navigation_visible main-navigation__site-navigation">
           <li class="site-navigation__item site-navigation__item_header site-navigation__item_current site-navigation__item_main">
             <a class="site-navigation__link site-navigation__link_header site-navigation__link_current" href="#">Главная</a>
           </li>
@@ -41,7 +41,7 @@
             <a class="site-navigation__link site-navigation__link_header" href="#">Примеры</a>
           </li>
         </ul>
-        <ul class="user-navigation main-navigation__user-navigation">
+        <ul class="user-navigation user-navigation_visible main-navigation__user-navigation">
           <li class="user-navigation__item">
             <a class="button user-navigation__button user-navigation__button_registration" href="registration.html">Зарегистрироваться</a>
           </li>
@@ -56,7 +56,7 @@
           </li>
         </ul>
       </div>
-      <ul class="language-navigation main-navigation__language-navigation">
+      <ul class="language-navigation language-navigation_visible main-navigation__language-navigation">
         <li class="language-navigation__item">
           <a class="language-navigation__button language-navigation__button_ru language-navigation__button_current">Ru</a>
         </li>
@@ -235,22 +235,28 @@
         <li class="reviews__item">
           <article class="reviews__article">
             <img class="reviews__image" src="images/reviews/client-photo-1.jpg" width="100" height="100" alt="Владислав Греков">
-            <blockquote class="reviews__text">...после перехода из&nbsp;другой версии системы: &laquo;А&nbsp;вообще классная у&nbsp;вас платформа Покупо. Сразу видны изменения в&nbsp;лучшую сторону&raquo;.</blockquote>
-            <cite class="reviews__author">Владислав Греков</cite>
+            <blockquote class="reviews__content">
+              <p class="reviews__text">...после перехода из&nbsp;другой версии системы: &laquo;А&nbsp;вообще классная у&nbsp;вас платформа Покупо. Сразу видны изменения в&nbsp;лучшую сторону&raquo;.</p>
+              <cite class="reviews__author">Владислав Греков</cite>
+            </blockquote>
           </article>
         </li>
         <li class="reviews__item reviews__item_current">
           <article class="reviews__article">
             <img class="reviews__image" src="images/reviews/client-photo-3.jpg" width="100" height="100" alt="Юрий Махнев">
-            <blockquote class="reviews__text">Все самые главные новости про блокчейн у&nbsp;Вас и&nbsp;у&nbsp;forklog. Это очень круто, поскольку мы&nbsp;сами работаем с&nbsp;блокчейн, поэтому я&nbsp;НЕСКОЛЬКО раз в&nbsp;день читаю Ваши новости и&nbsp;статьи. В&nbsp;связи с&nbsp;этим хотел&nbsp;бы выразить Вам благодарность и&nbsp;успехов в&nbsp;предпринимательской деятельности. Большое Вам спасибо!!!</blockquote>
-            <cite class="reviews__author">Юрий Махнев</cite>
+            <blockquote class="reviews__content">
+              <p class="reviews__text">Все самые главные новости про блокчейн у&nbsp;Вас и&nbsp;у&nbsp;forklog. Это очень круто, поскольку мы&nbsp;сами работаем с&nbsp;блокчейн, поэтому я&nbsp;НЕСКОЛЬКО раз в&nbsp;день читаю Ваши новости и&nbsp;статьи. В&nbsp;связи с&nbsp;этим хотел&nbsp;бы выразить Вам благодарность и&nbsp;успехов в&nbsp;предпринимательской деятельности. Большое Вам спасибо!!!</p>
+              <cite class="reviews__author">Юрий Махнев</cite>
+            </blockquote>
           </article>
         </li>
         <li class="reviews__item">
           <article class="reviews__article">
             <img class="reviews__image" src="images/reviews/client-photo-2.jpg" width="100" height="100" alt="Юрий Махнев">
-            <blockquote class="reviews__text">Здравствуйте. Ваше приложение pokupo news на&nbsp;android нереально крутое в&nbsp;плане агрегации новостей, особенно из&nbsp;мира блокчейн.</blockquote>
-            <cite class="reviews__author">Юрий Махнев</cite>
+            <blockquote class="reviews__content">
+              <p class="reviews__text">Здравствуйте. Ваше приложение pokupo news на&nbsp;android нереально крутое в&nbsp;плане агрегации новостей, особенно из&nbsp;мира блокчейн.</p>
+              <cite class="reviews__author">Юрий Махнев</cite>
+            </blockquote>
           </article>
         </li>
       </ul>
@@ -356,5 +362,7 @@
       </li>
     </ul>
   </footer>
+  <script src="scripts/main-page.js"></script>
+  <script src="scripts/main-navigation.js"></script>
 </body>
 </html>

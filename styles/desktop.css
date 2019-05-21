@@ -2,7 +2,8 @@
 
 @media screen and (min-width: 1480px) {
 
-  body {
+  body,
+  .main-page_visible {
     background-image: url(../images/backgrounds/bg-top.png),
                       url(../images/backgrounds/bg-group-1.png),
                       url(../images/backgrounds/bg-group-2.png),
@@ -30,10 +31,16 @@
     min-height: 116px;
   }
 
-  /*.main-navigation_visible {
+  .main-navigation_visible {
     min-height: auto;
     padding-bottom: 0;
-  }*/
+
+    background-image: none;
+  }
+
+  .main-navigation_visible .container_page-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
   .main-navigation__logo {
     margin-left: 0;
@@ -52,6 +59,11 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -120,6 +132,8 @@
 
   .page-content_inner {
     justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   .controls__button_back {
@@ -138,6 +152,11 @@
     padding-bottom: 60px;
 
     background-position: 672px 105px;
+  }
+
+  .intro::after {
+    top: 105px;
+    left: 885px;
   }
 
   .intro__text {
@@ -434,24 +453,24 @@
 
   /* ------------- Registration ------------- */
 
-  .registration {
+  /*.registration {
     padding-top: 58px;
     padding-bottom: 62px;
-  }
+  }*/
 
 
   /* ------------- Enter ------------- */
 
-  .enter {
+  /*.enter {
     padding-top: 110px;
-  }
+  }*/
 
 
   /* ------------- Reset ------------- */
 
-  .reset {
+  /*.reset {
     padding-top: 159px;
-  }
+  }*/
 
 
   /* ------------- Footer ------------- */
