@@ -4,20 +4,51 @@
 
   body,
   .main-page_visible {
-    background-image: url(../images/backgrounds/bg-top.png),
+    background-image: url(../images/backgrounds/bg-stars.png),
+                      url(../images/backgrounds/bg-chains.png),
+                      url(../images/backgrounds/bg-logos.png),
+                      url(../images/backgrounds/bg-top-empty.png),
                       url(../images/backgrounds/bg-group-1.png),
                       url(../images/backgrounds/bg-group-2.png),
                       url(../images/backgrounds/bg-group-3.png),
                       url(../images/backgrounds/bg-middle.png),
                       url(../images/backgrounds/bg-group-4.png),
                       url(../images/backgrounds/bg-group-1.png);
-    background-position: center top,
+    background-position: center 216px,
+                         center 63px,
+                         center 163px,
+                         center top,
                          left 1146px,
                          right 1442px,
                          left 2446px,
                          center 2662px,
                          right 3618px,
                          left 3880px;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto auto,
+                              auto auto,
+                              auto auto,
+                              100% 1117px,
+                              auto auto,
+                              auto auto,
+                              auto auto,
+                              /*100% 1089px,*/
+                              auto auto,
+                              auto auto,
+                              auto auto;
+    background-size: auto auto,
+                      auto auto,
+                      auto auto,
+                      100% 1117px,
+                      auto auto,
+                      auto auto,
+                      auto auto,
+                      /*100% 1089px,*/
+                      auto auto,
+                      auto auto,
+                      auto auto;
+
+    transition: background-position 0.2s ease;
   }
 
   .container {
@@ -122,8 +153,8 @@
     display: flex;
     position: absolute;
     top: 42px;
-    /*right: 40px;*/
-    left: calc(50% + 620px);
+    right: 40px;
+    /*left: calc(50% + 620px);*/
     width: auto;
   }
 
@@ -147,7 +178,7 @@
   /* ------------- Intro ------------- */
 
   .intro {
-    padding: 0 68px;
+    /*padding: 0 68px;*/
     padding-top: 118px;
     padding-bottom: 60px;
 
@@ -156,11 +187,14 @@
 
   .intro::after {
     top: 105px;
-    left: 885px;
+    /*left: 885px;*/
+    left: calc(50% + 295px)
   }
 
   .intro__text {
     width: 590px;
+    padding-left: 68px;
+    padding-right: 0;
   }
 
   .intro__text_big {
@@ -236,7 +270,8 @@
   }
 
   .product-widget__image {
-    left: 43px;
+    /*left: 43px;*/
+    left: 167px;
 
     margin: 0;
   }
@@ -274,6 +309,7 @@
 
   .advertising-widget__header {
     margin-left: 10px;
+    margin-bottom: 20px;
   }
 
   .advertising-widget__form {
@@ -286,6 +322,7 @@
   .advertising-widget__price {
     margin-top: 21px;
     margin-right: 12px;
+    margin-bottom: 40px;
   }
 
   .advertising-widget__form-button_submit {
