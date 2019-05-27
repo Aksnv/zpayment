@@ -49,7 +49,7 @@
             <a class="button button_white user-navigation__button user-navigation__button_enter" href="enter.html">Войти</a>
           </li>
           <li class="user-navigation__item user-navigation__item_hidden">
-            <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span>zpayment2017</span></a>
+            <a class="button user-navigation__button user-navigation__button_personal-area" href="#"><span class="user-navigation__login">zpayment2017</span></a>
           </li>
           <li class="user-navigation__item user-navigation__item_exit user-navigation__item_hidden">
             <a class="user-navigation__button user-navigation__button_exit" href="#"><span class="visually-hidden">Выйти</span></a>
@@ -138,9 +138,15 @@
             <p class="product-widget__text">Подробнее о&nbsp;товаре на&nbsp;<a class="inline-link" href="#">Aliexpress</a></p>
             <strong class="product-widget__price use-cases__price">499 ₽</strong>
             <form class="product-widget__form" id="product-widget__form" method="post" action="#" name="product-widget__form">
-              <button class="product-widget__form-button product-widget__form-button_decrease" type="button" disabled>&ndash;</button>
+              <button class="product-widget__form-button product-widget__form-button_decrease" type="button" disabled>
+                <span class="visually-hidden">Удалить товар</span>
+                &ndash;
+              </button>
               <input class="product-widget__form-field product-widget__form-field_text" type="text" name="product-widget__form-field_text" value="1">
-              <button class="product-widget__form-button product-widget__form-button_increase" type="button">+</button>
+              <button class="product-widget__form-button product-widget__form-button_increase" type="button">
+                <span class="visually-hidden">Добавить товар</span>
+                +
+              </button>
             </form>
             <button class="button button_medium button_red product-widget__form-button product-widget__form-button_submit" form="product-widget__form"
             type="submit">Оплатить товар</button>
@@ -228,60 +234,62 @@
         </li>
       </ul>
     </section>
-    <section class="reviews container">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__header">Отзывы о&nbsp;нас</h2>
-        <b class="reviews__text reviews__text_big">Мы&nbsp;публикуем отзывы наших клиентов, чтобы все&nbsp;знали, какая мы&nbsp;отличная команда!</b>
+    <section class="reviews">
+      <div class="container container_reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__header">Отзывы о&nbsp;нас</h2>
+          <b class="reviews__text reviews__text_big">Мы&nbsp;публикуем отзывы наших клиентов, чтобы все&nbsp;знали, какая мы&nbsp;отличная команда!</b>
+        </div>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <article class="reviews__article">
+              <img class="reviews__image" src="images/reviews/client-photo-1.jpg" width="100" height="100" alt="Владислав Греков">
+              <blockquote class="reviews__content">
+                <p class="reviews__text">...после перехода из&nbsp;другой версии системы: &laquo;А&nbsp;вообще классная у&nbsp;вас платформа Покупо. Сразу видны изменения в&nbsp;лучшую сторону&raquo;.</p>
+                <cite class="reviews__author">Владислав Греков</cite>
+              </blockquote>
+            </article>
+          </li>
+          <li class="reviews__item reviews__item_current">
+            <article class="reviews__article">
+              <img class="reviews__image" src="images/reviews/client-photo-3.jpg" width="100" height="100" alt="Юрий Махнев">
+              <blockquote class="reviews__content">
+                <p class="reviews__text">Все самые главные новости про блокчейн у&nbsp;Вас и&nbsp;у&nbsp;forklog. Это очень круто, поскольку мы&nbsp;сами работаем с&nbsp;блокчейн, поэтому я&nbsp;НЕСКОЛЬКО раз в&nbsp;день читаю Ваши новости и&nbsp;статьи. В&nbsp;связи с&nbsp;этим хотел&nbsp;бы выразить Вам благодарность и&nbsp;успехов в&nbsp;предпринимательской деятельности. Большое Вам спасибо!!!</p>
+                <cite class="reviews__author">Юрий Махнев</cite>
+              </blockquote>
+            </article>
+          </li>
+          <li class="reviews__item">
+            <article class="reviews__article">
+              <img class="reviews__image" src="images/reviews/client-photo-2.jpg" width="100" height="100" alt="Юрий Махнев">
+              <blockquote class="reviews__content">
+                <p class="reviews__text">Здравствуйте. Ваше приложение pokupo news на&nbsp;android нереально крутое в&nbsp;плане агрегации новостей, особенно из&nbsp;мира блокчейн.</p>
+                <cite class="reviews__author">Юрий Махнев</cite>
+              </blockquote>
+            </article>
+          </li>
+        </ul>
+        <div class="controls reviews__controls">
+          <button class="controls__button controls__button_light controls__button_back" type="button" disabled>
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="controls__button controls__button_light controls__button_forward" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
+        <ul class="indicators reviews__indicators">
+          <li class="indicator indicator_pagination indicator_pagination_current">
+            <span class="visually-hidden">1</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">2</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">3</span>
+          </li>
+        </ul>
+        <a class="button button_big button_blue reviews__button" href="#">Подключить прием платежей</a>
       </div>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <article class="reviews__article">
-            <img class="reviews__image" src="images/reviews/client-photo-1.jpg" width="100" height="100" alt="Владислав Греков">
-            <blockquote class="reviews__content">
-              <p class="reviews__text">...после перехода из&nbsp;другой версии системы: &laquo;А&nbsp;вообще классная у&nbsp;вас платформа Покупо. Сразу видны изменения в&nbsp;лучшую сторону&raquo;.</p>
-              <cite class="reviews__author">Владислав Греков</cite>
-            </blockquote>
-          </article>
-        </li>
-        <li class="reviews__item reviews__item_current">
-          <article class="reviews__article">
-            <img class="reviews__image" src="images/reviews/client-photo-3.jpg" width="100" height="100" alt="Юрий Махнев">
-            <blockquote class="reviews__content">
-              <p class="reviews__text">Все самые главные новости про блокчейн у&nbsp;Вас и&nbsp;у&nbsp;forklog. Это очень круто, поскольку мы&nbsp;сами работаем с&nbsp;блокчейн, поэтому я&nbsp;НЕСКОЛЬКО раз в&nbsp;день читаю Ваши новости и&nbsp;статьи. В&nbsp;связи с&nbsp;этим хотел&nbsp;бы выразить Вам благодарность и&nbsp;успехов в&nbsp;предпринимательской деятельности. Большое Вам спасибо!!!</p>
-              <cite class="reviews__author">Юрий Махнев</cite>
-            </blockquote>
-          </article>
-        </li>
-        <li class="reviews__item">
-          <article class="reviews__article">
-            <img class="reviews__image" src="images/reviews/client-photo-2.jpg" width="100" height="100" alt="Юрий Махнев">
-            <blockquote class="reviews__content">
-              <p class="reviews__text">Здравствуйте. Ваше приложение pokupo news на&nbsp;android нереально крутое в&nbsp;плане агрегации новостей, особенно из&nbsp;мира блокчейн.</p>
-              <cite class="reviews__author">Юрий Махнев</cite>
-            </blockquote>
-          </article>
-        </li>
-      </ul>
-      <div class="controls reviews__controls">
-        <button class="controls__button controls__button_light controls__button_back" type="button" disabled>
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="controls__button controls__button_light controls__button_forward" type="button">
-          <span class="visually-hidden">Вперед</span>
-        </button>
-      </div>
-      <ul class="indicators reviews__indicators">
-        <li class="indicator indicator_pagination indicator_pagination_current">
-          <span class="visually-hidden">1</span>
-        </li>
-        <li class="indicator indicator_pagination">
-          <span class="visually-hidden">2</span>
-        </li>
-        <li class="indicator indicator_pagination">
-          <span class="visually-hidden">3</span>
-        </li>
-      </ul>
-      <a class="button button_big button_blue reviews__button" href="#">Подключить прием платежей</a>
     </section>
     <section class="integration container">
       <h2 class="integration__header">Интеграция</h2>
@@ -326,23 +334,6 @@
     <a class="logo page-footer__logo">
       <img class="logo__image logo__image_blue" src="images/logo/zpayment-logo-blue.png" width="207" height="66" alt="Логотип Z-Payment">
     </a>
-    <ul class="socials page-footer__socials">
-      <li class="socials__item">
-        <a class="socials__link socials__link_vkontakte" href="#">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link socials__link_facebook" href="#">
-          <span class="visually-hidden">Фейсбук</span>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link socials__link_twitter" href="#">
-          <span class="visually-hidden">Твиттер</span>
-        </a>
-      </li>
-    </ul>
     <ul class="site-navigation site-navigation_footer page-footer__site-navigation">
       <li class="site-navigation__item site-navigation__item_footer">
         <a class="site-navigation__link site-navigation__link_footer" href="#">Возможности</a>
@@ -361,6 +352,23 @@
       </li>
       <li class="site-navigation__item site-navigation__item_footer">
         <a class="site-navigation__link site-navigation__link_footer" href="#">Контакты</a>
+      </li>
+    </ul>
+    <ul class="socials page-footer__socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link_vkontakte" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link_facebook" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link_twitter" href="#">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
       </li>
     </ul>
   </footer>

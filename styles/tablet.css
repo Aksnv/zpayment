@@ -2,35 +2,25 @@
 
 @media screen and (min-width: 768px) {
 
-  /*body {
-    background-image: url(../images/backgrounds/bg-top.png),
-                      url(../images/backgrounds/bg-middle.png);
-    background-position: left top, center 2705px;
-  }*/
-
   body {
     background-image: url(../images/backgrounds/bg-stars.png),
                       url(../images/backgrounds/bg-chains.png),
                       url(../images/backgrounds/bg-logos.png),
-                      url(../images/backgrounds/bg-top-empty.png),
-                      url(../images/backgrounds/bg-middle.png);
+                      url(../images/backgrounds/bg-top.png)/*,
+                      url(../images/backgrounds/bg-middle.png)*/;
     background-position: 174px 216px,
                          -87px 63px,
                          26px 163px,
-                         left top,
-                         center 2705px;
+                         left top/*,
+                         center 2705px*/;
   }
-
-  /*.main-page_visible {
-    background-position: left 909px, center 1903px;
-  }*/
 
   .main-page_visible {
     background-position: 174px 1125px,
                          -87px 972px,
                          26px 1072px,
-                         left 909px,
-                         center 2705px;
+                         left 909px/*,
+                         center 2705px*/;
   }
 
   .container {
@@ -133,7 +123,7 @@
 
   .indicator_radio {
     top: 1px;
-    left: -37px;
+    left: -6px;
   }
 
   /*.indicator_pagination_current {
@@ -498,13 +488,19 @@
   }
 
   .donation-widget__form {
-    margin-left: 32px;
+    /*margin-left: 32px;*/
+    margin-left: 0;
   }
 
   .donation-widget__form-label {
     margin-bottom: 10px;
+    padding-left: 42px;
 
     font-size: 30px;
+  }
+
+  .donation-widget__price {
+    margin-left: 32px;
   }
 
   .donation-widget__form-button_submit {
@@ -516,6 +512,12 @@
 
   .reviews {
     padding-bottom: 89px;
+  }
+
+  .reviews::before {
+    top: -414px;
+
+    background-position: left top;
   }
 
   .reviews__wrapper {

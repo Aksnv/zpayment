@@ -7,11 +7,11 @@
     background-image: url(../images/backgrounds/bg-stars.png),
                       url(../images/backgrounds/bg-chains.png),
                       url(../images/backgrounds/bg-logos.png),
-                      url(../images/backgrounds/bg-top-empty.png),
+                      url(../images/backgrounds/bg-top.png),
                       url(../images/backgrounds/bg-group-1.png),
                       url(../images/backgrounds/bg-group-2.png),
                       url(../images/backgrounds/bg-group-3.png),
-                      url(../images/backgrounds/bg-middle.png),
+                      /*url(../images/backgrounds/bg-middle.png),*/
                       url(../images/backgrounds/bg-group-4.png),
                       url(../images/backgrounds/bg-group-1.png);
     background-position: center 216px,
@@ -21,7 +21,7 @@
                          left 1146px,
                          right 1442px,
                          left 2446px,
-                         center 2662px,
+                         /*center 2662px,*/
                          right 3618px,
                          left 3880px;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
                               auto auto,
                               auto auto,
                               /*100% 1089px,*/
-                              auto auto,
+                              /*auto auto,*/
                               auto auto,
                               auto auto;
     background-size: auto auto,
@@ -44,7 +44,7 @@
                       auto auto,
                       auto auto,
                       /*100% 1089px,*/
-                      auto auto,
+                      /*auto auto,*/
                       auto auto,
                       auto auto;
 
@@ -60,6 +60,11 @@
 
   .page-header {
     min-height: 116px;
+  }
+
+  .page-header_inner {
+    -webkit-background-size: 100%;
+    background-size: 100%;
   }
 
   .main-navigation_visible {
@@ -359,6 +364,18 @@
   /* ------------- Reviews ------------- */
 
   .reviews {
+    padding-bottom: 120px;
+  }
+
+  .reviews::before {
+    top: -191px;
+
+    background-position: center top;
+    -webkit-background-size: 100% 1089px;
+    background-size: 100% 1089px;
+  }
+
+  .container_reviews {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -376,7 +393,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding-bottom: 120px;
   }
 
   .reviews__wrapper,
