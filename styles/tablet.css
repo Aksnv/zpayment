@@ -261,6 +261,7 @@
   }
 
   .advantages__button {
+    max-width: none;
     margin-bottom: 19px;
   }
 
@@ -482,7 +483,7 @@
   .donation-widget__link {
     position: absolute;
     left: 20px;
-    bottom: 17px;
+    bottom: 14px;
 
     margin: 0;
   }
@@ -587,6 +588,7 @@
   }
 
   .reviews__button {
+    max-width: none;
     padding: 21px 36px;
 
     font-size: 18px;
@@ -675,6 +677,7 @@
     -o-flex-direction: column;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .registration-form {
@@ -682,12 +685,16 @@
     width: 450px;
   }
 
+  .registration-form__label {
+    width: 360px;
+  }
+
   .registration-form__label_radio {
     width: 210px;
     min-height: 260px;
     margin-bottom: 62px;
     padding: 0;
-    padding-top: 169px;
+    padding-top: 167px;
 
     text-align: center;
   }
@@ -744,7 +751,12 @@
     right: 18px;
   }
 
+  .registration-form__fieldset_visible {
+    width: auto;
+  }
+
   .registration-form__label_agreement {
+    width: 100%;
     margin-bottom: 47px;
     padding-left: 43px;
   }
@@ -797,16 +809,16 @@
   }
 
   .enter-form__field_text {
-    margin-bottom: 29px;
+    /*margin-bottom: 29px;*/
     padding: 0 8px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
-  .enter-form__field_password {
+  /*.enter-form__field_password {
     margin-bottom: 33px;
-  }
+  }*/
 
   .enter-form__label {
     margin-bottom: 31px;
@@ -853,7 +865,7 @@
     margin: auto;
   }
 
-  .reset-form__field_text {
+  .reset-form__label_email {
     margin-bottom: 50px;
   }
 

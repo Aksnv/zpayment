@@ -211,18 +211,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/*legend.visually-hidden {
+legend.visually-hidden {
   display: block;
-}*/
-
-/* ------------- Sprite ------------- */
-
-/*
-
-.sprite-robot {
-    width: 422px;
-    height: 456px;
-    background-position: -593px -5px;
 }
-
-*/
