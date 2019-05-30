@@ -68,13 +68,21 @@
   </header>
   <main class="page-content page-content_inner">
     <section class="enter container">
-      <h1 class="enter__header">Вход в&nbsp;Z&#8209;Payment</h1>
+      <h1 class="enter__header inner-page__main-header">Вход в&nbsp;Z&#8209;Payment</h1>
       <p class="enter__text">Для продавцов</p>
       <form class="enter-form enter__form">
-        <input class="enter-form__field enter-form__field_text enter-form__field_login" type="text" name="enter-form__field_login" placeholder="Логин">
-        <input class="enter-form__field enter-form__field_text enter-form__field_password" type="text" name="enter-form__field_password" placeholder="Пароль">
+        <input class="enter-form__field enter-form__field_text enter-form__field_login enter-form__field_valid" id="enter-form__field_login" type="text" name="enter-form__field_login">
+        <label class="enter-form__label enter-form__label_login enter-form__label_required" for="enter-form__field_login">
+          <span class="enter-form__signature enter-form__signature_login enter-form__signature_valid">Логин<sup>*</sup></span>
+          <span class="enter-form__signature enter-form__signature_login enter-form__signature_invalid">Заполните поле логин</span>
+        </label>
+        <input class="enter-form__field enter-form__field_text enter-form__field_password enter-form__field_valid" id="enter-form__field_password" type="text" name="enter-form__field_password">
+        <label class="enter-form__label enter-form__label_password enter-form__label_required" for="enter-form__field_login">
+          <span class="enter-form__signature enter-form__signature_password enter-form__signature_valid">Пароль<sup>*</sup></span>
+          <span class="enter-form__signature enter-form__signature_password enter-form__signature_invalid">Заполните поле пароль</span>
+        </label>
         <input class="enter-form__field enter-form__field_checkbox visually-hidden" id="remember-password" type="checkbox" name="enter-form__field_checkbox" checked>
-        <label class="enter-form__label" for="remember-password">
+        <label class="enter-form__label enter-form__label_remember-password" for="remember-password">
           <span class="enter-form__indicator enter-form__indicator_checkbox"></span>
           Запомнить пароль
         </label>
@@ -128,5 +136,6 @@
   </footer>
   <script src="scripts/inner-page.js"></script>
   <script src="scripts/main-navigation.js"></script>
+  <script src="scripts/enter.js"></script>
 </body>
 </html>

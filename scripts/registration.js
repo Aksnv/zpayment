@@ -1,6 +1,6 @@
 "use strict";
 
-/* ------------- Registration ------------- */
+/* ------------- Registration form ------------- */
 
 var container = document.querySelector(".container");
 var registrationForm = document.querySelector(".registration-form");

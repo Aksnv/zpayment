@@ -68,9 +68,13 @@
   </header>
   <main class="page-content page-content_inner">
     <section class="reset container">
-      <h1 class="reset__header">Сброс пароля</h1>
+      <h1 class="reset__header inner-page__main-header">Сброс пароля</h1>
       <form class="reset-form reset__form">
-        <input class="reset-form__field reset-form__field_text reset-form__field_email" type="text" name="reset-form__field_email" placeholder="Укажите ваш e-mail">
+        <input class="reset-form__field reset-form__field_text reset-form__field_email reset-form__field_valid" id="reset-form__field_email" type="text" name="reset-form__field_email">
+        <label class="reset-form__label reset-form__label_email reset-form__label_required" for="reset-form__field_email">
+          <span class="reset-form__signature reset-form__signature_email reset-form__signature_valid">Укажите ваш e-mail<sup>*</sup></span>
+          <span class="reset-form__signature reset-form__signature_email reset-form__signature_invalid">Заполните поле e-mail</span>
+        </label>
         <button class="button button_big button_blue reset-form__button reset-form__button_submit" type="submit">Сброс</button>
       </form>
     </section>
@@ -119,5 +123,6 @@
   </footer>
   <script src="scripts/inner-page.js"></script>
   <script src="scripts/main-navigation.js"></script>
+  <script src="scripts/reset.js"></script>
 </body>
 </html>

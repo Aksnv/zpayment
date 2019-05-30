@@ -41,6 +41,15 @@ body {
   height: auto;
 }
 
+.inner-page__main-header {
+  margin: 0;
+
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
 .container {
   width: 320px;
 }
@@ -361,8 +370,8 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 34px;
+  padding-bottom: 60px;
 }
 
 .indicators {
@@ -965,7 +974,7 @@ body {
   /*margin-left: auto;*/
   margin-left: 28px;
   margin-right: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
   line-height: 20px;
   /*line-height: 14px;*/
@@ -1023,6 +1032,7 @@ body {
 }
 
 .donation-widget__price {
+  margin-top: 2px;
   margin-bottom: 20px;
 
   font-size: 30px;
@@ -1334,18 +1344,18 @@ body {
 }
 
 .registration__header {
-  margin: 0;
+  /*margin: 0;*/
   margin-bottom: 10px;
 
-  font-size: 20px;
+  /*font-size: 20px;
   line-height: 40px;
 
-  text-align: center;
+  text-align: center;*/
 }
 
 .registration__text {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   line-height: 25px;
   text-align: center;
@@ -1363,8 +1373,17 @@ body {
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
 .registration-form__wrapper {
   padding: 0 10px;
+}
+
+.registration-form__label {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .registration-form__label_radio,
@@ -1375,13 +1394,13 @@ body {
 .registration-form__label_radio {
   position: relative;
 
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   padding: 18px 28px;
   padding-left: 138px;
 
   font-family: "GothamPro-Medium", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 32px;
   word-break: break-word;
 
   background-color: transparent;
@@ -1488,23 +1507,16 @@ body {
   border-bottom: 1px solid #a7a8bb;
 }
 
-.registration-form__field_invalid {
-  border-bottom: 1px solid #cf453c;
-}
-
-.registration-form__label {
-  position: relative;
-
-  display: block;
-  margin-bottom: 32px;
+.registration-form__label_phone {
+  margin-bottom: 48px;
 }
 
 .registration-form__label_required {
   pointer-events: none;
 }
 
-.registration-form__label_phone {
-  margin-bottom: 47px;
+.registration-form__field_invalid {
+  border-bottom: 1px solid #cf453c;
 }
 
 .registration-form__signature {
@@ -1754,11 +1766,7 @@ body {
 }
 
 .enter__header {
-  margin: 0;
-
   font-size: 23px;
-  line-height: 40px;
-  text-align: center;
 }
 
 .enter__text {
@@ -1785,7 +1793,7 @@ body {
 
 .enter-form__field_text {
   width: 100%;
-  margin-bottom: 32px;
+  /*margin-bottom: 32px;*/
   padding: 0 10px;
 
   font-family: "GothamPro-Light", "Arial", sans-serif;
@@ -1797,20 +1805,91 @@ body {
   border-bottom: 1px solid #a7a8bb;
 }
 
-.enter-form__field_password {
-  margin-bottom: 40px;
-}
-
 .enter-form__label {
   position: relative;
 
-  margin-bottom: 28px;
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
   padding-left: 10px;
+}
+
+.enter-form__label_password {
+  margin-bottom: 40px;
+}
+
+.enter-form__label_required {
+  pointer-events: none;
+}
+
+.enter-form__label_remember-password {
+  width: auto;
+  margin-bottom: 28px;
 
   font-size: 12px;
   line-height: 14px;
 
   cursor: pointer;
+}
+
+.enter-form__field_invalid {
+  border-bottom: 1px solid #cf453c;
+}
+
+.enter-form__signature {
+  position: absolute;
+  top: -29px;
+  left: 10px;
+
+  font-family: "GothamPro-Light", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgba(50, 50, 93, 0.8);
+
+  transition: all 0.2s;
+}
+
+.enter-form__signature_invalid {
+  color: #cf453c;
+}
+
+.enter-form__field_valid + .enter-form__label .enter-form__signature_invalid,
+.enter-form__field_invalid + .enter-form__label .enter-form__signature_valid {
+  display: none;
+}
+
+.enter-form__field_valid + .enter-form__label .enter-form__signature_valid,
+.enter-form__field_invalid + .enter-form__label .enter-form__signature_invalid {
+  display: block;
+}
+
+.enter-form__signature sup {
+  position: relative;
+  top: -3px;
+  left: 5px;
+
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-size: 20px;
+  color: #cf453c;
+}
+
+.enter-form__field_text:focus + .enter-form__label .enter-form__signature,
+.enter-form__signature_focused {
+  position: absolute;
+  top: -50px;
+  left: 0;
+
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.enter-form__field_text:focus + .enter-form__label .enter-form__signature sup,
+.enter-form__signature_focused sup {
+  top: -2px;
+  left: 3px;
+
+  font-size: 15px;
 }
 
 .enter-form__indicator_checkbox {
@@ -1914,17 +1993,14 @@ body {
 }
 
 .reset__header {
-  margin: 0;
   margin-bottom: 18px;
 
   font-size: 25px;
-  line-height: 40px;
-  text-align: center;
 }
 
 .reset-form__field_text {
   width: 100%;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   padding: 0 10px;
 
   font-family: "GothamPro-Light", "Arial", sans-serif;
@@ -1936,10 +2012,86 @@ body {
   border-bottom: 1px solid #a7a8bb;
 }
 
+.reset-form__label {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.reset-form__label_required {
+  pointer-events: none;
+}
+
+.reset-form__field_invalid {
+  border-bottom: 1px solid #cf453c;
+}
+
+.reset-form__signature {
+  position: absolute;
+  top: -29px;
+  left: 10px;
+
+  font-family: "GothamPro-Light", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgba(50, 50, 93, 0.8);
+
+  transition: all 0.2s;
+}
+
+.reset-form__signature_invalid {
+  color: #cf453c;
+}
+
+.reset-form__field_valid + .reset-form__label .reset-form__signature_invalid,
+.reset-form__field_invalid + .reset-form__label .reset-form__signature_valid {
+  display: none;
+}
+
+.reset-form__field_valid + .reset-form__label .reset-form__signature_valid,
+.reset-form__field_invalid + .reset-form__label .reset-form__signature_invalid {
+  display: block;
+}
+
+.reset-form__signature sup {
+  position: relative;
+  top: -3px;
+  left: 5px;
+
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-size: 20px;
+  color: #cf453c;
+}
+
+.reset-form__field_text:focus + .reset-form__label .reset-form__signature,
+.reset-form__signature_focused {
+  position: absolute;
+  top: -50px;
+  left: 0;
+
+  font-family: "GothamPro-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.reset-form__field_text:focus + .reset-form__label .reset-form__signature sup,
+.reset-form__signature_focused sup {
+  top: -2px;
+  left: 3px;
+
+  font-size: 15px;
+}
+
 .reset-form__button_submit {
   width: 100%;
   margin-bottom: 12px;
   padding: 22px 28px;
+
+  font-size: 16px;
+  line-height: 30px;
 }
 
 
