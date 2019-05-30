@@ -1596,6 +1596,7 @@ body {
   align-items: center;
 
   width: 100%;
+  margin-bottom: 21px;
 }
 
 .registration-form__button_extra-data {
@@ -1639,6 +1640,10 @@ body {
   right: 0;
 
   transform: rotate(-45deg);
+}
+
+.registration-form__button_extra-data_visible {
+  margin-bottom: 39px;
 }
 
 .registration-form__button_extra-data_visible::before {

@@ -167,9 +167,8 @@
   /* ------------- Main content ------------- */
 
   .page-content_inner {
-    justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 80px;
+    /*justify-content: flex-start;*/
+    padding: 60px 0;
   }
 
   .controls__button_back {
@@ -289,6 +288,10 @@
   .subscription-widget__header {
     width: auto;
     margin-bottom: 14px;
+  }
+
+  .subscription-widget__image {
+    margin-bottom: 9px;
   }
 
   .subscription-widget__price {
@@ -510,6 +513,10 @@
     padding-top: 58px;
     padding-bottom: 62px;
   }*/
+
+  .registration__header {
+    margin-bottom: 1px;
+  }
 
 
   /* ------------- Enter ------------- */
