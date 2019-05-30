@@ -309,6 +309,7 @@
   .product-widget {
     position: relative;
 
+    justify-content: flex-start;
     align-items: flex-start;
     min-height: 404px;
     padding-left: 304px;

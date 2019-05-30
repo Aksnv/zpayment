@@ -36,15 +36,6 @@
        url(../fonts/web/GothamPro-Bold.woff) format("woff");
 }
 
-@font-face {
-  font-family: "GothamPro-Black";
-  font-style: normal;
-  font-weight: normal;
-  src: local("GothamPro-Black"),
-       url(../fonts/web/GothamPro-Black.woff2) format("woff2"),
-       url(../fonts/web/GothamPro-Black.woff) format("woff");
-}
-
 
 /* ------------- Сommon styles ------------- */
 

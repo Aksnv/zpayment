@@ -20,7 +20,11 @@
     <nav class="main-navigation main-navigation_visible page-header__main-navigation">
       <div class="container container_page-header">
         <a class="logo main-navigation__logo">
-          <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment">
+          <!-- <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white.png" width="207" height="66" alt="Логотип Z-Payment"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/zpayment-logo-white.png">
+            <img class="logo__image logo__image_white" src="images/logo/zpayment-logo-white-mobile.png" alt="Логотип Z-Payment">
+          </picture>
         </a>
         <button class="main-navigation__button main-navigation__button_open main-navigation__button_hidden" type="button"><span class="visually-hidden">Показать навигацию</span></button>
         <button class="main-navigation__button main-navigation__button_close main-navigation__button_hidden" type="button"><span class="visually-hidden">Скрыть навигацию</span></button>
@@ -133,7 +137,11 @@
         <li class="use-cases__item use-cases__item_current">
           <article class="product-widget use-cases__product-widget">
             <h3 class="product-widget__header use-cases__header">Хлопковая футболка с&nbsp;принтом</h3>
-            <img class="product-widget__image" src="images/use-cases/product-image.jpg" width="251" height="297" alt="Хлопковая футболка с принтом">
+            <!-- <img class="product-widget__image" src="images/use-cases/product-image.jpg" width="251" height="297" alt="Хлопковая футболка с принтом"> -->
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/use-cases/product-image.jpg">
+              <img class="product-widget__image" src="images/use-cases/product-image-mobile.jpg" alt="Хлопковая футболка с принтом">
+            </picture>
             <p class="product-widget__text">Бесплатная доставка в&nbsp;Россию через Aliexpress (стандартная доставка). Расчетный срок поставки&nbsp;&mdash; 25&nbsp;дней</p>
             <p class="product-widget__text">Подробнее о&nbsp;товаре на&nbsp;<a class="inline-link" href="#">Aliexpress</a></p>
             <strong class="product-widget__price use-cases__price">499 ₽</strong>
@@ -184,7 +192,11 @@
         <li class="use-cases__item use-cases__item_donation">
           <article class="donation-widget use-cases__donation-widget">
             <h3 class="donation-widget__header use-cases__header">Товар-пожертвование</h3>
-            <img class="donation-widget__image" src="images/use-cases/donation-image.jpg" width="306" height="405" alt="Сумка с принтом WWF.RU">
+            <!-- <img class="donation-widget__image" src="images/use-cases/donation-image.jpg" width="306" height="405" alt="Сумка с принтом WWF.RU"> -->
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/use-cases/donation-image.jpg">
+              <img class="donation-widget__image" src="images/use-cases/donation-image-mobile.jpg" alt="Сумка с принтом WWF.RU">
+            </picture>
             <a class="donation-widget__link inline-link" href="#">wwf.ru</a>
             <form class="donation-widget__form" id="donation-widget__form" method="post" action="#" name="donation-widget__form">
               <input class="donation-widget__form-field donation-widget__form-field_radio visually-hidden" id="4000" type="radio" name="donation-widget__form-field_radio" value="4000">
@@ -296,34 +308,74 @@
       <b class="integration__text integration__text_big">Простая интеграция приема платежей через&nbsp;модули популярных систем управления сайтом</b>
       <ul class="integration__list">
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/wordpress.png" width="85" height="78" alt="Wordpress">
+          <!-- <img class="integration__image" src="images/logo/cms/wordpress.png" width="85" height="78" alt="Wordpress"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/wordpress.png">
+            <img class="integration__image" src="images/logo/cms/wordpress-mobile.png" alt="Wordpress">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/umicms.png" width="87" height="31" alt="Umicms">
+          <!-- <img class="integration__image" src="images/logo/cms/umicms.png" width="87" height="31" alt="Umicms"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/umicms.png">
+            <img class="integration__image" src="images/logo/cms/umicms-mobile.png" alt="Umicms">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/bitrix.png" width="70" height="77" alt="1C-Bitrix">
+          <!-- <img class="integration__image" src="images/logo/cms/bitrix.png" width="70" height="77" alt="1C-Bitrix"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/bitrix.png">
+            <img class="integration__image" src="images/logo/cms/bitrix-mobile.png" alt="1C-Bitrix">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/insales.png" width="80" height="27" alt="Insales">
+          <!-- <img class="integration__image" src="images/logo/cms/insales.png" width="80" height="27" alt="Insales"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/insales.png">
+            <img class="integration__image" src="images/logo/cms/insales-mobile.png" alt="Insales">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/ecwid.png" width="72" height="70" alt="Ecwid">
+          <!-- <img class="integration__image" src="images/logo/cms/ecwid.png" width="72" height="70" alt="Ecwid"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/ecwid.png">
+            <img class="integration__image" src="images/logo/cms/ecwid-mobile.png" alt="Ecwid">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/netcat.png" width="75" height="60" alt="Netcat">
+          <!-- <img class="integration__image" src="images/logo/cms/netcat.png" width="75" height="60" alt="Netcat"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/netcat.png">
+            <img class="integration__image" src="images/logo/cms/netcat-mobile.png" alt="Netcat">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/simpla.png" width="79" height="37" alt="Simpla">
+          <!-- <img class="integration__image" src="images/logo/cms/simpla.png" width="79" height="37" alt="Simpla"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/simpla.png">
+            <img class="integration__image" src="images/logo/cms/simpla-mobile.png" alt="Simpla">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/joomla.png" width="59" height="58" alt="Joomla">
+          <!-- <img class="integration__image" src="images/logo/cms/joomla.png" width="59" height="58" alt="Joomla"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/joomla.png">
+            <img class="integration__image" src="images/logo/cms/joomla-mobile.png" alt="Joomla">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/drupal.png" width="84" height="94" alt="Drupal">
+          <!-- <img class="integration__image" src="images/logo/cms/drupal.png" width="84" height="94" alt="Drupal"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/drupal.png">
+            <img class="integration__image" src="images/logo/cms/drupal-mobile.png" alt="Drupal">
+          </picture>
         </li>
         <li class="integration__item">
-          <img class="integration__image" src="images/logo/cms/opencart.png" width="75" height="59" alt="Opencart">
+          <!-- <img class="integration__image" src="images/logo/cms/opencart.png" width="75" height="59" alt="Opencart"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo/cms/opencart.png">
+            <img class="integration__image" src="images/logo/cms/opencart-mobile.png" alt="Opencart">
+          </picture>
         </li>
       </ul>
       <p class="integration__text">Вы&nbsp;можете бесплатно выбрать и&nbsp;загрузить модуль оплаты <a class="inline-link" href="#">здесь</a></p>
@@ -332,7 +384,11 @@
   </main>
   <footer class="page-footer container">
     <a class="logo page-footer__logo">
-      <img class="logo__image logo__image_blue" src="images/logo/zpayment-logo-blue.png" width="207" height="66" alt="Логотип Z-Payment">
+      <!-- <img class="logo__image logo__image_blue" src="images/logo/zpayment-logo-blue.png" width="207" height="66" alt="Логотип Z-Payment"> -->
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo/zpayment-logo-blue.png">
+        <img class="logo__image logo__image_blue" src="images/logo/zpayment-logo-blue-mobile.png" alt="Логотип Z-Payment">
+      </picture>
     </a>
     <ul class="site-navigation site-navigation_footer page-footer__site-navigation">
       <li class="site-navigation__item site-navigation__item_footer">

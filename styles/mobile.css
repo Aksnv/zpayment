@@ -59,13 +59,12 @@ body {
 
 .page-header {
   min-height: 80px;
-
-  /*color: #ffffff;
-
-  background-color: #4d44d6;*/
 }
 
 .page-header_inner {
+  color: #ffffff;
+
+  background-color: #333cc9;
   background-image: url(../images/backgrounds/bg-top.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -428,9 +427,6 @@ body {
   padding-bottom: 20px;
   padding-top: 386px;
 
-  /*color: #ffffff;
-
-  background-color: #4d44d6;*/
   /*background-image: url(../images/robot.png);
   background-repeat: no-repeat;
   background-position: center 42px;
@@ -666,7 +662,7 @@ body {
 }
 
 .use-cases__item {
-  display: none;
+  /*display: none;*/
   width: 300px;
   margin-bottom: 20px;
   padding: 30px;
@@ -724,6 +720,7 @@ body {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
 }
 
