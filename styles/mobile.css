@@ -4,21 +4,18 @@ body {
   background-image: url(../images/backgrounds/bg-stars.png),
                     url(../images/backgrounds/bg-chains.png),
                     url(../images/backgrounds/bg-logos.png),
-                    url(../images/backgrounds/bg-top.png)/*,
-                    url(../images/backgrounds/bg-middle.png)*/;
+                    url(../images/backgrounds/bg-top.png);
   background-position: -430px 216px,
                        -690px 63px,
                        -578px 163px,
-                       center top/*,
-                       center 1903px*/;
+                       center top;
 }
 
 .main-page_visible {
   background-position: -430px 676px,
                        -690px 523px,
                        -578px 623px,
-                       center 460px/*,
-                       center 1903px*/;
+                       center 460px;
 }
 
 .inner-page {
@@ -98,19 +95,10 @@ body {
 }
 
 .main-navigation_visible {
-  /*position: absolute;
-  top: 0;
-  left: 50%;
-
-  width: 100%;*/
   min-height: 540px;
   padding-bottom: 18px;
 
   background-image: linear-gradient(to right bottom, #323bc9, #7f53ed);
-
-  /*transform: translateX(-50%);
-
-  z-index: 1;*/
 }
 
 .main-navigation__logo {
@@ -423,15 +411,8 @@ body {
 .intro {
   position: relative;
 
-  /*padding: 0 17px;*/
   padding-bottom: 20px;
   padding-top: 386px;
-
-  /*background-image: url(../images/robot.png);
-  background-repeat: no-repeat;
-  background-position: center 42px;
-  -webkit-background-size: 296px 319px;
-  background-size: 296px 319px;*/
 }
 
 .intro::after {
@@ -662,11 +643,10 @@ body {
 }
 
 .use-cases__item {
-  /*display: none;*/
+  display: none;
   width: 300px;
   margin-bottom: 20px;
   padding: 30px;
-  /*padding-right: 25px;*/
   padding-left: 22px;
   padding-right: 18px;
 
@@ -679,7 +659,6 @@ body {
 
 .use-cases__item_donation {
   padding-top: 0;
-  /*padding-left: 48px;*/
   padding-left: 22px;
 }
 
@@ -698,8 +677,6 @@ body {
 .use-cases__price {
   font-family: "GothamPro-Light", "Arial", sans-serif;
   font-size: 40px;
-  /*font-size: 30px;*/
-  /*line-height: 58px;*/
   line-height: 40px;
   font-weight: 100;
   letter-spacing: -2px;
@@ -766,7 +743,6 @@ body {
   width: 120px;
   height: 42px;
   margin-top: 11px;
-  /*margin-left: auto;*/
   margin-bottom: 20px;
   padding: 0 17px;
 
@@ -922,7 +898,6 @@ body {
 .advertising-widget__price {
   order: 2;
   margin-top: 3px;
-  /*margin-left: auto;*/
   margin-left: 10px;
   margin-right: 15px;
   margin-bottom: 41px;
@@ -967,13 +942,11 @@ body {
 .donation-widget__link {
   order: 1;
   margin-top: auto;
-  /*margin-left: auto;*/
   margin-left: 28px;
   margin-right: 16px;
   margin-bottom: 13px;
 
   line-height: 20px;
-  /*line-height: 14px;*/
 }
 
 .donation-widget__form {
@@ -996,7 +969,6 @@ body {
 .donation-widget__form-label {
   position: relative;
 
-  /*padding-left: 10px;*/
   padding-left: 12px;
 
   font-family: "GothamPro-Light", "Arial", sans-serif;
@@ -1335,18 +1307,10 @@ body {
 
 .registration {
   padding: 0 10px;
-  /*padding-top: 34px;
-  padding-bottom: 15px;*/
 }
 
 .registration__header {
-  /*margin: 0;*/
   margin-bottom: 10px;
-
-  /*font-size: 20px;
-  line-height: 40px;
-
-  text-align: center;*/
 }
 
 .registration__text {
@@ -1763,7 +1727,6 @@ body {
 
 .enter {
   padding: 0 20px;
-  /*padding-bottom: 28px;*/
 }
 
 .enter__header {
@@ -1794,7 +1757,6 @@ body {
 
 .enter-form__field_text {
   width: 100%;
-  /*margin-bottom: 32px;*/
   padding: 0 10px;
 
   font-family: "GothamPro-Light", "Arial", sans-serif;
@@ -2001,7 +1963,6 @@ body {
 
 .reset-form__field_text {
   width: 100%;
-  /*margin-bottom: 30px;*/
   padding: 0 10px;
 
   font-family: "GothamPro-Light", "Arial", sans-serif;
@@ -2246,4 +2207,9 @@ body {
   font-size: 13px;
   line-height: 25px;
   color: #666666;
+}
+
+.site-navigation__link_footer:hover,
+.site-navigation__link_footer:focus {
+  color: #4a9ad8;
 }

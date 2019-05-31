@@ -6,21 +6,18 @@
     background-image: url(../images/backgrounds/bg-stars.png),
                       url(../images/backgrounds/bg-chains.png),
                       url(../images/backgrounds/bg-logos.png),
-                      url(../images/backgrounds/bg-top.png)/*,
-                      url(../images/backgrounds/bg-middle.png)*/;
+                      url(../images/backgrounds/bg-top.png);
     background-position: 174px 216px,
                          -87px 63px,
                          26px 163px,
-                         left top/*,
-                         center 2705px*/;
+                         left top;
   }
 
   .main-page_visible {
     background-position: 174px 1125px,
                          -87px 972px,
                          26px 1072px,
-                         left 909px/*,
-                         center 2705px*/;
+                         left 909px;
   }
 
   .container {
@@ -126,10 +123,6 @@
     left: -6px;
   }
 
-  /*.indicator_pagination_current {
-    background-color: #ffffff;
-  }*/
-
   .controls__button {
     position: absolute;
 
@@ -202,13 +195,8 @@
   /* ------------- Intro ------------- */
 
   .intro {
-    /*padding: 0 35px;*/
     padding-top: 559px;
     padding-bottom: 20px;
-
-    /*background-position: center 55px;
-    -webkit-background-size: 420px 456px;
-    background-size: 420px 456px;*/
   }
 
   .intro::after {
@@ -315,7 +303,6 @@
     padding-left: 304px;
     padding-top: 53px;
     padding-right: 30px;
-    /*padding-bottom: 50px;*/
     padding-bottom: 20px;
   }
 
@@ -327,7 +314,6 @@
   .product-widget__image {
     position: absolute;
     top: 52px;
-    /*left: 23px;*/
     left: 148px;
 
     max-width: 251px;
@@ -351,9 +337,6 @@
   }
 
   .product-widget__form {
-    /*position: relative;
-    left: -7px;*/
-
     margin: 0;
     margin-right: 13px;
     margin-bottom: 30px;
@@ -385,7 +368,6 @@
     max-width: 250px;
     margin-top: 7px;
     margin-left: 0;
-    /*margin-right: 93px;*/
     margin-right: auto;
     margin-bottom: 0;
   }
@@ -470,7 +452,6 @@
 
   .donation-widget__image {
     position: absolute;
-    /*top: 0;*/
     top: 50%;
     left: 40px;
 
@@ -490,7 +471,6 @@
   }
 
   .donation-widget__form {
-    /*margin-left: 32px;*/
     margin-left: 0;
   }
 
@@ -649,7 +629,6 @@
     -o-flex-direction: column;
     flex-direction: column;
     align-items: center;
-    /*padding-bottom: 30px;*/
   }
 
   .registration__header {
@@ -786,10 +765,6 @@
 
   /* ------------- Enter ------------- */
 
-  /*.enter {
-    padding-bottom: 20px;
-  }*/
-
   .enter__header {
     font-size: 40px;
     line-height: 58px;
@@ -810,16 +785,11 @@
   }
 
   .enter-form__field_text {
-    /*margin-bottom: 29px;*/
     padding: 0 8px;
 
     font-size: 20px;
     line-height: 30px;
   }
-
-  /*.enter-form__field_password {
-    margin-bottom: 33px;
-  }*/
 
   .enter-form__label {
     margin-bottom: 31px;
@@ -849,10 +819,6 @@
 
 
   /* ------------- Reset ------------- */
-
-  /*.reset {
-    padding-top: 10px;
-  }*/
 
   .reset__header {
     margin-bottom: 103px;

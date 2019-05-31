@@ -15,7 +15,6 @@ intro.addEventListener("mousemove", function(e) {
                                         'left 1146px' + ', ' +
                                         'right 1442px' + ', ' +
                                         'left 2446px' + ', ' +
-                                        /*'center 2662px' + ', ' +*/
                                         'right 3618px' + ', ' +
                                         'left 3880px';
   }

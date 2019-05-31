@@ -11,7 +11,6 @@
                       url(../images/backgrounds/bg-group-1.png),
                       url(../images/backgrounds/bg-group-2.png),
                       url(../images/backgrounds/bg-group-3.png),
-                      /*url(../images/backgrounds/bg-middle.png),*/
                       url(../images/backgrounds/bg-group-4.png),
                       url(../images/backgrounds/bg-group-1.png);
     background-position: center 216px,
@@ -21,7 +20,6 @@
                          left 1146px,
                          right 1442px,
                          left 2446px,
-                         /*center 2662px,*/
                          right 3618px,
                          left 3880px;
     background-repeat: no-repeat;
@@ -32,8 +30,6 @@
                               auto auto,
                               auto auto,
                               auto auto,
-                              /*100% 1089px,*/
-                              /*auto auto,*/
                               auto auto,
                               auto auto;
     background-size: auto auto,
@@ -43,8 +39,6 @@
                       auto auto,
                       auto auto,
                       auto auto,
-                      /*100% 1089px,*/
-                      /*auto auto,*/
                       auto auto,
                       auto auto;
 
@@ -159,7 +153,6 @@
     position: absolute;
     top: 42px;
     right: 40px;
-    /*left: calc(50% + 620px);*/
     width: auto;
   }
 
@@ -167,7 +160,6 @@
   /* ------------- Main content ------------- */
 
   .page-content_inner {
-    /*justify-content: flex-start;*/
     padding: 60px 0;
   }
 
@@ -182,7 +174,6 @@
   /* ------------- Intro ------------- */
 
   .intro {
-    /*padding: 0 68px;*/
     padding-top: 118px;
     padding-bottom: 60px;
 
@@ -191,7 +182,6 @@
 
   .intro::after {
     top: 105px;
-    /*left: 885px;*/
     left: calc(50% + 295px)
   }
 
@@ -274,7 +264,6 @@
   }
 
   .product-widget__image {
-    /*left: 43px;*/
     left: 167px;
 
     margin: 0;
@@ -424,10 +413,6 @@
     min-height: 150px;
   }
 
-  /*.reviews__item_current {
-    order: 1;
-  }*/
-
   .reviews__text {
     position: relative;
 
@@ -509,11 +494,6 @@
 
   /* ------------- Registration ------------- */
 
-  /*.registration {
-    padding-top: 58px;
-    padding-bottom: 62px;
-  }*/
-
   .registration__header {
     margin-bottom: 1px;
   }
@@ -521,16 +501,8 @@
 
   /* ------------- Enter ------------- */
 
-  /*.enter {
-    padding-top: 110px;
-  }*/
-
 
   /* ------------- Reset ------------- */
-
-  /*.reset {
-    padding-top: 159px;
-  }*/
 
 
   /* ------------- Footer ------------- */
