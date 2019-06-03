@@ -7,42 +7,22 @@
     background-image: url(../images/backgrounds/bg-stars.png),
                       url(../images/backgrounds/bg-chains.png),
                       url(../images/backgrounds/bg-logos.png),
-                      url(../images/backgrounds/bg-top.png),
-                      url(../images/backgrounds/bg-group-1.png),
-                      url(../images/backgrounds/bg-group-2.png),
-                      url(../images/backgrounds/bg-group-3.png),
-                      url(../images/backgrounds/bg-group-4.png),
-                      url(../images/backgrounds/bg-group-1.png);
+                      url(../images/backgrounds/bg-top.png);
     background-position: center 216px,
                          center 63px,
                          center 163px,
-                         center top,
-                         left 1146px,
-                         right 1442px,
-                         left 2446px,
-                         right 3618px,
-                         left 3880px;
+                         center top;
     background-repeat: no-repeat;
     -webkit-background-size: auto auto,
                               auto auto,
                               auto auto,
-                              100% 1117px,
-                              auto auto,
-                              auto auto,
-                              auto auto,
-                              auto auto,
-                              auto auto;
+                              100% 1117px;
     background-size: auto auto,
                       auto auto,
                       auto auto,
-                      100% 1117px,
-                      auto auto,
-                      auto auto,
-                      auto auto,
-                      auto auto,
-                      auto auto;
+                      100% 1117px;
 
-    transition: background-position 0.2s ease;
+    transition: background-position 0.1s ease;
   }
 
   .container {
@@ -209,6 +189,13 @@
 
   .advantages {
     padding-bottom: 100px;
+
+    background-image: url(../images/backgrounds/bg-group-1.png),
+                      url(../images/backgrounds/bg-group-2.png);
+    background-repeat: no-repeat;
+    background-position: left 432px, right 718px;
+    -webkit-background-size: 100% 241px, 100% 378px;
+    background-size: 100% 241px, 100% 378px;
   }
 
   .advantages-list {
@@ -225,6 +212,14 @@
 
 
   /* ------------- Use cases ------------- */
+
+  .use-cases {
+    background-image: url(../images/backgrounds/bg-group-3.png);
+    background-repeat: no-repeat;
+    background-position: left 590px;
+    -webkit-background-size: 100% 267px;
+    background-size: 100% 267px;
+  }
 
   .use-cases h2 {
     margin-bottom: 40px;
@@ -357,6 +352,13 @@
 
   .reviews {
     padding-bottom: 120px;
+
+    background-image: url(../images/backgrounds/bg-group-1.png),
+                      url(../images/backgrounds/bg-group-4.png);
+    background-repeat: no-repeat;
+    background-position: left 1027px, right 765px;
+    -webkit-background-size: 100% 241px, 100% 303px;
+    background-size: 100% 241px, 100% 303px;
   }
 
   .reviews::before {
@@ -464,7 +466,7 @@
   }
 
   .reviews__controls .controls__button_back {
-    right: 82px;
+    right: 78px;
   }
 
 

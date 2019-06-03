@@ -17,3 +17,9 @@ mainNavigationButtonOpen.addEventListener("click", function() {
 mainNavigationButtonClose.addEventListener("click", function() {
   mainPage.classList.remove("main-page_visible");
 });
+
+window.addEventListener("resize", function() {
+  if (container.clientWidth !== 1180) {
+    mainPage.removeAttribute("style");
+  }
+});
