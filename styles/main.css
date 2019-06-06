@@ -189,7 +189,6 @@ button[disabled] {
 input {
   -moz-appearance: none;
   -webkit-appearance: none;
-  border-radius: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
