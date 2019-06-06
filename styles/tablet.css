@@ -542,9 +542,6 @@
   }
 
   .reviews__item {
-    order: 0;
-    /*display: block;*/
-    display: none;
     width: 688px;
     min-height: 150px;
     margin-bottom: 35px;

@@ -5,8 +5,27 @@
 var container = document.querySelector(".container");
 var controlsButtonUseCasesForward = document.querySelector(".controls__button_use-cases_forward");
 var controlsButtonUseCasesBack = document.querySelector(".controls__button_use-cases_back");
+var useCasesList = document.querySelector(".use-cases__list");
 var useCasesItems = document.querySelectorAll(".use-cases__item");
 var useCasesIndicators = document.querySelectorAll(".indicator_pagination_use-cases");
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (container.clientWidth !== 1180) {
+    for (var i = useCasesItems.length - 1; i >= 0; i--) {
+      useCasesItems[i].classList.add("use-cases__item_hidden");
+    }
+    useCasesList.children[0].classList.remove("use-cases__item_hidden");
+  }
+});
+
+window.addEventListener("resize", function() {
+  if (container.clientWidth !== 1180) {
+    for (var i = useCasesItems.length - 1; i >= 0; i--) {
+      useCasesItems[i].classList.add("use-cases__item_hidden");
+    }
+    useCasesList.children[0].classList.remove("use-cases__item_hidden");
+  }
+});
 
 controlsButtonUseCasesForward.addEventListener("click", function() {
   if (container.clientWidth === 768) {
