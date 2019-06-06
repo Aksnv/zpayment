@@ -29,12 +29,12 @@ body {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
+  min-height: 100vh;
 
   background-image: none;
 }
 
-.inner-page_visible,
-.inner-page_registration {
+.inner-page_visible {
   height: auto;
 }
 
