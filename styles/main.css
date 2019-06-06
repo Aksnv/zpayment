@@ -57,6 +57,7 @@ body {
   font-family: "GothamPro-Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
+  word-break: break-word;
   color: #32325d;
 
   background-color: #f5f7fa;
@@ -180,6 +181,11 @@ button[disabled] {
 .inline-link {
   text-decoration: underline;
   color: #4a9ad8;
+}
+
+.inline-link:hover,
+.inline-link:focus {
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),

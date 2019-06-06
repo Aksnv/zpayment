@@ -142,6 +142,11 @@
     cursor: default;
   }
 
+  .controls__button:hover,
+  .controls__button:focus {
+    opacity: 0.5;
+  }
+
   .controls__button_back {
     left: 0;
 
@@ -236,7 +241,8 @@
   }
 
   .advantages-list {
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    justify-content: center;
     margin-bottom: 20px;
     padding: 0 40px;
   }
@@ -244,10 +250,16 @@
   .advantages-item {
     display: block;
     width: 323px;
+    margin-right: 42px;
     margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 32px;
+  }
+
+  .advantages-item:nth-child(2n + 2),
+  .advantages-item:last-child {
+    margin-right: 0;
   }
 
   .advantages__button {
@@ -311,6 +323,10 @@
   .product-widget__header {
     margin-top: 5px;
     margin-left: 0;
+  }
+
+  .product-widget__picture {
+    margin: 0;
   }
 
   .product-widget__image {
@@ -501,7 +517,14 @@
   .reviews::before {
     top: -414px;
 
-    background-position: left top;
+    background-image: url(../images/backgrounds/bg-stars.png),
+                      url(../images/backgrounds/bg-chains.png),
+                      url(../images/backgrounds/bg-logos.png),
+                      url(../images/backgrounds/bg-middle.png);
+    background-position: 174px 216px,
+                         -87px 63px,
+                         26px 163px,
+                         left top;
   }
 
   .reviews__wrapper {
@@ -511,6 +534,7 @@
 
   .reviews__header {
     margin-bottom: 31px;
+    padding-right: 110px;
   }
 
   .reviews__list {
@@ -519,11 +543,17 @@
 
   .reviews__item {
     order: 0;
-    display: block;
+    /*display: block;*/
+    display: none;
     width: 688px;
+    min-height: 150px;
     margin-bottom: 35px;
     padding-top: 22px;
     padding-right: 55px;
+  }
+
+  .reviews__item_visible {
+    display: block;
   }
 
   .reviews__article {
@@ -536,7 +566,8 @@
   .reviews__image {
     position: absolute;
     top: 3px;
-    left: 13px;
+    left: 65px;
+    transform: translateX(-50%);
 
     margin-bottom: 0;
   }
@@ -554,6 +585,10 @@
 
     font-size: 40px;
     line-height: 58px;
+  }
+
+  .reviews__author {
+    text-align: left;
   }
 
   .reviews__controls {
@@ -579,7 +614,7 @@
   }
 
   .reviews__button:before {
-    bottom: 124px;
+    top: -234px;
   }
 
 
@@ -614,6 +649,7 @@
 
   .integration__image {
     width: auto;
+    max-height: 95px;
   }
 
 
@@ -855,11 +891,6 @@
 
   .page-footer__logo {
     margin-bottom: 33px;
-  }
-
-  .logo__image_blue {
-    max-width: 207px;
-    max-height: 66px;
   }
 
   .socials {

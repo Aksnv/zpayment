@@ -12,7 +12,6 @@
                          center 63px,
                          center 163px,
                          center top;
-    background-repeat: no-repeat;
     -webkit-background-size: auto auto,
                               auto auto,
                               auto auto,
@@ -203,6 +202,15 @@
     padding: 0 20px;
   }
 
+  .advantages-item:nth-child(n) {
+    margin-right: 40px;
+  }
+
+  .advantages-item:nth-child(3n + 3),
+  .advantages-item:last-child {
+    margin-right: 0;
+  }
+
   .advantages-item {
     width: 353px;
     margin-bottom: 40px;
@@ -265,13 +273,20 @@
   }
 
   .subscription-widget {
+    flex-direction: column;
+    justify-content: flex-start;
     padding-top: 43px;
     padding-right: 30px;
   }
 
   .subscription-widget__header {
     width: auto;
-    margin-bottom: 14px;
+    /*margin-bottom: 14px;*/
+    margin-bottom: 32px;
+  }
+
+  .subscription-widget__link {
+    margin-bottom: 23px;
   }
 
   .subscription-widget__image {
@@ -280,6 +295,12 @@
 
   .subscription-widget__price {
     margin: 0;
+    margin-top: auto;
+    margin-bottom: 40px;
+  }
+
+  .subscription-widget__form {
+    margin-top: 0;
   }
 
   .subscription-widget__form-button_submit {
@@ -364,9 +385,22 @@
   .reviews::before {
     top: -191px;
 
-    background-position: center top;
-    -webkit-background-size: 100% 1089px;
-    background-size: 100% 1089px;
+    background-image: url(../images/backgrounds/bg-stars.png),
+                      url(../images/backgrounds/bg-chains.png),
+                      url(../images/backgrounds/bg-logos.png),
+                      url(../images/backgrounds/bg-middle.png);
+    background-position: center 216px,
+                         center 63px,
+                         center 163px,
+                         center top;
+    -webkit-background-size: auto auto,
+                              auto auto,
+                              auto auto,
+                              100% 1089px;
+    background-size: auto auto,
+                      auto auto,
+                      auto auto,
+                      100% 1089px;
   }
 
   .container_reviews {
@@ -402,6 +436,7 @@
 
   .reviews__header {
     margin-bottom: 21px;
+    padding-right: 0;
   }
 
   .reviews__list {
@@ -412,7 +447,6 @@
 
   .reviews__item {
     width: 550px;
-    min-height: 150px;
   }
 
   .reviews__text {
