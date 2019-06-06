@@ -757,15 +757,18 @@ body {
   height: 42px;
   margin-top: 11px;
   margin-bottom: 20px;
-  padding: 0 17px;
+  /*padding: 0 17px;*/
+  padding: 0;
 
   border: 1px solid #adadbe;
   border-radius: 30px;
 }
 
 .product-widget__form-field_text {
-  width: 32px;
-  margin: 0 4px;
+  /*width: 32px;*/
+  width: 38px;
+  /*margin: 0 4px;*/
+  margin: 0;
   padding: 0;
 
   font-family: "GothamPro-Medium", "Arial", sans-serif;
@@ -777,7 +780,8 @@ body {
 
 .product-widget__form-button_decrease,
 .product-widget__form-button_increase {
-  width: 25px;
+  /*width: 25px;*/
+  width: 40px;
   padding: 0;
 
   font-family: "GothamPro-Medium", "Arial", sans-serif;
@@ -1400,7 +1404,6 @@ body {
   font-family: "GothamPro-Medium", "Arial", sans-serif;
   font-size: 18px;
   line-height: 32px;
-  word-break: break-word;
 
   background-color: transparent;
   border: 1px dashed #4d91dd;
@@ -1451,7 +1454,7 @@ body {
 
 .registration-form__field_radio:checked + .registration-form__label_radio {
   background-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid transparent;
 
   -webkit-box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
   box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
@@ -1465,7 +1468,7 @@ body {
 .registration-form__label_radio:hover,
 .registration-form__label_radio:focus {
   background-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid transparent;
 
   -webkit-box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
   box-shadow: 0 7px 25px rgba(43, 81, 144, 0.2);
@@ -1692,7 +1695,7 @@ body {
 
 .registration-form__field_checkbox:checked + .registration-form__label .registration-form__indicator_checkbox {
   background-color: #3d3b7f;
-  border: 1px solid #3d3b7f;
+  border: 1px solid transparent;
 }
 
 .registration-form__field_checkbox:checked + .registration-form__label .registration-form__indicator_checkbox::before {
