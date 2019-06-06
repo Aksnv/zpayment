@@ -757,7 +757,6 @@ body {
   height: 42px;
   margin-top: 11px;
   margin-bottom: 20px;
-  /*padding: 0 17px;*/
   padding: 0;
 
   border: 1px solid #adadbe;
@@ -765,9 +764,7 @@ body {
 }
 
 .product-widget__form-field_text {
-  /*width: 32px;*/
   width: 38px;
-  /*margin: 0 4px;*/
   margin: 0;
   padding: 0;
 
@@ -780,7 +777,6 @@ body {
 
 .product-widget__form-button_decrease,
 .product-widget__form-button_increase {
-  /*width: 25px;*/
   width: 40px;
   padding: 0;
 
