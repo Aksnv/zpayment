@@ -1,6 +1,8 @@
 /* Carousel swipe */
 
-/*.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive {
+/*.carousel-inner>.item>a>img,
+  .carousel-inner>.item>img,
+  .img-responsive {
     display: block;
     max-width: 100%;
     height: auto
@@ -46,7 +48,8 @@
   transition: .6s ease-in-out left;
 }
 
-/*.carousel-inner>.item>a>img,.carousel-inner>.item>img {
+/*.carousel-inner>.item>a>img,
+  .carousel-inner>.item>img {
     line-height: 1
 }*/
 
@@ -130,5 +133,13 @@
 /* ------------- Tablet styles (768px) ------------- */
 
 @media screen and (min-width: 768px) {
+
+  .carousel-inner {
+    width: auto;
+  }
+
+  .carousel-inner > .item {
+    display: block;
+  }
 
 }

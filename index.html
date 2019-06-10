@@ -109,7 +109,7 @@
           <ul class="advantages-list carousel-inner">
             <li class="advantages-item advantages-item_methods item active">
               <h3 class="advantages-header">Более 40&nbsp;методов оплаты</h3>
-              <p class="advantages-text">Выберите и&nbsp;подключите те&nbsp;методы оплаты, которые увеличат продажи за&nbsp;счет притока новых клиентов и&nbsp;повышения конверсии</p>
+              <p class="advantages-text">Выберите и&nbsp;подключите те&nbsp;методы оплаты, которые увеличат продажи за&nbsp;счет притока новых клиентов и&nbsp;повышения конверсии.</p>
             </li>
             <li class="advantages-item advantages-item_payments item">
               <h3 class="advantages-header">Принимайте платежи везде</h3>
@@ -145,22 +145,22 @@
         </div>
 
         <ul class="indicators advantages__indicators">
-          <li class="indicator indicator_pagination indicator_pagination_current">
+          <li class="indicator indicator_pagination indicator_pagination_current advantages__indicator">
             <span class="visually-hidden">1</span>
           </li>
-          <li class="indicator indicator_pagination">
+          <li class="indicator indicator_pagination advantages__indicator">
             <span class="visually-hidden">2</span>
           </li>
-          <li class="indicator indicator_pagination">
+          <li class="indicator indicator_pagination advantages__indicator">
             <span class="visually-hidden">3</span>
           </li>
-          <li class="indicator indicator_pagination">
+          <li class="indicator indicator_pagination advantages__indicator">
             <span class="visually-hidden">4</span>
           </li>
-          <li class="indicator indicator_pagination">
+          <li class="indicator indicator_pagination advantages__indicator">
             <span class="visually-hidden">5</span>
           </li>
-          <li class="indicator indicator_pagination">
+          <li class="indicator indicator_pagination advantages__indicator">
             <span class="visually-hidden">6</span>
           </li>
         </ul>
@@ -567,6 +567,17 @@
       hammer.get("swipe");
       hammer.on("swipeleft", function(){
           $carousel.carousel("next");
+
+          for (var i = 0; i < $(".advantages__indicator").length; i++) {
+            if ($($(".advantages__indicator")[i]).hasClass("indicator_pagination_current")) {
+              var num = i;
+              if (num === $(".advantages__indicator").length) {
+                num = -1;
+              }
+            }
+            $($(".advantages__indicator")[i]).removeClass("indicator_pagination_current");
+          }
+          $($(".advantages__indicator")[num + 1]).addClass("indicator_pagination_current");
 
           /*for (var i = 0; i < $(".gallery__image-item").length; i++) {
             if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
