@@ -23,13 +23,15 @@
 
   border-radius: 5px;
 
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .carousel-inner > .item {
   position: relative;
 
   display: none;
+
+  border-radius: 5px;
 
   -webkit-transition: .6s ease-in-out left;
   -o-transition: .6s ease-in-out left;
