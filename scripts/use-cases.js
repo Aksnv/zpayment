@@ -69,6 +69,22 @@ controlsButtonUseCasesBack.addEventListener("click", function() {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  if (container.clientWidth === 320) {
+    useCasesList.children[0].classList.add("active");
+  } else {
+    useCasesList.children[0].classList.remove("active");
+  }
+});
+
+window.addEventListener("resize", function() {
+  if (container.clientWidth === 320) {
+    useCasesList.children[0].classList.add("active");
+  } else {
+    useCasesList.children[0].classList.remove("active");
+  }
+});
+
 /* ------------- Use cases carousel swipe ------------- */
 
 var useCasesCarousel = new Hammer(document.querySelector(".use-cases__carousel"));

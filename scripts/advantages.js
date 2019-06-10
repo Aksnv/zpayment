@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
       advantagesItems[i].classList.add("advantages-item_hidden");
     }
     advantagesList.children[0].classList.remove("advantages-item_hidden");
+    advantagesList.children[0].classList.add("active");
+  } else {
+    advantagesList.children[0].classList.remove("active");
   }
 });
 
@@ -21,6 +24,9 @@ window.addEventListener("resize", function() {
       advantagesItems[i].classList.add("advantages-item_hidden");
     }
     advantagesList.children[0].classList.remove("advantages-item_hidden");
+    advantagesList.children[0].classList.add("active");
+  } else {
+    advantagesList.children[0].classList.remove("active");
   }
 });
 

@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   if (container.clientWidth === 320) {
     reviewsList.children[0].classList.remove("reviews__item_hidden");
+    reviewsList.children[0].classList.add("active");
+  } else {
+    reviewsList.children[0].classList.remove("active");
   }
 });
 
@@ -23,6 +26,9 @@ window.addEventListener("resize", function() {
   }
   if (container.clientWidth === 320) {
     reviewsList.children[0].classList.remove("reviews__item_hidden");
+    reviewsList.children[0].classList.add("active");
+  } else {
+    reviewsList.children[0].classList.remove("active");
   }
 });
 
