@@ -83,11 +83,11 @@
     <section class="advantages">
       <div class="container">
         <h2 class="visually-hidden">Преимущества Z&#8209;Payment</h2>
-        <div class="carousel slide">
+        <div class="carousel slide advantages__carousel">
           <ul class="advantages-list carousel-inner">
             <li class="advantages-item advantages-item_methods item active">
               <h3 class="advantages-header">Более 40&nbsp;методов оплаты</h3>
-              <p class="advantages-text">Выберите и&nbsp;подключите те&nbsp;методы оплаты, которые увеличат продажи за&nbsp;счет притока новых клиентов и&nbsp;повышения конверсии.</p>
+              <p class="advantages-text">Выберите и&nbsp;подключите те&nbsp;методы оплаты, которые увеличат продажи за&nbsp;счет притока новых клиентов и&nbsp;повышения конверсии</p>
             </li>
             <li class="advantages-item advantages-item_payments item">
               <h3 class="advantages-header">Принимайте платежи везде</h3>
@@ -197,7 +197,7 @@
     <section class="use-cases">
       <div class="container">
         <h2>Как можно использовать&nbsp;Z&#8209;Payment</h2>
-        <div class="carousel slide">
+        <div class="carousel slide use-cases__carousel">
           <ul class="use-cases__list carousel-inner">
             <li class="use-cases__item use-cases__item_current item active">
               <article class="product-widget use-cases__product-widget">
@@ -637,16 +637,16 @@
   <script src="scripts/main-page.min.js"></script>
   <script src="scripts/main-navigation.min.js"></script>
   <script src="scripts/parallax.min.js"></script>
-  <!-- <script src="scripts/advantages.min.js"></script> -->
-  <script src="scripts/use-cases.min.js"></script>
+  <script src="scripts/advantages.js"></script>
+  <script src="scripts/use-cases.js"></script>
   <script src="scripts/product-widget.min.js"></script>
-  <script src="scripts/reviews.min.js"></script>
+  <script src="scripts/reviews.js"></script>
 
   <!-- Carousel swipe -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
-  <script>
+  <!-- <script>
       var hammer = new Hammer(document.querySelector(".carousel"));
       var $carousel = $(".carousel").carousel({"interval": 0});
       hammer.get("swipe");
@@ -678,7 +678,7 @@
           }
           $($(".indicator_pagination_advantages")[num - 1]).addClass("indicator_pagination_current");
       });
-    </script>
+    </script> -->
     <!-- /Carousel swipe -->
 </body>
 </html>

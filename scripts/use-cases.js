@@ -68,3 +68,38 @@ controlsButtonUseCasesBack.addEventListener("click", function() {
     }
   }
 });
+
+/* ------------- Use cases carousel swipe ------------- */
+
+var useCasesCarousel = new Hammer(document.querySelector(".use-cases__carousel"));
+var $carousel = $(".use-cases__carousel").carousel({"interval": 0});
+useCasesCarousel.get("swipe");
+useCasesCarousel.on("swipeleft", function(){
+    $carousel.carousel("next");
+
+    for (var i = 0; i < $(".indicator_pagination_use-cases").length; i++) {
+      if ($($(".indicator_pagination_use-cases")[i]).hasClass("indicator_pagination_current")) {
+        var num = i;
+        if (num === $(".indicator_pagination_use-cases").length - 1) {
+          num = -1;
+        }
+      }
+      $($(".indicator_pagination_use-cases")[i]).removeClass("indicator_pagination_current");
+    }
+    $($(".indicator_pagination_use-cases")[num + 1]).addClass("indicator_pagination_current");
+});
+useCasesCarousel.on("swiperight", function(){
+    $carousel.carousel("prev");
+
+    for (var i = 0; i < $(".indicator_pagination_use-cases").length; i++) {
+      if ($($(".indicator_pagination_use-cases")[i]).hasClass("indicator_pagination_current")) {
+        var num = i;
+        if (num === 0) {
+          num = $(".indicator_pagination_use-cases").length;
+        }
+      }
+      $($(".indicator_pagination_use-cases")[i]).removeClass("indicator_pagination_current");
+    }
+    $($(".indicator_pagination_use-cases")[num - 1]).addClass("indicator_pagination_current");
+});
+
