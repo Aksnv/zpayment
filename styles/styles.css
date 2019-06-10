@@ -235,7 +235,6 @@ legend.visually-hidden {
 .carousel-inner > .item {
   position: relative;
 
-  /*display: none;*/
   display: block;
 }
 
