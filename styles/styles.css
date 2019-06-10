@@ -235,6 +235,13 @@ legend.visually-hidden {
 .carousel-inner > .item {
   position: relative;
 
+  /*display: none;*/
+  display: block;
+}
+
+.carousel-inner > .advantages-item_hidden,
+.carousel-inner > .use-cases__item_hidden,
+.carousel-inner > .reviews__item_hidden {
   display: none;
 }
 
