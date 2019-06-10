@@ -234,7 +234,7 @@ legend.visually-hidden {
     width: 300px;
   }
 
-  .item {
+  .carousel-inner > .item {
     position: relative;
 
     display: none;
@@ -246,36 +246,36 @@ legend.visually-hidden {
       display: block;
   }
 
-  .active {
+  .carousel-inner > .active {
       left: 0;
   }
 
-  .next,
-  .prev {
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
       position: absolute;
       top: 0;
 
       width: 100%;
   }
 
-  .next {
+  .carousel-inner > .next {
       left: 100%;
   }
 
-  .prev {
+  .carousel-inner > .prev {
       left: -100%;
   }
 
-  .next.left,
-  .prev.right {
+  .carousel-inner > .next.left,
+  .carousel-inner > .prev.right {
       left: 0;
   }
 
-  .active.left {
+  .carousel-inner > .active.left {
       left: -100%;
   }
 
-  .active.right {
+  .carousel-inner > .active.right {
       left: 100%;
   }
 
