@@ -28,10 +28,10 @@ window.addEventListener("resize", function() {
 /* ------------- Advantages carousel swipe ------------- */
 
 var advantagesCarousel = new Hammer(document.querySelector(".advantages__carousel"));
-var $carousel = $(".advantages__carousel").carousel({"interval": 0});
+var $carouselAdvantages = $(".advantages__carousel").carousel({"interval": 0});
 advantagesCarousel.get("swipe");
 advantagesCarousel.on("swipeleft", function(){
-    $carousel.carousel("next");
+    $carouselAdvantages.carousel("next");
 
     for (var i = 0; i < $(".indicator_pagination_advantages").length; i++) {
       if ($($(".indicator_pagination_advantages")[i]).hasClass("indicator_pagination_current")) {
@@ -45,7 +45,7 @@ advantagesCarousel.on("swipeleft", function(){
     $($(".indicator_pagination_advantages")[num + 1]).addClass("indicator_pagination_current");
 });
 advantagesCarousel.on("swiperight", function(){
-    $carousel.carousel("prev");
+    $carouselAdvantages.carousel("prev");
 
     for (var i = 0; i < $(".indicator_pagination_advantages").length; i++) {
       if ($($(".indicator_pagination_advantages")[i]).hasClass("indicator_pagination_current")) {
