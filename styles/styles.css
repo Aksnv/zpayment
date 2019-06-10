@@ -219,7 +219,7 @@ legend.visually-hidden {
 
 /* ------------- Carousel swipe ------------- */
 
-/*.carousel {
+.carousel {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -288,7 +288,7 @@ legend.visually-hidden {
     display: block;
   }
 
-}*/
+}
 
 
 /* ------------- Mobile styles (320px) ------------- */
