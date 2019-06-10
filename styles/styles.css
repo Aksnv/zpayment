@@ -288,6 +288,26 @@ legend.visually-hidden {
     display: block;
   }
 
+  .carousel-inner > .use-cases__item_hidden {
+    display: none;
+  }
+
+  .carousel-inner > .reviews__item_hidden {
+    display: none;
+  }
+
+  .carousel-inner > .reviews__item_visible {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 1180px) {
+
+  .carousel-inner > .use-cases__item_hidden {
+    display: block;
+  }
+
 }
 
 
