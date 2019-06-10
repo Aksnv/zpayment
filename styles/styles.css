@@ -219,62 +219,66 @@ legend.visually-hidden {
 
 /* ------------- Carousel swipe ------------- */
 
-.carousel {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-}
+@media screen and (max-width: 767px) {
 
-.carousel-inner {
-  width: 300px;
-}
+  .carousel {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
 
-.item {
-  position: relative;
+  .carousel-inner {
+    width: 300px;
+  }
 
-  display: none;
-}
+  .item {
+    position: relative;
 
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
-    display: block;
-}
+    display: none;
+  }
 
-.active {
-    left: 0;
-}
+  .carousel-inner > .active,
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+      display: block;
+  }
 
-.next,
-.prev {
-    position: absolute;
-    top: 0;
+  .active {
+      left: 0;
+  }
 
-    width: 100%;
-}
+  .next,
+  .prev {
+      position: absolute;
+      top: 0;
 
-.next {
-    left: 100%;
-}
+      width: 100%;
+  }
 
-.prev {
-    left: -100%;
-}
+  .next {
+      left: 100%;
+  }
 
-.next.left,
-.prev.right {
-    left: 0;
-}
+  .prev {
+      left: -100%;
+  }
 
-.active.left {
-    left: -100%;
-}
+  .next.left,
+  .prev.right {
+      left: 0;
+  }
 
-.active.right {
-    left: 100%;
+  .active.left {
+      left: -100%;
+  }
+
+  .active.right {
+      left: 100%;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
