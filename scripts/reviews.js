@@ -57,3 +57,37 @@ controlsButtonReviewsBack.addEventListener("click", function() {
     break;
   }
 });
+
+/* ------------- Reviews carousel swipe ------------- */
+
+var reviewsCarousel = new Hammer(document.querySelector(".reviews__carousel"));
+var $carouselReviews = $(".reviews__carousel").carousel({"interval": 0});
+reviewsCarousel.get("swipe");
+reviewsCarousel.on("swipeleft", function(){
+    $carouselReviews.carousel("next");
+
+    for (var i = 0; i < $(".indicator_pagination_reviews").length; i++) {
+      if ($($(".indicator_pagination_reviews")[i]).hasClass("indicator_pagination_current")) {
+        var num = i;
+        if (num === $(".indicator_pagination_reviews").length - 1) {
+          num = -1;
+        }
+      }
+      $($(".indicator_pagination_reviews")[i]).removeClass("indicator_pagination_current");
+    }
+    $($(".indicator_pagination_reviews")[num + 1]).addClass("indicator_pagination_current");
+});
+reviewsCarousel.on("swiperight", function(){
+    $carouselReviews.carousel("prev");
+
+    for (var i = 0; i < $(".indicator_pagination_reviews").length; i++) {
+      if ($($(".indicator_pagination_reviews")[i]).hasClass("indicator_pagination_current")) {
+        var num = i;
+        if (num === 0) {
+          num = $(".indicator_pagination_reviews").length;
+        }
+      }
+      $($(".indicator_pagination_reviews")[i]).removeClass("indicator_pagination_current");
+    }
+    $($(".indicator_pagination_reviews")[num - 1]).addClass("indicator_pagination_current");
+});

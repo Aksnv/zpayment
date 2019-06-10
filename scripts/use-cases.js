@@ -102,4 +102,3 @@ useCasesCarousel.on("swiperight", function(){
     }
     $($(".indicator_pagination_use-cases")[num - 1]).addClass("indicator_pagination_current");
 });
-
