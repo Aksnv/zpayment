@@ -32,7 +32,7 @@
 
   display: none;
 
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 
   -webkit-transition: .6s ease-in-out left;
   -o-transition: .6s ease-in-out left;
