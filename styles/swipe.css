@@ -7,14 +7,12 @@
 }*/
 
 .carousel {
-  position: relative;
+  /*position: relative;*/
 
-  max-width: 320px;
+  /*max-width: 320px;*/
   /*margin: auto;*/
 
-  border-radius: 5px;
-
-  overflow: hidden;
+  /*border-radius: 5px;*/
 }
 
 .carousel-inner {
