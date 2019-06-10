@@ -559,11 +559,11 @@
 
   <!-- Carousel swipe -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
   <script>
-      var hammer = new Hammer(document.querySelector('.carousel'));
-      var $carousel = $(".carousel").carousel({"interval":0});
+      var hammer = new Hammer(document.querySelector(".carousel"));
+      var $carousel = $(".carousel").carousel({"interval": 0});
       hammer.get("swipe");
       hammer.on("swipeleft", function(){
           $carousel.carousel("next");
