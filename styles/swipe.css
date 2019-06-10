@@ -13,6 +13,8 @@
   /*margin: auto;*/
 
   border-radius: 5px;
+
+  overflow: hidden;
 }
 
 .carousel-inner {
