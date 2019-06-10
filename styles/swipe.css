@@ -1,4 +1,4 @@
-/* Gallery carousel */
+/* Carousel swipe */
 
 .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive {
     display: block;
@@ -7,7 +7,9 @@
 }
 
 .carousel {
-    position: relative
+    position: relative;
+    max-width:480px;
+    margin:auto;
 }
 
 .carousel-inner {
@@ -90,4 +92,11 @@
 
 .carousel-inner>.active.right {
     left: 100%
+}
+
+
+/* ------------- Tablet styles (768px) ------------- */
+
+@media screen and (min-width: 768px) {
+
 }

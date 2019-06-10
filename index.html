@@ -9,23 +9,11 @@
   <meta name="description" content="Z-Payment - Принимайте все методы оплаты от всех клиентов!">
   <link rel="stylesheet" href="styles/normalize.min.css">
   <link rel="stylesheet" href="styles/styles.min.css">
+  <!-- Carousel swipe -->
+  <link rel="stylesheet" href="styles/swipe.css">
+  <!-- /Carousel swipe -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-  <!-- Touch carousel -->
-  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
-  <!-- <style>
-    .carousel{
-      max-width:480px;
-      margin:auto;
-    }
-  </style> -->
-  <link rel="stylesheet" href="styles/swipe.css">
-  <!-- /Touch carousel -->
-
 </head>
 <body class="main-page main-page_visible">
   <header class="page-header">
@@ -92,7 +80,7 @@
     </section>
 
 
-    <!-- Touch carousel -->
+    <!-- Carousel swipe -->
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -124,51 +112,68 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-
-      <button class="gallery__button gallery__button--back"></button>
-      <button class="gallery__button gallery__button--forward"></button>
     </div>
-
-    <script>
-      var hammer = new Hammer(document.querySelector('.carousel'));
-      var $carousel = $(".carousel").carousel({"interval":0});
-      hammer.get("swipe");
-      hammer.on("swipeleft", function(){
-          $carousel.carousel("next");
-
-          /*for (var i = 0; i < $(".gallery__image-item").length; i++) {
-            if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
-              var num = i;
-              if (num === 2) {
-                num = -1;
-              }
-            }
-            $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
-          }
-          $($(".gallery__image-item")[num + 1]).addClass("gallery__image-item--active");
-          $(".gallery__image-number").text(num + 2);*/
-      });
-      hammer.on("swiperight", function(){
-          $carousel.carousel("prev");
-
-          /*for (var i = 0; i < $(".gallery__image-item").length; i++) {
-            if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
-              var num = i;
-              if (num === 0) {
-                num = 3;
-              }
-            }
-            $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
-          }
-          $($(".gallery__image-item")[num - 1]).addClass("gallery__image-item--active");
-          $(".gallery__image-number").text(num);*/
-      });
-    </script>
-
-    <!-- /Touch carousel -->
 
 
     <section class="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества Z&#8209;Payment</h2>
+        <ul class="advantages-list carousel-inner">
+          <li class="advantages-item advantages-item_methods item active">
+            <h3 class="advantages-header">Более 40&nbsp;методов оплаты</h3>
+            <p class="advantages-text">Выберите и&nbsp;подключите те&nbsp;методы оплаты, которые увеличат продажи за&nbsp;счет притока новых клиентов и&nbsp;повышения конверсии</p>
+          </li>
+          <li class="advantages-item advantages-item_payments item">
+            <h3 class="advantages-header">Принимайте платежи везде</h3>
+            <p class="advantages-text">Для торговли сайт не&nbsp;обязателен, создайте страницу оплаты и&nbsp;высылайте платежную ссылку покупателям в&nbsp;социальных сетях, мессенджерах или по&nbsp;электронной почте</p>
+          </li>
+          <li class="advantages-item advantages-item_widget item">
+            <h3 class="advantages-header">Встраиваемый виджет</h3>
+            <p class="advantages-text">Чтобы начать принимать платежи достаточно вставить код на&nbsp;сайт. Вы&nbsp;получите виджет оплаты, который позволяет покупателям платить, не&nbsp;покидая сайт продавца**</p>
+          </li>
+          <li class="advantages-item advantages-item_automation item">
+            <h3 class="advantages-header">Автоматизация финансов</h3>
+            <p class="advantages-text">Все платежи обрабатываются автоматически, с&nbsp;уведомлениями на&nbsp;почту/телефон/сайт сразу после оплаты. Вывод средств в&nbsp;автоматическом режиме по&nbsp;гибкому расписанию</p>
+          </li>
+          <li class="advantages-item advantages-item_cashbox item">
+            <h3 class="advantages-header">Онлайн-касса бесплатно*</h3>
+            <p class="advantages-text">Соответствуйте требованиям ФЗ-54 и&nbsp;подключите онлайн кассу без дополнительных затрат денег и&nbsp;времени</p>
+          </li>
+          <li class="advantages-item advantages-item_modules item">
+            <h3 class="advantages-header">Свои модули оплаты</h3>
+            <p class="advantages-text">Подключите собственные модули оплаты и&nbsp;контролируйте все платежи в&nbsp;единой системе учета</p>
+          </li>
+        </ul>
+        <ul class="indicators advantages__indicators">
+          <li class="indicator indicator_pagination indicator_pagination_current">
+            <span class="visually-hidden">1</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">2</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">3</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">4</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">5</span>
+          </li>
+          <li class="indicator indicator_pagination">
+            <span class="visually-hidden">6</span>
+          </li>
+        </ul>
+        <a class="button button_blue button_big advantages__button" href="#">Подключить Z&#8209;Payment</a>
+        <p class="advantages-comment">* Только для&nbsp;ИП и&nbsp;юридических лиц&nbsp;РФ</p>
+        <p class="advantages-comment">** Не&nbsp;все платежные системы разрешают проводить оплату на&nbsp;сайте продавца</p>
+      </div>
+    </section>
+
+    <!-- /Carousel swipe -->
+
+
+    <!-- <section class="advantages">
       <div class="container">
         <h2 class="visually-hidden">Преимущества Z&#8209;Payment</h2>
         <ul class="advantages-list">
@@ -221,7 +226,7 @@
         <p class="advantages-comment">* Только для&nbsp;ИП и&nbsp;юридических лиц&nbsp;РФ</p>
         <p class="advantages-comment">** Не&nbsp;все платежные системы разрешают проводить оплату на&nbsp;сайте продавца</p>
       </div>
-    </section>
+    </section> -->
     <section class="use-cases">
       <div class="container">
         <h2>Как можно использовать&nbsp;Z&#8209;Payment</h2>
@@ -546,9 +551,50 @@
   <script src="scripts/main-page.min.js"></script>
   <script src="scripts/main-navigation.min.js"></script>
   <script src="scripts/parallax.min.js"></script>
-  <script src="scripts/advantages.min.js"></script>
+  <!-- <script src="scripts/advantages.min.js"></script> -->
   <script src="scripts/use-cases.min.js"></script>
   <script src="scripts/product-widget.min.js"></script>
   <script src="scripts/reviews.min.js"></script>
+
+  <!-- Carousel swipe -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+  <script>
+      var hammer = new Hammer(document.querySelector('.carousel'));
+      var $carousel = $(".carousel").carousel({"interval":0});
+      hammer.get("swipe");
+      hammer.on("swipeleft", function(){
+          $carousel.carousel("next");
+
+          /*for (var i = 0; i < $(".gallery__image-item").length; i++) {
+            if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
+              var num = i;
+              if (num === 2) {
+                num = -1;
+              }
+            }
+            $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
+          }
+          $($(".gallery__image-item")[num + 1]).addClass("gallery__image-item--active");
+          $(".gallery__image-number").text(num + 2);*/
+      });
+      hammer.on("swiperight", function(){
+          $carousel.carousel("prev");
+
+          /*for (var i = 0; i < $(".gallery__image-item").length; i++) {
+            if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
+              var num = i;
+              if (num === 0) {
+                num = 3;
+              }
+            }
+            $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
+          }
+          $($(".gallery__image-item")[num - 1]).addClass("gallery__image-item--active");
+          $(".gallery__image-number").text(num);*/
+      });
+    </script>
+    <!-- /Carousel swipe -->
 </body>
 </html>
