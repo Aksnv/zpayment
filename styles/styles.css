@@ -219,68 +219,63 @@ legend.visually-hidden {
 
 /* ------------- Carousel swipe ------------- */
 
-@media screen and (min-width: 320px) {
-
-  .carousel {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-  }
-
-  .carousel-inner {
-    width: 300px;
-  }
-
-  .carousel-inner > .item {
-    position: relative;
-
-    display: none;
-  }
-
-  .carousel-inner > .active,
-  .carousel-inner > .next,
-  .carousel-inner > .prev {
-      display: block;
-  }
-
-  .carousel-inner > .active {
-      left: 0;
-  }
-
-  .carousel-inner > .next,
-  .carousel-inner > .prev {
-      position: absolute;
-      top: 0;
-
-      width: 100%;
-  }
-
-  .carousel-inner > .next {
-      left: 100%;
-  }
-
-  .carousel-inner > .prev {
-      left: -100%;
-  }
-
-  .carousel-inner > .next.left,
-  .carousel-inner > .prev.right {
-      left: 0;
-  }
-
-  .carousel-inner > .active.left {
-      left: -100%;
-  }
-
-  .carousel-inner > .active.right {
-      left: 100%;
-  }
-
+.carousel {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
 }
 
+.carousel-inner {
+  width: 300px;
+}
+
+.item {
+  position: relative;
+
+  display: none;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+    display: block;
+}
+
+.active {
+    left: 0;
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+}
+
+.next {
+    left: 100%;
+}
+
+.prev {
+    left: -100%;
+}
+
+.next.left,
+.prev.right {
+    left: 0;
+}
+
+.active.left {
+    left: -100%;
+}
+
+.active.right {
+    left: 100%;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -288,7 +283,7 @@ legend.visually-hidden {
     width: auto;
   }
 
-  .carousel-inner > .item {
+  .item {
     display: block;
   }
 
