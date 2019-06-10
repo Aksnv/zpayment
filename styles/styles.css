@@ -232,47 +232,51 @@ legend.visually-hidden {
   width: 300px;
 }
 
-.item {
+.carousel-inner > .item {
   position: relative;
 
   display: none;
 }
 
-.active {
-    left: 0;
-
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
     display: block;
 }
 
-.next,
-.prev {
+.carousel-inner > .active {
+    left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
     position: absolute;
     top: 0;
 
-    display: block;
     width: 100%;
 }
 
-.next {
+.carousel-inner > .next {
     left: 100%;
 }
 
-.prev {
+.carousel-inner > .prev {
     left: -100%;
 }
 
-.next.left,
-.prev.right {
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
     left: 0;
 }
 
-.active.left {
+.carousel-inner > .active.left {
     left: -100%;
 }
 
-.active.right {
+.carousel-inner > .active.right {
     left: 100%;
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -280,7 +284,7 @@ legend.visually-hidden {
     width: auto;
   }
 
-  .item {
+  .carousel-inner > .item {
     display: block;
   }
 
