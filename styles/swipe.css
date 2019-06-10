@@ -9,14 +9,14 @@
 .carousel {
   position: relative;
 
-  /*max-width: 480px;
-  margin: auto;*/
+  max-width: 320px;
+  margin: auto;
 }
 
 .carousel-inner {
   position: relative;
 
-  /*width: 100%;*/
+  width: 100%;
 
   overflow: hidden;
 }
@@ -87,7 +87,7 @@
     position: absolute;
     top: 0;
 
-    /*width: 100%;*/
+    width: 100%;
 }
 
 .carousel-inner > .next {
