@@ -87,7 +87,7 @@
     position: absolute;
     top: 0;
 
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .carousel-inner > .next {
