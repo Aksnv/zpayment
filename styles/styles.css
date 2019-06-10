@@ -232,48 +232,48 @@ legend.visually-hidden {
   width: 300px;
 }
 
-.carousel-inner > .item {
+.item {
   position: relative;
 
   display: none;
 }
 
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
+.active,
+.next,
+.prev {
     display: block;
 }
 
-.carousel-inner > .active {
+.active {
     left: 0;
 }
 
-.carousel-inner > .next,
-.carousel-inner > .prev {
+.next,
+.prev {
     position: absolute;
     top: 0;
 
     width: 100%;
 }
 
-.carousel-inner > .next {
+.next {
     left: 100%;
 }
 
-.carousel-inner > .prev {
+.prev {
     left: -100%;
 }
 
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
+.next.left,
+.prev.right {
     left: 0;
 }
 
-.carousel-inner > .active.left {
+.active.left {
     left: -100%;
 }
 
-.carousel-inner > .active.right {
+.active.right {
     left: 100%;
 }
 
@@ -284,7 +284,7 @@ legend.visually-hidden {
     width: auto;
   }
 
-  .carousel-inner > .item {
+  .item {
     display: block;
   }
 
