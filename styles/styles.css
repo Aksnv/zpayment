@@ -235,18 +235,19 @@ legend.visually-hidden {
 .carousel-inner > .item {
   position: relative;
 
-  display: block;
-}
-
-.carousel-inner > .advantages-item_hidden,
-.carousel-inner > .use-cases__item_hidden,
-.carousel-inner > .reviews__item_hidden {
+  /*display: block;*/
   display: none;
 }
 
-.carousel-inner > .active/*,
+/*.carousel-inner > .advantages-item_hidden,
+.carousel-inner > .use-cases__item_hidden,
+.carousel-inner > .reviews__item_hidden {
+  display: none;
+}*/
+
+.carousel-inner > .active,
 .carousel-inner > .next,
-.carousel-inner > .prev*/ {
+.carousel-inner > .prev {
   display: block;
 }
 
