@@ -235,7 +235,8 @@ legend.visually-hidden {
 .carousel-inner > .item {
   position: relative;
 
-  display: block;
+  /*display: block;*/
+  display: none;
 }
 
 /*.carousel-inner > .advantages-item_hidden,
