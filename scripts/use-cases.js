@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     for (var i = useCasesItems.length - 1; i >= 0; i--) {
       useCasesItems[i].classList.add("use-cases__item_hidden");
     }
-    useCasesList.children[0].classList.remove("use-cases__item_hidden");
   }
 });
 
@@ -23,7 +22,6 @@ window.addEventListener("resize", function() {
     for (var i = useCasesItems.length - 1; i >= 0; i--) {
       useCasesItems[i].classList.add("use-cases__item_hidden");
     }
-    useCasesList.children[0].classList.remove("use-cases__item_hidden");
   }
 });
 

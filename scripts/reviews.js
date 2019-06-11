@@ -12,17 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
   for (var i = reviewsItems.length - 1; i >= 0; i--) {
     reviewsItems[i].classList.add("reviews__item_hidden");
   }
-  if (container.clientWidth === 320) {
-    reviewsList.children[0].classList.remove("reviews__item_hidden");
-  }
 });
 
 window.addEventListener("resize", function() {
   for (var i = reviewsItems.length - 1; i >= 0; i--) {
     reviewsItems[i].classList.add("reviews__item_hidden");
-  }
-  if (container.clientWidth === 320) {
-    reviewsList.children[0].classList.remove("reviews__item_hidden");
   }
 });
 
