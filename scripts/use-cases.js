@@ -10,7 +10,13 @@ var useCasesItems = document.querySelectorAll(".use-cases__item");
 var useCasesIndicators = document.querySelectorAll(".indicator_pagination_use-cases");
 
 document.addEventListener("DOMContentLoaded", function() {
-  if (container.clientWidth !== 1180) {
+  if (container.clientWidth === 768) {
+    for (var i = useCasesItems.length - 1; i >= 0; i--) {
+      useCasesItems[i].classList.add("use-cases__item_hidden");
+    }
+    useCasesList.children[0].classList.remove("use-cases__item_hidden");
+  }
+  if (container.clientWidth === 320) {
     for (var i = useCasesItems.length - 1; i >= 0; i--) {
       useCasesItems[i].classList.add("use-cases__item_hidden");
     }
@@ -18,7 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 window.addEventListener("resize", function() {
-  if (container.clientWidth !== 1180) {
+  if (container.clientWidth === 768) {
+    for (var i = useCasesItems.length - 1; i >= 0; i--) {
+      useCasesItems[i].classList.add("use-cases__item_hidden");
+    }
+    useCasesList.children[0].classList.remove("use-cases__item_hidden");
+  }
+  if (container.clientWidth === 320) {
     for (var i = useCasesItems.length - 1; i >= 0; i--) {
       useCasesItems[i].classList.add("use-cases__item_hidden");
     }

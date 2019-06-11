@@ -308,7 +308,7 @@ legend.visually-hidden {
 
 }
 
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1480px) {
 
   .carousel-inner > .use-cases__item_hidden {
     display: block;
