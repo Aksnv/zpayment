@@ -32,7 +32,7 @@ var $carouselAdvantages = $(".advantages__carousel").carousel({"interval": 0});
 advantagesCarousel.get("swipe");
 advantagesCarousel.on("swipeleft", function(){
     $carouselAdvantages.carousel("next");
-    advantagesList.children[0].classList.add("advantages-item_hidden");
+
     for (var i = 0; i < $(".indicator_pagination_advantages").length; i++) {
       if ($($(".indicator_pagination_advantages")[i]).hasClass("indicator_pagination_current")) {
         var num = i;
@@ -46,7 +46,7 @@ advantagesCarousel.on("swipeleft", function(){
 });
 advantagesCarousel.on("swiperight", function(){
     $carouselAdvantages.carousel("prev");
-    advantagesList.children[0].classList.add("advantages-item_hidden");
+
     for (var i = 0; i < $(".indicator_pagination_advantages").length; i++) {
       if ($($(".indicator_pagination_advantages")[i]).hasClass("indicator_pagination_current")) {
         var num = i;
