@@ -460,13 +460,14 @@ body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  width: 20px;
+  height: 18px;
   margin-left: auto;
   margin-top: 28px;
   margin-right: 20px;
   padding: 0;
 
   background-color: transparent;
-  background-image: url(../images/sprite.png);
   background-repeat: no-repeat;
   border: none;
 }
@@ -477,17 +478,11 @@ body {
 }
 
 .main-navigation__button_open {
-  width: 20px;
-  height: 17px;
-
-  background-position: -45px -188px;
+  background-image: url(../images/icons/menu-icon-open.svg);
 }
 
 .main-navigation__button_close {
-  width: 20px;
-  height: 17px;
-
-  background-position: -563px -26px;
+  background-image: url(../images/icons/menu-icon-close.svg);
 }
 
 .main-navigation__button_hidden {
@@ -638,9 +633,7 @@ body {
   width: 16px;
   height: 17px;
 
-  background-image: url(../images/sprite.png);
-  background-position: -75px -471px;
-  background-repeat: no-repeat;
+  background-image: url(../images/icons/login-icon.svg);
 
   -webkit-transform: translateY(-50%);
 
@@ -650,14 +643,12 @@ body {
 }
 
 .user-navigation__button_exit {
-  width: 15px;
+  width: 16px;
   min-width: auto;
-  height: 16px;
+  height: 17px;
 
   background-color: transparent;
-  background-image: url(../images/sprite.png);
-  background-position: -566px -53px;
-  background-repeat: no-repeat;
+  background-image: url(../images/icons/logout-icon.svg);
   border: none;
 }
 
@@ -908,9 +899,6 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-
   -webkit-transform: translate(-50%, -50%);
 
       -ms-transform: translate(-50%, -50%);
@@ -922,42 +910,42 @@ body {
   width: 94px;
   height: 93px;
 
-  background-position: -5px -5px;
+  background-image: url(../images/icons/advantages/advantage-icon-1.svg);
 }
 
 .advantages-item_payments::before {
   width: 153px;
   height: 88px;
 
-  background-position: -109px -5px;
+  background-image: url(../images/icons/advantages/advantage-icon-2.svg);
 }
 
 .advantages-item_widget::before {
-  width: 93px;
+  width: 92px;
   height: 90px;
 
-  background-position: -272px -5px;
+  background-image: url(../images/icons/advantages/advantage-icon-3.svg);
 }
 
 .advantages-item_automation::before {
-  width: 117px;
-  height: 89px;
+  width: 116px;
+  height: 88px;
 
-  background-position: -375px -5px;
+  background-image: url(../images/icons/advantages/advantage-icon-4.svg);
 }
 
 .advantages-item_cashbox::before {
   width: 131px;
   height: 90px;
 
-  background-position: -109px -104px;
+  background-image: url(../images/icons/advantages/advantage-icon-5.svg);
 }
 
 .advantages-item_modules::before {
   width: 122px;
   height: 88px;
 
-  background-position: -375px -104px;
+  background-image: url(../images/icons/advantages/advantage-icon-6.svg);
 }
 
 .advantages-header {
@@ -1277,9 +1265,7 @@ body {
   width: 54px;
   height: 75px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -502px -5px;
+  background-image: url(../images/use-cases/advertising-icon.svg);
 }
 
 .advertising-widget__header {
@@ -1706,9 +1692,7 @@ body {
   width: 186px;
   height: 180px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -250px -202px;
+  background-image: url(../images/icons/cashbox-icon.svg);
 }
 
 
@@ -1854,9 +1838,6 @@ body {
   content: "";
 
   position: absolute;
-
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
 }
 
 .registration-form__label_radio_person::before {
@@ -1864,9 +1845,9 @@ body {
   left: 53px;
 
   width: 88px;
-  height: 100px;
+  height: 98px;
 
-  background-position: -446px -202px;
+  background-image: url(../images/icons/person-icon.svg);
 
   -webkit-transform: scale(0.5);
 
@@ -1879,10 +1860,10 @@ body {
   top: -11px;
   left: 63px;
 
-  width: 68px;
+  width: 69px;
   height: 88px;
 
-  background-position: -507px -90px;
+  background-image: url(../images/icons/company-icon.svg);
 
   -webkit-transform: scale(0.5);
 
@@ -2174,9 +2155,7 @@ body {
   width: 14px;
   height: 11px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -566px -5px;
+  background-image: url(../images/icons/check-icon.svg);
 }
 
 .registration-form__field_checkbox:focus + .registration-form__label .registration-form__indicator_checkbox {
@@ -2222,12 +2201,10 @@ body {
   left: 33px;
 
   display: block;
-  width: 33px;
+  width: 34px;
   height: 34px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -200px -451px;
+  background-image: url(../images/icons/google-icon.svg);
 }
 
 
@@ -2404,9 +2381,7 @@ body {
   width: 14px;
   height: 11px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -566px -5px;
+  background-image: url(../images/icons/check-icon.svg);
 }
 
 .enter-form__field_checkbox:focus + .enter-form__label .enter-form__indicator_checkbox {
@@ -2452,12 +2427,10 @@ body {
   left: 33px;
 
   display: block;
-  width: 33px;
+  width: 34px;
   height: 34px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -200px -451px;
+  background-image: url(../images/icons/google-icon.svg);
 }
 
 .enter-form__link {
@@ -2776,7 +2749,7 @@ body {
   }
 
   .logo__image {
-    max-width: 207px;
+    max-width: 208px;
     max-height: 66px;
   }
 
