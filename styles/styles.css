@@ -787,12 +787,11 @@ body {
   left: 50%;
 
   display: block;
-  width: 310px;
+  width: 295px;
   height: 347px;
 
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -410px -5px;
+  background-image: url(../images/robot/robot.svg);
+  -webkit-background-size: cover;
   background-size: cover;
 
   -webkit-transform: translateX(-50%);
@@ -2917,10 +2916,8 @@ body {
   .intro::after {
     top: 55px;
 
-    width: 446px;
-    height: 492px;
-
-    background-position: -581px -5px;
+    width: 422px;
+    height: 497px;
   }
 
   .intro__text {
@@ -3848,7 +3845,7 @@ body {
 
   .intro::after {
     top: 105px;
-    left: calc(50% + 295px)
+    left: calc(50% + 292px);
   }
 
   .intro__text {
