@@ -22,6 +22,15 @@ window.addEventListener("resize", function() {
   }
 });
 
+/* ------------- Advantages items animation ------------- */
+
+window.addEventListener("scroll", function() {
+  if (container.clientWidth === 1180) {
+    for (var i = advantagesItems.length - 1; i >= 0; i--) {
+      advantagesItems[i].classList.add("advantages-item_animation");
+    }
+  }
+});
 
 /* ------------- Advantages carousel swipe ------------- */
 

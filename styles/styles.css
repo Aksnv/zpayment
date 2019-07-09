@@ -4065,6 +4065,78 @@ body {
     padding-right: 25px;
   }
 
+  /* Advantages animation */
+
+  .advantages-item_widget,
+  .advantages-item_payments,
+  .advantages-item_methods {
+    transform: translateX(-1000px);
+
+    opacity: 0;
+  }
+
+  .advantages-item_widget.advantages-item_animation {
+    animation: advantagesItemLeft 2s ease 0s forwards;
+  }
+
+  .advantages-item_payments.advantages-item_animation {
+    animation: advantagesItemLeft 2s ease 1s forwards;
+  }
+
+  .advantages-item_methods.advantages-item_animation {
+    animation: advantagesItemLeft 2s ease 2s forwards;
+  }
+
+  @keyframes advantagesItemLeft {
+
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+  }
+
+  .advantages-item_automation,
+  .advantages-item_cashbox,
+  .advantages-item_modules {
+    transform: translateX(1000px);
+
+    opacity: 0;
+  }
+
+  .advantages-item_automation.advantages-item_animation {
+    animation: advantagesItemRight 2s ease 3s forwards;
+  }
+
+  .advantages-item_cashbox.advantages-item_animation {
+    animation: advantagesItemRight 2s ease 4s forwards;
+  }
+
+  .advantages-item_modules.advantages-item_animation {
+    animation: advantagesItemRight 2s ease 5s forwards;
+  }
+
+  @keyframes advantagesItemRight {
+
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+  }
+
+  /* /Advantages animation */
+
 
   /* ------------- Use cases ------------- */
 
