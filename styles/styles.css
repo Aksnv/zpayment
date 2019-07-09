@@ -4169,9 +4169,7 @@ body {
 
   /* Advantages animation */
 
-  .advantages-item_widget,
-  .advantages-item_payments,
-  .advantages-item_methods {
+  .advantages-item_hidden_left {
     -webkit-transform: translateX(-1000px);
         -ms-transform: translateX(-1000px);
             transform: translateX(-1000px);
@@ -4226,9 +4224,7 @@ body {
 
   }
 
-  .advantages-item_automation,
-  .advantages-item_cashbox,
-  .advantages-item_modules {
+  .advantages-item_hidden_right {
     -webkit-transform: translateX(1000px);
         -ms-transform: translateX(1000px);
             transform: translateX(1000px);
@@ -4441,8 +4437,7 @@ body {
 
   /* Use cases animation */
 
-  .use-cases__item_product,
-  .use-cases__item_subscription {
+  .use-cases__item_hidden_right {
     -webkit-transform: translateX(1000px);
         -ms-transform: translateX(1000px);
             transform: translateX(1000px);
@@ -4492,8 +4487,7 @@ body {
 
   }
 
-  .use-cases__item_donation,
-  .use-cases__item_advertising {
+  .use-cases__item_hidden_left {
     -webkit-transform: translateX(-1000px);
         -ms-transform: translateX(-1000px);
             transform: translateX(-1000px);

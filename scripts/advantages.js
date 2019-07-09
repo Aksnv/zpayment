@@ -11,6 +11,23 @@ document.addEventListener("DOMContentLoaded", function() {
     for (var i = advantagesItems.length - 1; i >= 0; i--) {
       advantagesItems[i].classList.add("advantages-item_hidden");
     }
+  } else {
+    for (var i = advantagesItems.length - 1; i >= 0; i--) {
+      advantagesItems[i].classList.remove("advantages-item_hidden");
+    }
+  }
+  if (container.clientWidth === 1180) {
+    for (var i = 2; i >= 0; i--) {
+      advantagesItems[i].classList.add("advantages-item_hidden_left");
+    }
+    for (var i = advantagesItems.length - 1; i >= 3; i--) {
+      advantagesItems[i].classList.add("advantages-item_hidden_right");
+    }
+  } else {
+    for (var i = advantagesItems.length - 1; i >= 0; i--) {
+      advantagesItems[i].classList.remove("advantages-item_hidden_left");
+      advantagesItems[i].classList.remove("advantages-item_hidden_right");
+    }
   }
 });
 
@@ -18,6 +35,23 @@ window.addEventListener("resize", function() {
   if (container.clientWidth === 320) {
     for (var i = advantagesItems.length - 1; i >= 0; i--) {
       advantagesItems[i].classList.add("advantages-item_hidden");
+    }
+  } else {
+    for (var i = advantagesItems.length - 1; i >= 0; i--) {
+      advantagesItems[i].classList.remove("advantages-item_hidden");
+    }
+  }
+  if (container.clientWidth === 1180) {
+    for (var i = 2; i >= 0; i--) {
+      advantagesItems[i].classList.add("advantages-item_hidden_left");
+    }
+    for (var i = advantagesItems.length - 1; i >= 3; i--) {
+      advantagesItems[i].classList.add("advantages-item_hidden_right");
+    }
+  } else {
+    for (var i = advantagesItems.length - 1; i >= 0; i--) {
+      advantagesItems[i].classList.remove("advantages-item_hidden_left");
+      advantagesItems[i].classList.remove("advantages-item_hidden_right");
     }
   }
 });
