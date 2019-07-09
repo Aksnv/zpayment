@@ -220,12 +220,15 @@ legend.visually-hidden {
 /* ------------- Carousel swipe ------------- */
 
 .carousel {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carousel-inner {
@@ -791,7 +794,6 @@ body {
   height: 347px;
 
   background-image: url(../images/robot/robot.svg);
-  -webkit-background-size: cover;
   background-size: cover;
 
   -webkit-transform: translateX(-50%);
@@ -3894,9 +3896,29 @@ body {
 
     background-image: url(../images/robot/robot-circles.svg);
 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 
-    animation: robotCircles 2s ease 0s forwards;
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+
+    -webkit-animation: robotCircles 2s ease 0s forwards;
+
+            animation: robotCircles 2s ease 0s forwards;
+  }
+
+  @-webkit-keyframes robotCircles {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 341px;
+      opacity: 1;
+    }
+
   }
 
   @keyframes robotCircles {
@@ -3923,9 +3945,29 @@ body {
 
     background-image: url(../images/robot/robot-lines.svg);
 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 
-    animation: robotLines 2s ease 1s forwards;
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+
+    -webkit-animation: robotLines 2s ease 1s forwards;
+
+            animation: robotLines 2s ease 1s forwards;
+  }
+
+  @-webkit-keyframes robotLines {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 10px;
+      opacity: 1;
+    }
+
   }
 
   @keyframes robotLines {
@@ -3952,9 +3994,29 @@ body {
 
     background-image: url(../images/robot/robot-rectangles.svg);
 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 
-    animation: robotRectangles 2s ease 2s forwards;
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+
+    -webkit-animation: robotRectangles 2s ease 2s forwards;
+
+            animation: robotRectangles 2s ease 2s forwards;
+  }
+
+  @-webkit-keyframes robotRectangles {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 173px;
+      opacity: 1;
+    }
+
   }
 
   @keyframes robotRectangles {
@@ -3981,9 +4043,29 @@ body {
 
     background-image: url(../images/robot/robot-body.svg);
 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 
-    animation: robotBody 2s ease 3s forwards;
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+
+    -webkit-animation: robotBody 2s ease 3s forwards;
+
+            animation: robotBody 2s ease 3s forwards;
+  }
+
+  @-webkit-keyframes robotBody {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 113px;
+      opacity: 1;
+    }
+
   }
 
   @keyframes robotBody {
@@ -4010,9 +4092,29 @@ body {
 
     background-image: url(../images/robot/robot-message.svg);
 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 
-    animation: robotMessage 2s ease 4s forwards;
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+
+    -webkit-animation: robotMessage 2s ease 4s forwards;
+
+            animation: robotMessage 2s ease 4s forwards;
+  }
+
+  @-webkit-keyframes robotMessage {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+
   }
 
   @keyframes robotMessage {
@@ -4070,32 +4172,55 @@ body {
   .advantages-item_widget,
   .advantages-item_payments,
   .advantages-item_methods {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
 
     opacity: 0;
   }
 
   .advantages-item_widget.advantages-item_animation {
-    animation: advantagesItemLeft 2s ease 0s forwards;
+    -webkit-animation: advantagesItemLeft 2s ease 0s forwards;
+            animation: advantagesItemLeft 2s ease 0s forwards;
   }
 
   .advantages-item_payments.advantages-item_animation {
-    animation: advantagesItemLeft 2s ease 1s forwards;
+    -webkit-animation: advantagesItemLeft 2s ease 1s forwards;
+            animation: advantagesItemLeft 2s ease 1s forwards;
   }
 
   .advantages-item_methods.advantages-item_animation {
-    animation: advantagesItemLeft 2s ease 2s forwards;
+    -webkit-animation: advantagesItemLeft 2s ease 2s forwards;
+            animation: advantagesItemLeft 2s ease 2s forwards;
+  }
+
+  @-webkit-keyframes advantagesItemLeft {
+
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+
   }
 
   @keyframes advantagesItemLeft {
 
     0% {
-      transform: translateX(-1000px);
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
       opacity: 0;
     }
 
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
 
@@ -4104,32 +4229,55 @@ body {
   .advantages-item_automation,
   .advantages-item_cashbox,
   .advantages-item_modules {
-    transform: translateX(1000px);
+    -webkit-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+            transform: translateX(1000px);
 
     opacity: 0;
   }
 
   .advantages-item_automation.advantages-item_animation {
-    animation: advantagesItemRight 2s ease 3s forwards;
+    -webkit-animation: advantagesItemRight 2s ease 3s forwards;
+            animation: advantagesItemRight 2s ease 3s forwards;
   }
 
   .advantages-item_cashbox.advantages-item_animation {
-    animation: advantagesItemRight 2s ease 4s forwards;
+    -webkit-animation: advantagesItemRight 2s ease 4s forwards;
+            animation: advantagesItemRight 2s ease 4s forwards;
   }
 
   .advantages-item_modules.advantages-item_animation {
-    animation: advantagesItemRight 2s ease 5s forwards;
+    -webkit-animation: advantagesItemRight 2s ease 5s forwards;
+            animation: advantagesItemRight 2s ease 5s forwards;
+  }
+
+  @-webkit-keyframes advantagesItemRight {
+
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+
   }
 
   @keyframes advantagesItemRight {
 
     0% {
-      transform: translateX(1000px);
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
       opacity: 0;
     }
 
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
 
@@ -4295,28 +4443,50 @@ body {
 
   .use-cases__item_product,
   .use-cases__item_subscription {
-    transform: translateX(1000px);
+    -webkit-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+            transform: translateX(1000px);
 
     opacity: 0;
   }
 
   .use-cases__item_product.use-cases__item_animation {
-    animation: useCasesItemRight 2s ease 0s forwards;
+    -webkit-animation: useCasesItemRight 2s ease 0s forwards;
+            animation: useCasesItemRight 2s ease 0s forwards;
   }
 
   .use-cases__item_subscription.use-cases__item_animation {
-    animation: useCasesItemRight 2s ease 1s forwards;
+    -webkit-animation: useCasesItemRight 2s ease 1s forwards;
+            animation: useCasesItemRight 2s ease 1s forwards;
+  }
+
+  @-webkit-keyframes useCasesItemRight {
+
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+
   }
 
   @keyframes useCasesItemRight {
 
     0% {
-      transform: translateX(1000px);
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
       opacity: 0;
     }
 
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
 
@@ -4324,28 +4494,50 @@ body {
 
   .use-cases__item_donation,
   .use-cases__item_advertising {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
 
     opacity: 0;
   }
 
   .use-cases__item_donation.use-cases__item_animation {
-    animation: useCasesItemLeft 2s ease 3s forwards;
+    -webkit-animation: useCasesItemLeft 2s ease 2s forwards;
+            animation: useCasesItemLeft 2s ease 2s forwards;
   }
 
   .use-cases__item_advertising.use-cases__item_animation {
-    animation: useCasesItemLeft 2s ease 4s forwards;
+    -webkit-animation: useCasesItemLeft 2s ease 3s forwards;
+            animation: useCasesItemLeft 2s ease 3s forwards;
+  }
+
+  @-webkit-keyframes useCasesItemLeft {
+
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+
   }
 
   @keyframes useCasesItemLeft {
 
     0% {
-      transform: translateX(-1000px);
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
       opacity: 0;
     }
 
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
 
