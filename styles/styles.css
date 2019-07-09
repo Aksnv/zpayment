@@ -3844,6 +3844,8 @@ body {
   }
 
   .intro::after {
+    display: none;
+
     top: 105px;
     left: calc(50% + 292px);
   }
@@ -3866,6 +3868,168 @@ body {
 
     line-height: 90px;
   }
+
+  /* Robot animation */
+
+  .intro__animation {
+    position: absolute;
+    top: -10px;
+    right: 87px;
+  }
+
+  .robot {
+    width: 422px;
+    height: 507px;
+
+    overflow: hidden;
+  }
+
+  .robot__circles {
+    position: absolute;
+    top: 507px;
+    left: 50%;
+
+    width: 179px;
+    height: 111px;
+
+    background-image: url(../images/robot/robot-circles.svg);
+
+    transform: translateX(-50%);
+
+    animation: robotCircles 2s ease 0s forwards;
+  }
+
+  @keyframes robotCircles {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 341px;
+      opacity: 1;
+    }
+
+  }
+
+  .robot__lines {
+    position: absolute;
+    top: 507px;
+    left: 50%;
+
+    width: 422px;
+    height: 497px;
+
+    background-image: url(../images/robot/robot-lines.svg);
+
+    transform: translateX(-50%);
+
+    animation: robotLines 2s ease 1s forwards;
+  }
+
+  @keyframes robotLines {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 10px;
+      opacity: 1;
+    }
+
+  }
+
+  .robot__rectangles {
+    position: absolute;
+    top: 507px;
+    left: 207px;
+
+    width: 339px;
+    height: 278px;
+
+    background-image: url(../images/robot/robot-rectangles.svg);
+
+    transform: translateX(-50%);
+
+    animation: robotRectangles 2s ease 2s forwards;
+  }
+
+  @keyframes robotRectangles {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 173px;
+      opacity: 1;
+    }
+
+  }
+
+  .robot__body {
+    position: absolute;
+    top: 507px;
+    left: 195px;
+
+    width: 331px;
+    height: 259px;
+
+    background-image: url(../images/robot/robot-body.svg);
+
+    transform: translateX(-50%);
+
+    animation: robotBody 2s ease 3s forwards;
+  }
+
+  @keyframes robotBody {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 113px;
+      opacity: 1;
+    }
+
+  }
+
+  .robot__message {
+    position: absolute;
+    top: 507px;
+    left: 237px;
+
+    width: 97px;
+    height: 97px;
+
+    background-image: url(../images/robot/robot-message.svg);
+
+    transform: translateX(-50%);
+
+    animation: robotMessage 2s ease 4s forwards;
+  }
+
+  @keyframes robotMessage {
+
+    0% {
+      top: 507px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+
+  }
+
+  /* /Robot animation */
 
 
   /* ------------- Advantages ------------- */
