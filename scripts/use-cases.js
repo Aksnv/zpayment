@@ -5,6 +5,7 @@
 var container = document.querySelector(".container");
 var controlsButtonUseCasesForward = document.querySelector(".controls__button_use-cases_forward");
 var controlsButtonUseCasesBack = document.querySelector(".controls__button_use-cases_back");
+var useCases = document.querySelector(".use-cases");
 var useCasesList = document.querySelector(".use-cases__list");
 var useCasesItems = document.querySelectorAll(".use-cases__item");
 var useCasesIndicators = document.querySelectorAll(".indicator_pagination_use-cases");
@@ -86,9 +87,9 @@ controlsButtonUseCasesBack.addEventListener("click", function() {
 /* ------------- Use cases items animation ------------- */
 
 window.addEventListener("scroll", function() {
-  if (container.clientWidth === 1180) {
-    for (var i = advantagesItems.length - 1; i >= 0; i--) {
-      advantagesItems[i].classList.add("advantages-item_animation");
+  if ((container.clientWidth === 1180) && (useCases.getBoundingClientRect().top < document.documentElement.clientHeight)) {
+    for (var i = useCasesItems.length - 1; i >= 0; i--) {
+      useCasesItems[i].classList.add("use-cases__item_animation");
     }
   }
 });

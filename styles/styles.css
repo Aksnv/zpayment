@@ -4291,6 +4291,68 @@ body {
     width: 100%;
   }
 
+  /* Use cases animation */
+
+  .use-cases__item_product,
+  .use-cases__item_subscription {
+    transform: translateX(1000px);
+
+    opacity: 0;
+  }
+
+  .use-cases__item_product.use-cases__item_animation {
+    animation: useCasesItemRight 2s ease 0s forwards;
+  }
+
+  .use-cases__item_subscription.use-cases__item_animation {
+    animation: useCasesItemRight 2s ease 1s forwards;
+  }
+
+  @keyframes useCasesItemRight {
+
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+  }
+
+  .use-cases__item_donation,
+  .use-cases__item_advertising {
+    transform: translateX(-1000px);
+
+    opacity: 0;
+  }
+
+  .use-cases__item_donation.use-cases__item_animation {
+    animation: useCasesItemLeft 2s ease 3s forwards;
+  }
+
+  .use-cases__item_advertising.use-cases__item_animation {
+    animation: useCasesItemLeft 2s ease 4s forwards;
+  }
+
+  @keyframes useCasesItemLeft {
+
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+  }
+
+  /* /Use cases animation */
+
 
   /* ------------- Reviews ------------- */
 
