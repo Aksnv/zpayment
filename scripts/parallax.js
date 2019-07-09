@@ -5,6 +5,7 @@
 var pageBody = document.querySelector("body");
 var container = document.querySelector(".container");
 var intro = document.querySelector(".intro");
+/*var robot = document.querySelector(".robot");*/
 
 intro.addEventListener("mousemove", function(e) {
   if (container.clientWidth === 1180) {
@@ -12,5 +13,8 @@ intro.addEventListener("mousemove", function(e) {
                                         (e.pageX/30 + pageBody.clientWidth/2 - 1920/2) + 'px ' + (e.pageY/30 + 63) + 'px, ' +
                                         (-e.pageX/50 + pageBody.clientWidth/2 - 1624/2) + 'px ' + (-e.pageY/50 + 163) + 'px, ' +
                                         'center top';
+
+    /*robot.style.top = (-e.pageY/120) + 'px';
+    robot.style.right = (-e.pageX/120 + 87) + 'px';*/
   }
 });
