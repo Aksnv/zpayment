@@ -4049,9 +4049,9 @@ body {
 
             transform: translateX(-50%);
 
-    -webkit-animation: robotBody 2s ease 3s forwards;
+    -webkit-animation: robotBody 2s ease 3s forwards, robotBodyMove 2s ease 5s infinite;
 
-            animation: robotBody 2s ease 3s forwards;
+            animation: robotBody 2s ease 3s forwards, robotBodyMove 2s ease 5s infinite;
   }
 
   @-webkit-keyframes robotBody {
@@ -4082,9 +4082,41 @@ body {
 
   }
 
+  @-webkit-keyframes robotBodyMove {
+
+    0% {
+      transform: translate(-50%, 0%);
+    }
+
+    50% {
+      transform: translate(-50%, 4%);
+    }
+
+    100% {
+      transform: translate(-50%, 0%);
+    }
+
+  }
+
+  @keyframes robotBodyMove {
+
+    0% {
+      transform: translate(-50%, 0%);
+    }
+
+    50% {
+      transform: translate(-50%, 4%);
+    }
+
+    100% {
+      transform: translate(-50%, 0%);
+    }
+
+  }
+
   .robot__message {
     position: absolute;
-    top: 507px;
+    top: 0;
     left: 237px;
 
     width: 97px;
@@ -4098,20 +4130,20 @@ body {
 
             transform: translateX(-50%);
 
-    -webkit-animation: robotMessage 2s ease 4s forwards;
+    -webkit-animation: robotMessage 2s ease 5s forwards;
 
-            animation: robotMessage 2s ease 4s forwards;
+            animation: robotMessage 2s ease 5s forwards;
+
+    opacity: 0;
   }
 
   @-webkit-keyframes robotMessage {
 
     0% {
-      top: 507px;
       opacity: 0;
     }
 
     100% {
-      top: 0;
       opacity: 1;
     }
 
@@ -4120,12 +4152,10 @@ body {
   @keyframes robotMessage {
 
     0% {
-      top: 507px;
       opacity: 0;
     }
 
     100% {
-      top: 0;
       opacity: 1;
     }
 
