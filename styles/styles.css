@@ -3686,24 +3686,70 @@ body {
 
   body,
   .main-page_visible {
-    background-image: url(../images/backgrounds/bg-stars.png),
-                      url(../images/backgrounds/bg-chains.png),
-                      url(../images/backgrounds/bg-logos.png),
+    background-image: none,
+                      none,
+                      none,
                       url(../images/backgrounds/bg-top.png);
-    background-position: center 216px,
-                         center 63px,
-                         center 163px,
+    background-position: 0 0,
+                         0 0,
+                         0 0,
                          center top;
     background-size: auto auto,
                       auto auto,
                       auto auto,
                       100% 1117px;
+  }
 
-    -webkit-transition: background-position 0.1s ease;
+  .stars,
+  .chains,
+  .logos {
+    position: absolute;
+    left: 50%;
 
-    -o-transition: background-position 0.1s ease;
+    -webkit-transform: translateX(-50%);
 
-    transition: background-position 0.1s ease;
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+
+    -webkit-transition: transform 0.1s ease;
+
+    -o-transition: transform 0.1s ease;
+
+    -webkit-transition: -webkit-transform 0.1s ease;
+
+    transition: -webkit-transform 0.1s ease;
+
+    transition: transform 0.1s ease;
+
+    transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+  }
+
+  .stars {
+    top: 216px;
+
+    width: 1299px;
+    height: 383px;
+
+    background-image: url(../images/backgrounds/bg-stars.png);
+  }
+
+  .chains {
+    top: 63px;
+
+    width: 1920px;
+    height: 856px;
+
+    background-image: url(../images/backgrounds/bg-chains.png);
+  }
+
+  .logos {
+    top: 163px;
+
+    width: 1624px;
+    height: 812px;
+
+    background-image: url(../images/backgrounds/bg-logos.png);
   }
 
   .container {
@@ -3843,6 +3889,8 @@ body {
     padding-bottom: 60px;
 
     background-position: 672px 105px;
+
+    z-index: 1;
   }
 
   .intro::after {
@@ -4085,15 +4133,18 @@ body {
   @-webkit-keyframes robotBodyMove {
 
     0% {
-      transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
     }
 
     50% {
-      transform: translate(-50%, 4%);
+      -webkit-transform: translate(-50%, 4%);
+              transform: translate(-50%, 4%);
     }
 
     100% {
-      transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
     }
 
   }
@@ -4101,15 +4152,18 @@ body {
   @keyframes robotBodyMove {
 
     0% {
-      transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
     }
 
     50% {
-      transform: translate(-50%, 4%);
+      -webkit-transform: translate(-50%, 4%);
+              transform: translate(-50%, 4%);
     }
 
     100% {
-      transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
     }
 
   }

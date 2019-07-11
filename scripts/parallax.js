@@ -2,19 +2,16 @@
 
 /* ------------- Parallax animation ------------- */
 
-var pageBody = document.querySelector("body");
 var container = document.querySelector(".container");
 var intro = document.querySelector(".intro");
-/*var robot = document.querySelector(".robot");*/
+var stars = document.querySelector(".stars");
+var chains = document.querySelector(".chains");
+var logos = document.querySelector(".logos");
 
 intro.addEventListener("mousemove", function(e) {
   if (container.clientWidth === 1180) {
-    pageBody.style.backgroundPosition = (-e.pageX/20 + pageBody.clientWidth/2 - 1299/2) + 'px ' + (-e.pageY/20 + 216) + 'px, ' +
-                                        (e.pageX/30 + pageBody.clientWidth/2 - 1920/2) + 'px ' + (e.pageY/30 + 63) + 'px, ' +
-                                        (-e.pageX/50 + pageBody.clientWidth/2 - 1624/2) + 'px ' + (-e.pageY/50 + 163) + 'px, ' +
-                                        'center top';
-
-    /*robot.style.top = (-e.pageY/120) + 'px';
-    robot.style.right = (-e.pageX/120 + 87) + 'px';*/
+    stars.style.transform = "translate(" + (-e.pageX/20 - 1299/2) + "px, " + (-e.pageY/20) + "px)";
+    chains.style.transform = "translate(" + (e.pageX/30 - 1920/2) + "px, " + (e.pageY/30) + "px)";
+    logos.style.transform = "translate(" + (-e.pageX/50 - 1624/2) + "px, " + (-e.pageY/50) + "px)";
   }
 });
